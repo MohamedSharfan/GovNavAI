@@ -1,0 +1,50 @@
+[
+  {
+    "fact": "GIC 1919 is the Government Information Centre citizen hotline and runs 24 hours a day, 7 days a week ('Call Us 24/7 Citizen Hotline 1919'). Email info@gic.gov.lk; Presidential Secretariat, Galle Face Center Road, Colombo 1. The GIC website is available in Sinhala, Tamil and English (the site does not state explicitly that the phone line is served in all three languages).",
+    "sourceUrl": "https://gic.gov.lk/"
+  },
+  {
+    "fact": "PDPA No. 9 of 2022 (as amended): Extraordinary Gazette No. 2498/16, published 22 July 2026, sets 1 January 2027 as the start date for Section 2 (scope), Section 3 (relationship to other laws), Part I (lawful processing of personal data) and Part III (controllers and processors: Data Protection Officer, breach notification, DPIA). Cross-border transfer rules are part of the wider framework. As of 24 November 2026 these core duties are not yet in force.",
+    "sourceUrl": "https://www.ft.lk/front-page/Data-protection-compliance-regime-takes-effect-on-1-Jan-2027/44-795776"
+  },
+  {
+    "fact": "Earlier PDPA phases: Part V (Data Protection Authority board) took effect in July 2023; Parts VI, VIII, IX and X (DPA fund, staffing, miscellaneous, interpretation) took effect on 1 December 2023. The DPA site still lists 18 March 2025 for Parts I, II, III and VII; the 2026 gazette (2498/16) sets 1 January 2027 for Section 2, Section 3, Part I and Part III, so treat the 2025 date for those parts as superseded (our inference; the gazette report does not mention the 2025 date). Part IV (unsolicited messages) will start on a later date.",
+    "sourceUrl": "https://dpa.gov.lk/est.php"
+  },
+  {
+    "fact": "DRP answers phone enquiries between 8.30 a.m. and 4.15 p.m. on weekdays. GovNavAI uses 08:30-16:15 on weekdays as the assumed default counter hours for offices that do not publish their own hours; this is not stated as a general rule for all government offices.",
+    "sourceUrl": "https://drp.gov.lk/en/contact.php"
+  },
+  {
+    "fact": "Grama Niladhari office days (Ministry of Internal Affairs Circular No. 16/2020, from 1 October; year inferred from the circular number): GN officers are in their office for the public on Tuesday and Thursday 08:30-16:15 and Saturday 08:30-12:30. On Monday they attend to Divisional Secretariat work. The other days are two field days and one day off.",
+    "sourceUrl": "https://www.adaderana.lk/news/67460/circular-issued-on-official-hours-of-grama-niladharis"
+  },
+  {
+    "fact": "Monday is the 'Public Day' for state institutions. On Mondays, offices are expected to serve members of the public who visit.",
+    "sourceUrl": "https://www.newsfirst.lk/2020/09/27/people-urged-to-report-on-inconveniences-faced-at-state-institutions-on-public-day"
+  },
+  {
+    "fact": "Ratnapura District has 18 Divisional Secretariat divisions, including Kaltota (spelled 'Kalthotha' on the district site, phone +94 45 2288982). The DCS 2020 GN report and the Kuruwita DS overview still say 17.",
+    "sourceUrl": "http://www.ratnapura.dist.gov.lk/index.php/en/contact/contact-details.html"
+  },
+  {
+    "fact": "Not yet confirmed (source PDF could not be read during verification): Kaltota started on 7 April 2018 as a sub-office of Balangoda DS and became a full DS on 2 March 2021; the district had 575 GN divisions in the 2020 DCS report.",
+    "sourceUrl": "https://www.parliament.lk/uploads/businessdocs/english/23814_english_2026-06-26.pdf"
+  },
+  {
+    "fact": "Kuruwita DS division covers 172.83 km², with 39 Grama Niladhari divisions, 101 villages and a population of about 98,345.",
+    "sourceUrl": "http://kuruvita.ds.gov.lk/index.php/en/about-us/overview.html"
+  },
+  {
+    "fact": "Fees for copies of birth, marriage and death certificates at Kuruwita DS: Rs. 100 per copy if the registration number and date are known. If they are not known, Rs. 200 for the first copy and Rs. 100 for each extra copy. The declaration fee for a late birth registration (Section 24) is Rs. 50.",
+    "sourceUrl": "http://kuruvita.ds.gov.lk/index.php/en/civil-registrations.html"
+  },
+  {
+    "fact": "Local Registrars of Births and Deaths in Kuruwita DS: Thembiliyana (Gonapitiya Road) 045 2263796, Ellawela/Theppanawa (Kandangoda) 045 2262402, Erathna ('Samanala', Erathna) 045 2264750. Pussella registrar division is covered by Ellawela (acting).",
+    "sourceUrl": "http://kuruvita.ds.gov.lk/index.php/en/administrative-structure/registrar-division.html"
+  },
+  {
+    "fact": "DRP has 335 regional offices, established in each Divisional Secretariat. They forward normal NIC applications, schedule dates for one-day service applicants, check documents and return undelivered ID cards.",
+    "sourceUrl": "https://drp.gov.lk/en/divisional_office.php"
+  }
+]

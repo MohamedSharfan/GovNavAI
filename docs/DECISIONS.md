@@ -4,6 +4,18 @@ The brief says: when something is unclear, choose the option that helps a Sri La
 
 ---
 
+### D-020 · Form Studio uses an interim officer access code (2026-11-24)
+Officer endpoints (`/v1/officer/forms/*`) need `X-Officer-Token` to match `GOVNAV_OFFICER_TOKEN`. They are disabled when it is unset, and the check is constant-time. This lets the Form Studio be built and demoed now. M3 replaces it with Firebase Google sign-in plus an allow-list of officer emails. Publishing requires a named approving officer, and nothing is live before that.
+
+### D-019 · Imbulpe DS income form as the demo form (2026-11-24)
+Kuruwita DS publishes no downloadable income-certificate form. The Imbulpe DS form, from the same district, is a real, scanned, flat official form, which is exactly the hard case the pipeline must handle. It is labelled `demoData` and attributed to Imbulpe. Kuruwita's own form can be added by an officer through Form Studio in minutes.
+
+### D-018 · Fill statuses and an honest "% filled" (2026-11-24)
+Every field is `auto` (from a confirmed profile value), `confirm` (AI-written or transliterated, which the citizen must tick), `input` (typed in the app, such as income figures), `manual` (signature, done in front of the officer) or `officer` (never printed). "% filled" ignores officer sections and counts optional sections only when used. The signature counts as not done, so the badge never claims 100% for a form that still needs a hand. The PDF is generated only after each `confirm` field is ticked and the citizen confirms all values.
+
+### D-017 · PDF overlay with HarfBuzz shaping and embedded Noto Sans (2026-11-24)
+Sinhala and Tamil need complex shaping (for example ශ්‍රී and க்ஷ). pdf-lib cannot shape, so overlay happens server-side with PyMuPDF's HTML engine (HarfBuzz). The font is picked per value by script, and **Noto Sans Sinhala/Tamil** (OFL) are embedded and subset (an income form stays around 1 MB). Values shrink to fit their box rather than overflow onto officer sections. Known limitation: copy/paste text extraction from shaped clusters is imperfect, but the printed form is correct, and tests check the ink lands inside each box.
+
 ### D-016 · Follow-up continuity is gated on query novelty (2026-11-24)
 Found in browser testing: after an income-certificate answer, "How do I renew my passport?" was answered as the income certificate, because short follow-ups kept the procedure in view. The retriever now reports **novelty**, the share of query words that appear in no verified record. A small trilingual lexicon of fee/time/documents/office/form words always counts as known. The root gate allows continuity only when novelty < 0.34, so "gasthuwa keeyada?" continues and "renew my passport" declines. This is enforced in code, so it holds for the Gemini router too.
 

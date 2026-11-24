@@ -1,7 +1,7 @@
 "use client";
 
 import type { CitizenRequest } from "@govnav/shared";
-import { Building2, Check, Clock, MessageCircleQuestion, QrCode, Sparkles, Wallet } from "lucide-react";
+import { Building2, Check, Clock, FileText, MessageCircleQuestion, QrCode, Sparkles, Wallet } from "lucide-react";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { SourceChip } from "@/components/chat/answer-cards";
@@ -229,6 +229,15 @@ export function ProcedureDetailView({ detail, compact = false }: { detail: Detai
           </details>
         )}
 
+        {p.formIds && p.formIds.length > 0 && (
+          <Link
+            href={`/forms/${p.id}`}
+            className="flex min-h-14 items-center justify-center gap-2 rounded-xl bg-gold text-lg font-bold text-ink hover:brightness-95"
+          >
+            <FileText aria-hidden className="size-5" />
+            {t("form.getForm")}
+          </Link>
+        )}
         <Link
           href={`/visit-pack/${p.id}`}
           className="flex min-h-14 items-center justify-center gap-2 rounded-xl bg-primary text-lg font-bold text-white hover:bg-primary-strong"

@@ -1,4 +1,14 @@
-import type { AskRequest, AskResponse, District, Office, Procedure, ProfileExtractResponse } from "@govnav/shared";
+import type {
+  AskRequest,
+  AskResponse,
+  District,
+  FillPlan,
+  FillPlanRequest,
+  FormMap,
+  Office,
+  Procedure,
+  ProfileExtractResponse,
+} from "@govnav/shared";
 import type { Lang } from "@/i18n/dictionaries";
 
 type L10n = Record<Lang, string>;
@@ -78,6 +88,26 @@ export const api = {
   procedures: () => request<{ items: ProcedureSummary[]; count: number }>("/v1/procedures"),
   procedure: (id: string) => request<ProcedureDetail>(`/v1/procedures/${encodeURIComponent(id)}`),
   geo: () => request<{ districts: District[] }>("/v1/geo"),
+  form: (id: string) => request<Omit<FormMap, "pdfPath">>(`/v1/forms/${encodeURIComponent(id)}`),
+  blankFormUrl: (id: string) => `${baseUrl()}/v1/forms/${encodeURIComponent(id)}/blank.pdf`,
+  /** Maps the on-device profile onto the form. The server keeps nothing. */
+  planForm: (id: string, body: FillPlanRequest) =>
+    request<FillPlan>(`/v1/forms/${encodeURIComponent(id)}/plan`, { method: "POST", body: JSON.stringify(body), timeoutMs: 45_000 }),
+  /** Returns the official PDF with the confirmed values printed on it. */
+  fillForm: async (id: string, values: Record<string, string>): Promise<Blob> => {
+    let res: Response;
+    try {
+      res = await fetch(`${baseUrl()}/v1/forms/${encodeURIComponent(id)}/fill`, {
+        method: "POST",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify({ values }),
+      });
+    } catch {
+      throw new ApiError(0, "network");
+    }
+    if (!res.ok) throw new ApiError(res.status, res.status === 422 ? "bad_input" : "server");
+    return res.blob();
+  },
   /** Sends one photo for reading. The server keeps nothing (response says imageRetained: false). */
   extractProfile: (photo: Blob) => {
     const body = new FormData();

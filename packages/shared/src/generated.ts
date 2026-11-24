@@ -426,11 +426,34 @@ export interface Profile {
   civilStatus?: string | null;
   preferredLanguage?: Lang;
   confirmedKeys?: string[];
+  /**
+   * When the citizen accepted the privacy notice.
+   */
+  consentAt?: string | null;
 }
 export interface Address {
   en?: string | null;
   si?: string | null;
   ta?: string | null;
+}
+
+// ---- ProfileExtractResponse.schema.json ----
+export type DocumentType = "nic_old" | "nic_new" | "utility_bill" | "other";
+
+export interface ProfileExtractResponse {
+  documentType: DocumentType;
+  fields: ExtractedField[];
+  warnings?: string[];
+  imageRetained?: false;
+}
+export interface ExtractedField {
+  /**
+   * Profile key, e.g. fullNameEn, nic, address.si
+   */
+  key: string;
+  value: string;
+  source?: "ai" | "derived";
+  warning?: string | null;
 }
 
 // ---- RouteDecision.schema.json ----

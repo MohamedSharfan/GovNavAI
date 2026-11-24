@@ -440,6 +440,46 @@ class Profile(StrictModel):
     civil_status: str | None = Field(default=None, alias="civilStatus")
     preferred_language: Lang = Field(default=Lang.SI, alias="preferredLanguage")
     confirmed_keys: list[str] = Field(default_factory=list, alias="confirmedKeys")
+    consent_at: dt.datetime | None = Field(
+        default=None, alias="consentAt", description="When the citizen accepted the privacy notice."
+    )
+
+
+class DocumentType(StrEnum):
+    NIC_OLD = "nic_old"
+    NIC_NEW = "nic_new"
+    UTILITY_BILL = "utility_bill"
+    OTHER = "other"
+
+
+class DocumentExtraction(StrictModel):
+    """Gemini vision output for an NIC or utility-bill photo. Values as printed; null if absent."""
+
+    document_type: DocumentType = Field(alias="documentType")
+    full_name_en: str | None = Field(default=None, alias="fullNameEn")
+    full_name_si: str | None = Field(default=None, alias="fullNameSi")
+    full_name_ta: str | None = Field(default=None, alias="fullNameTa")
+    nic: str | None = None
+    date_of_birth: str | None = Field(default=None, alias="dateOfBirth", description="As printed")
+    address_en: str | None = Field(default=None, alias="addressEn")
+    address_si: str | None = Field(default=None, alias="addressSi")
+    address_ta: str | None = Field(default=None, alias="addressTa")
+    account_holder: str | None = Field(default=None, alias="accountHolder")
+    legibility: float = Field(ge=0, le=1, description="0 = unreadable photo, 1 = perfectly clear")
+
+
+class ExtractedField(StrictModel):
+    key: str = Field(description="Profile key, e.g. fullNameEn, nic, address.si")
+    value: str
+    source: Literal["ai", "derived"] = "ai"
+    warning: str | None = None
+
+
+class ProfileExtractResponse(StrictModel):
+    document_type: DocumentType = Field(alias="documentType")
+    fields: list[ExtractedField]
+    warnings: list[str] = Field(default_factory=list)
+    image_retained: Literal[False] = Field(default=False, alias="imageRetained")
 
 
 class RequestStatus(StrEnum):

@@ -245,6 +245,20 @@
       },
       "title": "Confirmedkeys",
       "type": "array"
+    },
+    "consentAt": {
+      "anyOf": [
+        {
+          "format": "date-time",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "When the citizen accepted the privacy notice.",
+      "title": "Consentat"
     }
   },
   "title": "Profile",

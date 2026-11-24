@@ -16,6 +16,7 @@ cannot be compared to a threshold.
 from __future__ import annotations
 
 import logging
+import math
 import time
 from dataclasses import dataclass, field
 
@@ -53,7 +54,7 @@ class Calibration:
 
 # Tuned on evals/queries.jsonl (see evals/REPORT.md); revisit when the model changes.
 CALIBRATIONS: dict[str, Calibration] = {
-    "ngram": Calibration(low=0.08, high=0.42),
+    "ngram": Calibration(low=0.15, high=0.80),
     "gemini": Calibration(low=0.52, high=0.78),
 }
 
@@ -127,6 +128,18 @@ class HybridRetriever:
             raise ValueError("cannot build a retriever over zero procedures")
         self._view_tokens = [tokens(v.text) for v in self.views]
         self._token_sets = [set(t) for t in self._view_tokens]
+        # Procedure-level IDF: a token shared by many procedures ("certificate", "venum")
+        # says little about WHICH procedure; a token in none ("passport") counts against all.
+        proc_tokens: dict[str, set[str]] = {}
+        for v, ts in zip(self.views, self._token_sets, strict=True):
+            proc_tokens.setdefault(v.procedure_id, set()).update(ts)
+        n = len(proc_tokens)
+        df: dict[str, int] = {}
+        for ts in proc_tokens.values():
+            for t in ts:
+                df[t] = df.get(t, 0) + 1
+        self._idf = {t: math.log((n + 1) / (c + 0.5)) for t, c in df.items()}
+        self._idf_unseen = math.log((n + 1) / 0.5)
         self._bm25 = BM25Okapi(self._view_tokens)
         t0 = time.perf_counter()
         self._matrix = self.embedder.embed([v.text for v in self.views], "RETRIEVAL_DOCUMENT")
@@ -148,13 +161,15 @@ class HybridRetriever:
         return best
 
     def _coverage(self, q_tokens: list[str]) -> dict[str, float]:
-        """Lexical confidence: share of query tokens found in the best-matching view."""
+        """Lexical confidence: IDF-weighted share of query tokens found in the best view."""
         q = set(q_tokens)
         if not q:
             return dict.fromkeys(self._procedure_ids, 0.0)
+        weights = {t: self._idf.get(t, self._idf_unseen) for t in q}
+        total = sum(weights.values())
         best: dict[str, float] = {}
         for i, ts in enumerate(self._token_sets):
-            cov = len(q & ts) / len(q)
+            cov = sum(weights[t] for t in q & ts) / total
             pid = self.views[i].procedure_id
             best[pid] = max(best.get(pid, 0.0), cov)
         return best

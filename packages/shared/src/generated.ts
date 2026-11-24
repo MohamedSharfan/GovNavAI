@@ -58,6 +58,7 @@ export interface FactCard {
   isFree: boolean;
 }
 export interface SourceChip {
+  title: string;
   url?: string | null;
   verifiedAt?: string | null;
   verifiedBy?: string | null;
@@ -152,6 +153,7 @@ export interface GnDivision {
  */
 export interface SourceRef {
   id: string;
+  title: string;
   url?: string | null;
   kind: SourceKind;
   section?: string | null;

@@ -1,0 +1,109 @@
+{
+  "app": {
+    "name": "GovNavAI",
+    "tagline": "Government paperwork, in your own language.",
+    "skip": "Skip to main content",
+    "limits": "GovNavAI prepares you. The office makes the final decision."
+  },
+  "nav": {
+    "ask": "Ask",
+    "procedures": "Procedures",
+    "offices": "Offices",
+    "requests": "Requests",
+    "main": "Main navigation"
+  },
+  "lang": { "label": "Language", "si": "සිං", "ta": "த", "en": "En", "siFull": "සිංහල", "taFull": "தமிழ்", "enFull": "English" },
+  "textSize": { "label": "Text size", "md": "Normal text", "lg": "Larger text", "xl": "Largest text" },
+  "home": {
+    "greeting": "Ayubowan, welcome",
+    "title": "What do you need from the government?",
+    "askPlaceholder": "Ask in Sinhala, Tamil or English…",
+    "askLabel": "Type what you need",
+    "voice": "Speak your question",
+    "voiceSoon": "Voice input is coming soon",
+    "common": "Common procedures",
+    "all": "All {count}",
+    "continue": "Continue",
+    "continueProgress": "{done} of {total}",
+    "resume": "resume checklist",
+    "examples": "Try asking",
+    "example1": "I need an income certificate for my daughter's scholarship",
+    "example2": "How do I get a copy of my birth certificate?",
+    "example3": "I lost my NIC, what should I do?"
+  },
+  "chat": {
+    "title": "GovNavAI assistant",
+    "subtitle": "Verified knowledge base · {count} procedures",
+    "placeholder": "Write a question…",
+    "send": "Send",
+    "thinking": "Checking verified records…",
+    "you": "You",
+    "assistant": "GovNavAI",
+    "office": "Office",
+    "fee": "Fee",
+    "time": "Time",
+    "source": "Source",
+    "verifiedOn": "Verified {date}",
+    "verifiedBy": "by {name}",
+    "sampleData": "Sample data, confirm with office",
+    "openSource": "Open source document",
+    "seeChecklist": "See my document checklist",
+    "documents": "{count} documents to bring",
+    "formAvailable": "Official form can be pre-filled",
+    "howMade": "How this answer was made",
+    "groundedYes": "Every fact above comes from the verified record.",
+    "groundedTemplate": "Shown from the verified record word for word.",
+    "declineTitle": "I can't confirm this yet",
+    "call1919": "Call 1919",
+    "findOffice": "Find my nearest office",
+    "didYouMean": "Did you mean:",
+    "greetingTitle": "Hello",
+    "error": "Something went wrong. Please try again.",
+    "networkError": "Can't reach GovNavAI. Check your connection and try again.",
+    "rateLimited": "Too many questions at once. Please wait a moment.",
+    "retry": "Try again",
+    "demoMode": "Demo mode (offline AI)",
+    "readAloud": "Read aloud",
+    "stopReading": "Stop reading",
+    "newChat": "New question",
+    "empty": "Ask anything about a government procedure. I will tell you the office, fee, time and documents, with the source."
+  },
+  "procedures": {
+    "title": "Procedures",
+    "subtitle": "Verified procedures for Kuruwita, Ratnapura District",
+    "search": "Search procedures",
+    "free": "Free",
+    "documents": "{count} documents",
+    "hasForm": "Form",
+    "ask": "Ask about this",
+    "notFound": "No procedures match your search.",
+    "steps": "Steps",
+    "whatToBring": "What to bring",
+    "eligibility": "Who can apply",
+    "sources": "Sources",
+    "aiCanPrefill": "AI can pre-fill",
+    "category": {
+      "civil-registration": "Civil registration",
+      "identity": "Identity documents",
+      "land-property": "Land & property",
+      "welfare-certificates": "Welfare & certificates",
+      "licensing": "Licensing"
+    }
+  },
+  "offices": {
+    "title": "Offices near you",
+    "comingSoon": "Office map, opening hours and directions are coming in the next update."
+  },
+  "requests": {
+    "title": "My requests",
+    "empty": "Procedures you look up and forms you prepare will appear here. They stay on this phone only."
+  },
+  "common": {
+    "back": "Back",
+    "loading": "Loading…",
+    "close": "Close",
+    "open": "Open",
+    "closed": "Closed",
+    "busy": "Busy"
+  }
+}

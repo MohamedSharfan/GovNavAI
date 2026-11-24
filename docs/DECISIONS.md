@@ -4,6 +4,25 @@ The brief says: when something is unclear, choose the option that helps a Sri La
 
 ---
 
+### D-016 · Follow-up continuity is gated on query novelty (2026-11-24)
+Found in browser testing: after an income-certificate answer, "How do I renew my passport?" was answered as the income certificate, because short follow-ups kept the procedure in view. The retriever now reports **novelty**, the share of query words that appear in no verified record. A small trilingual lexicon of fee/time/documents/office/form words always counts as known. The root gate allows continuity only when novelty < 0.34, so "gasthuwa keeyada?" continues and "renew my passport" declines. This is enforced in code, so it holds for the Gemini router too.
+
+### D-015 · Short, officer-approved fee/time labels (2026-11-24)
+Official fee rules are paragraphs (for example "1.27% of yearly income…"), but the Office · Fee · Time card needs a glanceable value. `Fee.short` and `ProcessingTime.short` are optional LocalizedText labels, and every number in them is checked against the full approved text. The card shows the short label, and the detail page and the model also see the full rule.
+
+### D-014 · Honest provenance on seed records (2026-11-24)
+Seed records were researched from official sources and adversarially re-checked, but no Kuruwita DS officer has approved them yet. They carry `verifiedBy: "ByteMe research team (pending Kuruwita DS officer review)"`, and every record that relies on another DS's practice or an unconfirmed fact has `demoData: true`. The UI shows both. In the pilot, a named officer re-approves each record in the Procedure editor (M3).
+
+### D-013 · Answer language follows the citizen, not the UI (2026-11-24)
+Sinhala script and Singlish get Sinhala answers, Tamil script and Tanglish get Tamil answers, and English gets English answers, whatever the UI language. Someone who types in English inside the Sinhala UI gets English. The UI chrome stays in the selected language.
+
+### D-012 · Retrieval: IDF-weighted lexical coverage (2026-11-24)
+Unweighted coverage let generic words ("certificate", "venum") outvote the distinguishing word, which sent a Tamil income-certificate question to the character certificate. Coverage is now IDF-weighted at procedure level, and words found in no procedure weigh most. In-scope queries score 0.76–1.0 and out-of-scope ones ≤ 0.32 (threshold 0.45).
+
+### D-011 · Local agent port 8787 (2026-11-24)
+Windows reserves 8080 on the dev machine. Local dev uses `PORT=8787`, and Cloud Run injects its own `PORT`.
+
+
 ### D-010 · Two-person team; Member 2 owns the form pipeline (2026-11-24)
 The team is two developers, not three. Member 2 owns Form Studio, form maps, the PDF overlay, `form_fill_agent` and preview/download. Member 1 owns everything else. Schemas are a shared contract. See `CONTRIBUTING.md`.
 

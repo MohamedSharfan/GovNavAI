@@ -1,4 +1,14 @@
-import type { AskRequest, AskResponse, Office, Procedure } from "@govnav/shared";
+import type {
+  AskRequest,
+  AskResponse,
+  District,
+  FillPlan,
+  FillPlanRequest,
+  FormMap,
+  Office,
+  Procedure,
+  ProfileExtractResponse,
+} from "@govnav/shared";
 import type { Lang } from "@/i18n/dictionaries";
 
 type L10n = Record<Lang, string>;
@@ -31,7 +41,7 @@ export type OfficeRow = Office & { distanceKm: number | null };
 export class ApiError extends Error {
   constructor(
     public readonly status: number,
-    public readonly kind: "network" | "rate_limited" | "not_found" | "server",
+    public readonly kind: "network" | "rate_limited" | "not_found" | "unavailable" | "bad_input" | "server",
   ) {
     super(`api ${kind} (${status})`);
   }
@@ -53,7 +63,11 @@ async function request<T>(path: string, init?: RequestInit & { timeoutMs?: numbe
     res = await fetch(`${baseUrl()}${path}`, {
       ...init,
       signal: init?.signal ?? controller.signal,
-      headers: { "content-type": "application/json", ...(init?.headers ?? {}) },
+      // FormData bodies must let the browser set the multipart boundary.
+      headers:
+        init?.body instanceof FormData
+          ? (init?.headers ?? {})
+          : { "content-type": "application/json", ...(init?.headers ?? {}) },
     });
   } catch {
     throw new ApiError(0, "network");
@@ -62,6 +76,8 @@ async function request<T>(path: string, init?: RequestInit & { timeoutMs?: numbe
   }
   if (res.status === 429) throw new ApiError(429, "rate_limited");
   if (res.status === 404) throw new ApiError(404, "not_found");
+  if (res.status === 503) throw new ApiError(503, "unavailable");
+  if (res.status === 413 || res.status === 415) throw new ApiError(res.status, "bad_input");
   if (!res.ok) throw new ApiError(res.status, "server");
   return (await res.json()) as T;
 }
@@ -71,6 +87,33 @@ export const api = {
     request<AskResponse>("/v1/ask", { method: "POST", body: JSON.stringify(body), timeoutMs: 45_000 }),
   procedures: () => request<{ items: ProcedureSummary[]; count: number }>("/v1/procedures"),
   procedure: (id: string) => request<ProcedureDetail>(`/v1/procedures/${encodeURIComponent(id)}`),
+  geo: () => request<{ districts: District[] }>("/v1/geo"),
+  form: (id: string) => request<Omit<FormMap, "pdfPath">>(`/v1/forms/${encodeURIComponent(id)}`),
+  blankFormUrl: (id: string) => `${baseUrl()}/v1/forms/${encodeURIComponent(id)}/blank.pdf`,
+  /** Maps the on-device profile onto the form. The server keeps nothing. */
+  planForm: (id: string, body: FillPlanRequest) =>
+    request<FillPlan>(`/v1/forms/${encodeURIComponent(id)}/plan`, { method: "POST", body: JSON.stringify(body), timeoutMs: 45_000 }),
+  /** Returns the official PDF with the confirmed values printed on it. */
+  fillForm: async (id: string, values: Record<string, string>): Promise<Blob> => {
+    let res: Response;
+    try {
+      res = await fetch(`${baseUrl()}/v1/forms/${encodeURIComponent(id)}/fill`, {
+        method: "POST",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify({ values }),
+      });
+    } catch {
+      throw new ApiError(0, "network");
+    }
+    if (!res.ok) throw new ApiError(res.status, res.status === 422 ? "bad_input" : "server");
+    return res.blob();
+  },
+  /** Sends one photo for reading. The server keeps nothing (response says imageRetained: false). */
+  extractProfile: (photo: Blob) => {
+    const body = new FormData();
+    body.append("photo", photo, "document");
+    return request<ProfileExtractResponse>("/v1/uploads/profile-extract", { method: "POST", body, timeoutMs: 60_000 });
+  },
   offices: (params: { procedureId?: string; type?: string; lat?: number; lng?: number } = {}) => {
     const q = new URLSearchParams();
     for (const [k, v] of Object.entries(params)) if (v !== undefined) q.set(k, String(v));

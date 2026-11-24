@@ -334,6 +334,7 @@ class FieldType(StrEnum):
 class FillMode(StrEnum):
     AUTO = "auto"  # filled from a confirmed profile value
     CONFIRM = "confirm"  # filled, but the citizen must check it (e.g. AI-written purpose)
+    INPUT = "input"  # the citizen types it in the app (e.g. income figures), then it is printed
     MANUAL = "manual"  # citizen writes by hand (e.g. signature in front of officer)
     OFFICER = "officer"  # officer-only section, never filled
 
@@ -373,6 +374,7 @@ class FormField(StrictModel):
     script: FieldScript = FieldScript.AS_PROFILE
     max_chars: int | None = Field(default=None, alias="maxChars", gt=0)
     font_size: float | None = Field(default=None, alias="fontSize", gt=0)
+    optional: bool = Field(default=False, description="Only some applicants fill it (e.g. land income).")
     hint: LocalizedText | None = None
 
 
@@ -403,6 +405,76 @@ class FormMap(StrictModel):
             if f.page >= self.page_count:
                 raise ValueError(f"field {f.id} on page {f.page} but form has {self.page_count} pages")
         return self
+
+
+class FillStatus(StrEnum):
+    AUTO = "auto"  # from a confirmed profile value
+    CONFIRM = "confirm"  # AI-written or converted: the citizen must check it
+    INPUT = "input"  # waiting for the citizen to type it in the app
+    MANUAL = "manual"  # to be done by hand at the office (e.g. signature)
+    OFFICER = "officer"  # officer-only section
+    MISSING = "missing"  # needed but not in the profile yet
+
+
+class FillPlanField(StrictModel):
+    id: str
+    number: str | None = None
+    label: LocalizedText
+    page: int
+    bbox: BBox
+    type: FieldType
+    status: FillStatus
+    value: str | None = None
+    source: Literal["profile", "derived", "ai", "citizen"] | None = None
+    optional: bool = False
+    hint: LocalizedText | None = None
+    max_chars: int | None = Field(default=None, alias="maxChars")
+
+
+class FillPlan(StrictModel):
+    """form_fill_agent output: every field of the official form, colour-coded by status."""
+
+    form_id: str = Field(alias="formId")
+    code: str
+    name: LocalizedText
+    page_count: int = Field(alias="pageCount")
+    verified_year: int | None = Field(default=None, alias="verifiedYear")
+    demo_data: bool = Field(alias="demoData")
+    source_url: str | None = Field(default=None, alias="sourceUrl")
+    fields: list[FillPlanField]
+    filled_pct: int = Field(alias="filledPct", ge=0, le=100)
+    manual_steps: list[LocalizedText] = Field(default_factory=list, alias="manualSteps")
+
+
+class FormDraft(StrictModel):
+    """Structured output of form_fill_agent's Gemini step (validated before use)."""
+
+    purpose: str | None = Field(
+        default=None, max_length=160, description="Purpose of request, in the form's language"
+    )
+    name_si: str | None = Field(
+        default=None, alias="nameSi", max_length=120, description="Sinhala transliteration"
+    )
+    name_ta: str | None = Field(
+        default=None, alias="nameTa", max_length=120, description="Tamil transliteration"
+    )
+    address_si: str | None = Field(default=None, alias="addressSi", max_length=240)
+    address_ta: str | None = Field(default=None, alias="addressTa", max_length=240)
+
+
+class FillPlanRequest(StrictModel):
+    profile: Profile
+    language: Lang = Lang.SI
+    purpose_hint: str | None = Field(default=None, alias="purposeHint", max_length=1000)
+    inputs: dict[str, str] = Field(
+        default_factory=dict, description="Values the citizen typed for input fields"
+    )
+
+
+class FormFillRequest(StrictModel):
+    """The citizen-confirmed values to print. Processed in memory, never stored."""
+
+    values: dict[str, Annotated[str, Field(max_length=400)]] = Field(max_length=80)
 
 
 # ---------------------------------------------------------------------------
@@ -440,6 +512,46 @@ class Profile(StrictModel):
     civil_status: str | None = Field(default=None, alias="civilStatus")
     preferred_language: Lang = Field(default=Lang.SI, alias="preferredLanguage")
     confirmed_keys: list[str] = Field(default_factory=list, alias="confirmedKeys")
+    consent_at: dt.datetime | None = Field(
+        default=None, alias="consentAt", description="When the citizen accepted the privacy notice."
+    )
+
+
+class DocumentType(StrEnum):
+    NIC_OLD = "nic_old"
+    NIC_NEW = "nic_new"
+    UTILITY_BILL = "utility_bill"
+    OTHER = "other"
+
+
+class DocumentExtraction(StrictModel):
+    """Gemini vision output for an NIC or utility-bill photo. Values as printed; null if absent."""
+
+    document_type: DocumentType = Field(alias="documentType")
+    full_name_en: str | None = Field(default=None, alias="fullNameEn")
+    full_name_si: str | None = Field(default=None, alias="fullNameSi")
+    full_name_ta: str | None = Field(default=None, alias="fullNameTa")
+    nic: str | None = None
+    date_of_birth: str | None = Field(default=None, alias="dateOfBirth", description="As printed")
+    address_en: str | None = Field(default=None, alias="addressEn")
+    address_si: str | None = Field(default=None, alias="addressSi")
+    address_ta: str | None = Field(default=None, alias="addressTa")
+    account_holder: str | None = Field(default=None, alias="accountHolder")
+    legibility: float = Field(ge=0, le=1, description="0 = unreadable photo, 1 = perfectly clear")
+
+
+class ExtractedField(StrictModel):
+    key: str = Field(description="Profile key, e.g. fullNameEn, nic, address.si")
+    value: str
+    source: Literal["ai", "derived"] = "ai"
+    warning: str | None = None
+
+
+class ProfileExtractResponse(StrictModel):
+    document_type: DocumentType = Field(alias="documentType")
+    fields: list[ExtractedField]
+    warnings: list[str] = Field(default_factory=list)
+    image_retained: Literal[False] = Field(default=False, alias="imageRetained")
 
 
 class RequestStatus(StrEnum):
@@ -468,6 +580,10 @@ class CitizenRequest(StrictModel):
     form_id: str | None = Field(default=None, alias="formId")
     purpose: str | None = None
     filled_values: dict[str, str] = Field(default_factory=dict, alias="filledValues")
+    form_filled_pct: int | None = Field(default=None, alias="formFilledPct", ge=0, le=100)
+    manual_steps: list[LocalizedText] = Field(
+        default_factory=list, alias="manualSteps", description="e.g. 'Sign field 06 in front of the GN'"
+    )
     visit_pack_code: str | None = Field(default=None, alias="visitPackCode")
     outcome: VisitOutcome = VisitOutcome.UNKNOWN
 

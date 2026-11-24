@@ -3,22 +3,50 @@
  * leave the phone except for the single request that needs them (PDPA No. 9 of 2022).
  */
 import { openDB, type DBSchema, type IDBPDatabase } from "idb";
-import type { CitizenRequest, Profile } from "@govnav/shared";
+import type { CitizenRequest, Office, Profile } from "@govnav/shared";
+import type { Lang } from "@/i18n/dictionaries";
+
+type L10n = Record<Lang, string>;
+
+/** Everything the Visit pack shows, snapshotted on the device so it opens offline. */
+export interface VisitPackSnapshot {
+  procedureId: string;
+  requestId: string;
+  createdAt: string;
+  procedure: { name: L10n; fee: L10n; time: L10n; officeFlow: L10n };
+  office: Office | null;
+  documents: { id: string; name: L10n; conditional: L10n | null; done: boolean }[];
+  form: { id: string; code: string; name: L10n; filledPct: number | null; byHand: L10n[] } | null;
+  qr: string;
+}
 
 interface GovNavDB extends DBSchema {
   requests: { key: string; value: CitizenRequest; indexes: { byUpdated: string } };
   profile: { key: "me"; value: Profile };
+  packs: { key: string; value: VisitPackSnapshot };
 }
 
 let dbPromise: Promise<IDBPDatabase<GovNavDB>> | null = null;
 
 function db(): Promise<IDBPDatabase<GovNavDB>> {
   if (typeof indexedDB === "undefined") return Promise.reject(new Error("IndexedDB unavailable"));
-  dbPromise ??= openDB<GovNavDB>("govnav", 1, {
-    upgrade(d) {
-      const requests = d.createObjectStore("requests", { keyPath: "id" });
-      requests.createIndex("byUpdated", "updatedAt");
-      d.createObjectStore("profile");
+  dbPromise ??= openDB<GovNavDB>("govnav", 2, {
+    upgrade(d, oldVersion) {
+      if (oldVersion < 1) {
+        const requests = d.createObjectStore("requests", { keyPath: "id" });
+        requests.createIndex("byUpdated", "updatedAt");
+        d.createObjectStore("profile");
+      }
+      if (oldVersion < 2) d.createObjectStore("packs", { keyPath: "procedureId" });
+    },
+    // Another tab running newer code wants to upgrade: let go so it is not blocked.
+    blocking() {
+      void dbPromise?.then((conn) => conn.close());
+      dbPromise = null;
+    },
+    // A tab running older code still holds the database: reset so the next call retries.
+    blocked() {
+      dbPromise = null;
     },
   });
   return dbPromise;
@@ -97,10 +125,26 @@ export async function saveProfile(profile: Profile): Promise<void> {
   await (await db()).put("profile", profile, "me");
 }
 
-/** "Delete my data": wipes profile and request history from this device. */
+export async function savePack(pack: VisitPackSnapshot): Promise<void> {
+  try {
+    await (await db()).put("packs", pack);
+  } catch {
+    /* storage unavailable: the pack still renders from live data */
+  }
+}
+
+export async function getPack(procedureId: string): Promise<VisitPackSnapshot | undefined> {
+  try {
+    return await (await db()).get("packs", procedureId);
+  } catch {
+    return undefined;
+  }
+}
+
+/** "Delete my data": wipes profile, request history and visit packs from this device. */
 export async function deleteAllMyData(): Promise<void> {
   const d = await db();
-  await Promise.all([d.clear("requests"), d.clear("profile")]);
+  await Promise.all([d.clear("requests"), d.clear("profile"), d.clear("packs")]);
 }
 
 // A question typed on Home is handed to /ask via sessionStorage (never the URL).

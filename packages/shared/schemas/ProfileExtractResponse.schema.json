@@ -1,0 +1,87 @@
+{
+  "$defs": {
+    "DocumentType": {
+      "enum": [
+        "nic_old",
+        "nic_new",
+        "utility_bill",
+        "other"
+      ],
+      "title": "DocumentType",
+      "type": "string"
+    },
+    "ExtractedField": {
+      "additionalProperties": false,
+      "properties": {
+        "key": {
+          "description": "Profile key, e.g. fullNameEn, nic, address.si",
+          "title": "Key",
+          "type": "string"
+        },
+        "value": {
+          "title": "Value",
+          "type": "string"
+        },
+        "source": {
+          "default": "ai",
+          "enum": [
+            "ai",
+            "derived"
+          ],
+          "title": "Source",
+          "type": "string"
+        },
+        "warning": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Warning"
+        }
+      },
+      "required": [
+        "key",
+        "value"
+      ],
+      "title": "ExtractedField",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "documentType": {
+      "$ref": "#/$defs/DocumentType"
+    },
+    "fields": {
+      "items": {
+        "$ref": "#/$defs/ExtractedField"
+      },
+      "title": "Fields",
+      "type": "array"
+    },
+    "warnings": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Warnings",
+      "type": "array"
+    },
+    "imageRetained": {
+      "const": false,
+      "default": false,
+      "title": "Imageretained",
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "documentType",
+    "fields"
+  ],
+  "title": "ProfileExtractResponse",
+  "type": "object"
+}

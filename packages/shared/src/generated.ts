@@ -108,6 +108,11 @@ export interface CitizenRequest {
   formId?: string | null;
   purpose?: string | null;
   filledValues?: Filledvalues;
+  formFilledPct?: number | null;
+  /**
+   * e.g. 'Sign field 06 in front of the GN'
+   */
+  manualSteps?: LocalizedText[];
   visitPackCode?: string | null;
   outcome?: VisitOutcome;
 }
@@ -116,6 +121,14 @@ export interface Checklist {
 }
 export interface Filledvalues {
   [k: string]: string | undefined;
+}
+/**
+ * A user-facing string in all three official languages.
+ */
+export interface LocalizedText {
+  en: string;
+  si: string;
+  ta: string;
 }
 
 // ---- District.schema.json ----
@@ -134,11 +147,6 @@ export interface District {
 /**
  * A user-facing string in all three official languages.
  */
-export interface LocalizedText {
-  en: string;
-  si: string;
-  ta: string;
-}
 export interface DsDivision {
   id: string;
   name: LocalizedText;
@@ -161,13 +169,114 @@ export interface SourceRef {
   retrievedAt: string;
 }
 
-// ---- FormMap.schema.json ----
+// ---- FillPlan.schema.json ----
+export type FieldType = "text" | "multiline" | "date" | "nic" | "phone" | "checkbox" | "signature";
+export type FillStatus = "auto" | "confirm" | "input" | "manual" | "officer" | "missing";
+
+/**
+ * form_fill_agent output: every field of the official form, colour-coded by status.
+ */
+export interface FillPlan {
+  formId: string;
+  code: string;
+  name: LocalizedText;
+  pageCount: number;
+  verifiedYear?: number | null;
+  demoData: boolean;
+  sourceUrl?: string | null;
+  fields: FillPlanField[];
+  filledPct: number;
+  manualSteps?: LocalizedText[];
+}
+/**
+ * A user-facing string in all three official languages.
+ */
+export interface FillPlanField {
+  id: string;
+  number?: string | null;
+  label: LocalizedText;
+  page: number;
+  bbox: BBox;
+  type: FieldType;
+  status: FillStatus;
+  value?: string | null;
+  source?: ("profile" | "derived" | "ai" | "citizen") | null;
+  optional?: boolean;
+  hint?: LocalizedText | null;
+  maxChars?: number | null;
+}
+/**
+ * Normalised bounding box, origin top-left, all values 0..1.
+ */
+export interface BBox {
+  x: number;
+  y: number;
+  w: number;
+  h: number;
+}
+
+// ---- FillPlanRequest.schema.json ----
+export type Gender = "female" | "male";
 /**
  * UI / answer language.
  */
-export type FieldType = "text" | "multiline" | "date" | "nic" | "phone" | "checkbox" | "signature";
+export type Lang1 = "si" | "ta" | "en";
+
+export interface FillPlanRequest {
+  profile: Profile;
+  language?: Lang1;
+  purposeHint?: string | null;
+  inputs?: Inputs;
+}
+export interface Profile {
+  fullNameEn?: string | null;
+  fullNameSi?: string | null;
+  fullNameTa?: string | null;
+  nameWithInitials?: string | null;
+  nic?: string | null;
+  dateOfBirth?: string | null;
+  gender?: Gender | null;
+  address?: Address;
+  gnDivisionCode?: string | null;
+  gnDivisionName?: string | null;
+  dsDivision?: string | null;
+  district?: string | null;
+  phone?: string | null;
+  occupation?: string | null;
+  civilStatus?: string | null;
+  preferredLanguage?: Lang;
+  confirmedKeys?: string[];
+  /**
+   * When the citizen accepted the privacy notice.
+   */
+  consentAt?: string | null;
+}
+export interface Address {
+  en?: string | null;
+  si?: string | null;
+  ta?: string | null;
+}
 /**
- * Keys a form field may map to. Kept in sync with the web Profile type.
+ * Values the citizen typed for input fields
+ */
+export interface Inputs {
+  [k: string]: string | undefined;
+}
+
+// ---- FormFillRequest.schema.json ----
+/**
+ * The citizen-confirmed values to print. Processed in memory, never stored.
+ */
+export interface FormFillRequest {
+  values: Values;
+}
+export interface Values {
+  [k: string]: string | undefined;
+}
+
+// ---- FormMap.schema.json ----
+/**
+ * UI / answer language.
  */
 export type ProfileKey =
   | "fullNameEn"
@@ -188,7 +297,7 @@ export type ProfileKey =
   | "civilStatus"
   | "purpose"
   | "today";
-export type FillMode = "auto" | "confirm" | "manual" | "officer";
+export type FillMode = "auto" | "confirm" | "input" | "manual" | "officer";
 export type FieldScript = "as_profile" | "si" | "ta" | "en" | "latin_caps";
 export type RecordStatus = "draft" | "approved";
 
@@ -240,19 +349,14 @@ export interface FormField {
   script?: FieldScript;
   maxChars?: number | null;
   fontSize?: number | null;
+  /**
+   * Only some applicants fill it (e.g. land income).
+   */
+  optional?: boolean;
   hint?: LocalizedText | null;
 }
 /**
  * Normalised bounding box, origin top-left, all values 0..1.
- */
-export interface BBox {
-  x: number;
-  y: number;
-  w: number;
-  h: number;
-}
-/**
- * An authorising or informing source for one or more facts.
  */
 export interface Verification {
   status: RecordStatus;
@@ -404,33 +508,25 @@ export interface Fieldsources {
  */
 
 // ---- Profile.schema.json ----
-export type Gender = "female" | "male";
-/**
- * UI / answer language.
- */
-export interface Profile {
-  fullNameEn?: string | null;
-  fullNameSi?: string | null;
-  fullNameTa?: string | null;
-  nameWithInitials?: string | null;
-  nic?: string | null;
-  dateOfBirth?: string | null;
-  gender?: Gender | null;
-  address?: Address;
-  gnDivisionCode?: string | null;
-  gnDivisionName?: string | null;
-  dsDivision?: string | null;
-  district?: string | null;
-  phone?: string | null;
-  occupation?: string | null;
-  civilStatus?: string | null;
-  preferredLanguage?: Lang;
-  confirmedKeys?: string[];
+
+
+// ---- ProfileExtractResponse.schema.json ----
+export type DocumentType = "nic_old" | "nic_new" | "utility_bill" | "other";
+
+export interface ProfileExtractResponse {
+  documentType: DocumentType;
+  fields: ExtractedField[];
+  warnings?: string[];
+  imageRetained?: false;
 }
-export interface Address {
-  en?: string | null;
-  si?: string | null;
-  ta?: string | null;
+export interface ExtractedField {
+  /**
+   * Profile key, e.g. fullNameEn, nic, address.si
+   */
+  key: string;
+  value: string;
+  source?: "ai" | "derived";
+  warning?: string | null;
 }
 
 // ---- RouteDecision.schema.json ----

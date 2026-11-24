@@ -1,0 +1,544 @@
+{
+  "id": "imbulpe-ds-income-certificate-request",
+  "code": "DS/IC (Imbulpe)",
+  "name": {
+    "en": "Request for an Income Certificate",
+    "si": "ආදායම් සහතිකයක් ඉල්ලීම",
+    "ta": "வருமானச் சான்றிதழ் கோரிக்கை"
+  },
+  "procedureIds": [
+    "income-certificate"
+  ],
+  "pdfPath": "data/forms/imbulpe-ds-income-certificate-request/official.pdf",
+  "pageCount": 2,
+  "pageSizes": [
+    {
+      "width": 595.2,
+      "height": 841.68
+    },
+    {
+      "width": 595.2,
+      "height": 841.68
+    }
+  ],
+  "verifiedYear": 2026,
+  "language": [
+    "si"
+  ],
+  "fields": [
+    {
+      "id": "applicant-name",
+      "number": "01",
+      "label": {
+        "en": "Applicant's full name",
+        "si": "ඉල්ලුම් කරුගේ සම්පූර්ණ නම",
+        "ta": "விண்ணப்பதாரரின் முழுப் பெயர்"
+      },
+      "page": 0,
+      "bbox": {
+        "x": 0.385,
+        "y": 0.188,
+        "w": 0.475,
+        "h": 0.038
+      },
+      "type": "multiline",
+      "fillMode": "auto",
+      "script": "si",
+      "optional": false,
+      "profileKey": "fullName",
+      "maxChars": 120,
+      "fontSize": 11
+    },
+    {
+      "id": "address",
+      "number": "02",
+      "label": {
+        "en": "Address",
+        "si": "ලිපිනය",
+        "ta": "முகவரி"
+      },
+      "page": 0,
+      "bbox": {
+        "x": 0.19,
+        "y": 0.237,
+        "w": 0.67,
+        "h": 0.018
+      },
+      "type": "text",
+      "fillMode": "auto",
+      "script": "si",
+      "optional": false,
+      "profileKey": "address",
+      "maxChars": 110,
+      "fontSize": 10.5
+    },
+    {
+      "id": "employment-income",
+      "number": "03 (01)",
+      "label": {
+        "en": "Monthly/annual income from employment",
+        "si": "රැකියාවෙන් මාසික/වාර්ෂිකව ලැබෙන ආදායම",
+        "ta": "வேலையிலிருந்து மாத/வருட வருமானம்"
+      },
+      "page": 0,
+      "bbox": {
+        "x": 0.625,
+        "y": 0.299,
+        "w": 0.205,
+        "h": 0.018
+      },
+      "type": "text",
+      "fillMode": "input",
+      "script": "en",
+      "optional": true,
+      "maxChars": 30
+    },
+    {
+      "id": "land-location",
+      "number": "03 (02) i",
+      "label": {
+        "en": "Location of land/property",
+        "si": "ඉඩම් හා දේපල පිහිටීම",
+        "ta": "காணி/சொத்து அமைவிடம்"
+      },
+      "page": 0,
+      "bbox": {
+        "x": 0.39,
+        "y": 0.322,
+        "w": 0.44,
+        "h": 0.034
+      },
+      "type": "multiline",
+      "fillMode": "input",
+      "script": "si",
+      "optional": true,
+      "maxChars": 90
+    },
+    {
+      "id": "land-deed",
+      "number": "03 (02) ii",
+      "label": {
+        "en": "Deed number, date and notary",
+        "si": "ඔප්පු අංකය, දිනය හා නොතාරිස් තැනගේ නම",
+        "ta": "உறுதி இலக்கம், திகதி, நொத்தாரிசு"
+      },
+      "page": 0,
+      "bbox": {
+        "x": 0.64,
+        "y": 0.368,
+        "w": 0.19,
+        "h": 0.018
+      },
+      "type": "text",
+      "fillMode": "input",
+      "script": "as_profile",
+      "optional": true,
+      "maxChars": 50
+    },
+    {
+      "id": "land-income",
+      "number": "03 (02) iii",
+      "label": {
+        "en": "Income from crops/buildings on the land",
+        "si": "ඉඩමේ වගාවෙන් / ගොඩනැගිලි වලින් ලැබෙන ආදායම",
+        "ta": "காணிப் பயிர்/கட்டட வருமானம்"
+      },
+      "page": 0,
+      "bbox": {
+        "x": 0.15,
+        "y": 0.411,
+        "w": 0.45,
+        "h": 0.018
+      },
+      "type": "text",
+      "fillMode": "input",
+      "script": "en",
+      "optional": true,
+      "maxChars": 40
+    },
+    {
+      "id": "business-name",
+      "number": "03 (03) i",
+      "label": {
+        "en": "Name of the business",
+        "si": "ව්‍යාපාරයේ නම",
+        "ta": "வணிகத்தின் பெயர்"
+      },
+      "page": 0,
+      "bbox": {
+        "x": 0.385,
+        "y": 0.443,
+        "w": 0.445,
+        "h": 0.018
+      },
+      "type": "text",
+      "fillMode": "input",
+      "script": "as_profile",
+      "optional": true,
+      "maxChars": 60
+    },
+    {
+      "id": "business-reg",
+      "number": "03 (03) ii",
+      "label": {
+        "en": "Business registration number",
+        "si": "ලියාපදිංචි අංකය",
+        "ta": "பதிவு இலக்கம்"
+      },
+      "page": 0,
+      "bbox": {
+        "x": 0.37,
+        "y": 0.46,
+        "w": 0.46,
+        "h": 0.018
+      },
+      "type": "text",
+      "fillMode": "input",
+      "script": "en",
+      "optional": true,
+      "maxChars": 30
+    },
+    {
+      "id": "business-income",
+      "number": "03 (03) iii",
+      "label": {
+        "en": "Monthly/annual business income",
+        "si": "ව්‍යාපාරයෙන් මාසික/වාර්ෂික ආදායම",
+        "ta": "வணிக மாத/வருட வருமானம்"
+      },
+      "page": 0,
+      "bbox": {
+        "x": 0.445,
+        "y": 0.479,
+        "w": 0.385,
+        "h": 0.018
+      },
+      "type": "text",
+      "fillMode": "input",
+      "script": "en",
+      "optional": true,
+      "maxChars": 30
+    },
+    {
+      "id": "total-employment",
+      "number": "04 i",
+      "label": {
+        "en": "Employment (Rs)",
+        "si": "රැකියාවෙන් (රු.)",
+        "ta": "வேலை (ரூ.)"
+      },
+      "page": 0,
+      "bbox": {
+        "x": 0.475,
+        "y": 0.526,
+        "w": 0.175,
+        "h": 0.018
+      },
+      "type": "text",
+      "fillMode": "input",
+      "script": "en",
+      "optional": true,
+      "maxChars": 16
+    },
+    {
+      "id": "total-land",
+      "number": "04 ii",
+      "label": {
+        "en": "Land and property (Rs)",
+        "si": "ඉඩම් දේපල වලින් (රු.)",
+        "ta": "காணி, சொத்து (ரூ.)"
+      },
+      "page": 0,
+      "bbox": {
+        "x": 0.475,
+        "y": 0.544,
+        "w": 0.175,
+        "h": 0.018
+      },
+      "type": "text",
+      "fillMode": "input",
+      "script": "en",
+      "optional": true,
+      "maxChars": 16
+    },
+    {
+      "id": "total-business",
+      "number": "04 iii",
+      "label": {
+        "en": "Business (Rs)",
+        "si": "ව්‍යාපාර වලින් (රු.)",
+        "ta": "வணிகம் (ரூ.)"
+      },
+      "page": 0,
+      "bbox": {
+        "x": 0.475,
+        "y": 0.561,
+        "w": 0.175,
+        "h": 0.018
+      },
+      "type": "text",
+      "fillMode": "input",
+      "script": "en",
+      "optional": true,
+      "maxChars": 16
+    },
+    {
+      "id": "total-other",
+      "number": "04 iv",
+      "label": {
+        "en": "Other (Rs)",
+        "si": "වෙනත් (රු.)",
+        "ta": "பிற (ரூ.)"
+      },
+      "page": 0,
+      "bbox": {
+        "x": 0.475,
+        "y": 0.578,
+        "w": 0.175,
+        "h": 0.018
+      },
+      "type": "text",
+      "fillMode": "input",
+      "script": "en",
+      "optional": true,
+      "maxChars": 16
+    },
+    {
+      "id": "total-income",
+      "number": "04",
+      "label": {
+        "en": "Total monthly/annual income (Rs)",
+        "si": "මුළු එකතුව (රු.)",
+        "ta": "மொத்த வருமானம் (ரூ.)"
+      },
+      "page": 0,
+      "bbox": {
+        "x": 0.475,
+        "y": 0.617,
+        "w": 0.175,
+        "h": 0.018
+      },
+      "type": "text",
+      "fillMode": "input",
+      "script": "en",
+      "optional": false,
+      "hint": {
+        "en": "Add up all your income. The Grama Niladhari will check it.",
+        "si": "ඔබේ සියලු ආදායම් එකතු කරන්න. ග්‍රාම නිලධාරී එය පරීක්ෂා කරයි.",
+        "ta": "உங்கள் எல்லா வருமானத்தையும் கூட்டுங்கள். கிராம அலுவலர் சரிபார்ப்பார்."
+      },
+      "maxChars": 16
+    },
+    {
+      "id": "welfare-number",
+      "number": "05",
+      "label": {
+        "en": "Welfare / Samurdhi number (if any)",
+        "si": "සහනාධාර / සමෘද්ධි අංකය (ඇත්නම්)",
+        "ta": "நலன்புரி / சமுர்த்தி இலக்கம் (இருந்தால்)"
+      },
+      "page": 0,
+      "bbox": {
+        "x": 0.17,
+        "y": 0.665,
+        "w": 0.13,
+        "h": 0.018
+      },
+      "type": "text",
+      "fillMode": "input",
+      "script": "en",
+      "optional": true,
+      "maxChars": 16
+    },
+    {
+      "id": "welfare-amount",
+      "number": "05",
+      "label": {
+        "en": "Welfare amount (Rs)",
+        "si": "දීමනාව (රු.)",
+        "ta": "உதவித் தொகை (ரூ.)"
+      },
+      "page": 0,
+      "bbox": {
+        "x": 0.36,
+        "y": 0.665,
+        "w": 0.14,
+        "h": 0.018
+      },
+      "type": "text",
+      "fillMode": "input",
+      "script": "en",
+      "optional": true,
+      "maxChars": 12
+    },
+    {
+      "id": "purpose",
+      "number": "06",
+      "label": {
+        "en": "Why you need it and where you will submit it",
+        "si": "අවශ්‍ය වන කාරණය සහ ඉදිරිපත් කරන ස්ථානය",
+        "ta": "தேவைக்கான காரணமும் சமர்ப்பிக்கும் இடமும்"
+      },
+      "page": 0,
+      "bbox": {
+        "x": 0.12,
+        "y": 0.709,
+        "w": 0.74,
+        "h": 0.059
+      },
+      "type": "multiline",
+      "fillMode": "confirm",
+      "script": "si",
+      "optional": false,
+      "profileKey": "purpose",
+      "maxChars": 160,
+      "fontSize": 11
+    },
+    {
+      "id": "date",
+      "number": null,
+      "label": {
+        "en": "Date",
+        "si": "දිනය",
+        "ta": "திகதி"
+      },
+      "page": 0,
+      "bbox": {
+        "x": 0.175,
+        "y": 0.86,
+        "w": 0.165,
+        "h": 0.018
+      },
+      "type": "date",
+      "fillMode": "auto",
+      "script": "en",
+      "optional": false,
+      "profileKey": "today",
+      "fontSize": 10.5
+    },
+    {
+      "id": "applicant-nic",
+      "number": null,
+      "label": {
+        "en": "NIC number (next to your signature)",
+        "si": "හැඳුනුම්පත් අංකය (අත්සන අසල)",
+        "ta": "அடையாள அட்டை இலக்கம் (கையொப்பத்தின் அருகில்)"
+      },
+      "page": 0,
+      "bbox": {
+        "x": 0.66,
+        "y": 0.873,
+        "w": 0.16,
+        "h": 0.016
+      },
+      "type": "nic",
+      "fillMode": "auto",
+      "script": "en",
+      "optional": false,
+      "profileKey": "nic",
+      "fontSize": 9.5
+    },
+    {
+      "id": "applicant-signature",
+      "number": null,
+      "label": {
+        "en": "Your signature",
+        "si": "ඔබේ අත්සන",
+        "ta": "உங்கள் கையொப்பம்"
+      },
+      "page": 0,
+      "bbox": {
+        "x": 0.565,
+        "y": 0.873,
+        "w": 0.09,
+        "h": 0.02
+      },
+      "type": "signature",
+      "fillMode": "manual",
+      "script": "as_profile",
+      "optional": false,
+      "hint": {
+        "en": "Sign here in front of the Grama Niladhari.",
+        "si": "ග්‍රාම නිලධාරී ඉදිරියේ මෙහි අත්සන් කරන්න.",
+        "ta": "கிராம அலுவலர் முன்னிலையில் இங்கே கையொப்பமிடுங்கள்."
+      }
+    },
+    {
+      "id": "gn-recommendation",
+      "number": null,
+      "label": {
+        "en": "Grama Niladhari's recommendation",
+        "si": "ග්‍රාම නිලධාරී නිර්දේශය",
+        "ta": "கிராம அலுவலரின் பரிந்துரை"
+      },
+      "page": 1,
+      "bbox": {
+        "x": 0.11,
+        "y": 0.09,
+        "w": 0.79,
+        "h": 0.27
+      },
+      "type": "multiline",
+      "fillMode": "officer",
+      "script": "as_profile",
+      "optional": false
+    },
+    {
+      "id": "ds-subject-officer",
+      "number": null,
+      "label": {
+        "en": "Divisional Secretariat: subject officer",
+        "si": "ප්‍රාදේශීය ලේකම් කාර්යාලය: විෂය ලිපිකරු",
+        "ta": "பிரதேச செயலகம்: பாட உத்தியோகத்தர்"
+      },
+      "page": 1,
+      "bbox": {
+        "x": 0.11,
+        "y": 0.38,
+        "w": 0.79,
+        "h": 0.24
+      },
+      "type": "multiline",
+      "fillMode": "officer",
+      "script": "as_profile",
+      "optional": false
+    },
+    {
+      "id": "ds-approval",
+      "number": null,
+      "label": {
+        "en": "Divisional Secretary's approval and fee receipt",
+        "si": "ප්‍රාදේශීය ලේකම් අනුමැතිය සහ ගාස්තු රිසිට්පත",
+        "ta": "பிரதேச செயலாளர் அனுமதியும் கட்டணப் பற்றுச்சீட்டும்"
+      },
+      "page": 1,
+      "bbox": {
+        "x": 0.11,
+        "y": 0.64,
+        "w": 0.79,
+        "h": 0.31
+      },
+      "type": "multiline",
+      "fillMode": "officer",
+      "script": "as_profile",
+      "optional": false
+    }
+  ],
+  "sources": [
+    {
+      "id": "imbulpe-ds-income-form",
+      "title": "Income certificate application form, Divisional Secretariat Imbulpe (Ratnapura District)",
+      "url": "http://imbulpe.ds.gov.lk/images/service_cluster_pdf/certificate_issuing/income-certificate.pdf",
+      "kind": "form",
+      "publisher": "Divisional Secretariat, Imbulpe",
+      "retrievedAt": "2026-11-24"
+    }
+  ],
+  "verification": {
+    "status": "approved",
+    "sourceRef": "imbulpe-ds-income-form",
+    "verifiedBy": "ByteMe research team (pending Kuruwita DS officer review)",
+    "verifiedAt": "2026-11-24",
+    "demoData": true
+  }
+}

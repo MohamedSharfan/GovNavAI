@@ -181,3 +181,25 @@ class LocalKnowledgeBase:
 
     def districts(self) -> list[District]:
         return list(self._districts)
+
+    def publish_form(self, form: FormMap, pdf: bytes | None) -> Path:
+        """Officer-approved form map (and PDF) → data/forms/<id>/, live immediately."""
+        unknown = [p for p in form.procedure_ids if p not in self._procedures]
+        if unknown:
+            raise KnowledgeBaseError(f"unknown procedures {unknown}")
+        folder = self.data_dir / "forms" / form.id
+        folder.mkdir(parents=True, exist_ok=True)
+        if pdf is not None:
+            (folder / "official.pdf").write_bytes(pdf)
+        elif not (folder / "official.pdf").exists():
+            raise KnowledgeBaseError("a new form needs its official PDF")
+        stored = form.model_copy(update={"pdf_path": f"data/forms/{form.id}/official.pdf"})
+        path = folder / "form_map.json"
+        text = stored.model_dump_json(by_alias=True, indent=2, exclude_none=True)
+        path.write_text(text + chr(10), encoding="utf-8")
+        self._forms[form.id] = stored
+        for pid in form.procedure_ids:
+            proc = self._procedures[pid]
+            if form.id not in proc.form_ids:
+                self._procedures[pid] = proc.model_copy(update={"form_ids": [*proc.form_ids, form.id]})
+        return path

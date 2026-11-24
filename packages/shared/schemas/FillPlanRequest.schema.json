@@ -1,0 +1,304 @@
+{
+  "$defs": {
+    "Address": {
+      "additionalProperties": false,
+      "properties": {
+        "en": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "En"
+        },
+        "si": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Si"
+        },
+        "ta": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Ta"
+        }
+      },
+      "title": "Address",
+      "type": "object"
+    },
+    "Gender": {
+      "enum": [
+        "female",
+        "male"
+      ],
+      "title": "Gender",
+      "type": "string"
+    },
+    "Lang": {
+      "description": "UI / answer language.",
+      "enum": [
+        "si",
+        "ta",
+        "en"
+      ],
+      "title": "Lang",
+      "type": "string"
+    },
+    "Profile": {
+      "additionalProperties": false,
+      "properties": {
+        "fullNameEn": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Fullnameen"
+        },
+        "fullNameSi": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Fullnamesi"
+        },
+        "fullNameTa": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Fullnameta"
+        },
+        "nameWithInitials": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Namewithinitials"
+        },
+        "nic": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Nic"
+        },
+        "dateOfBirth": {
+          "anyOf": [
+            {
+              "format": "date",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Dateofbirth"
+        },
+        "gender": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Gender"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "address": {
+          "$ref": "#/$defs/Address"
+        },
+        "gnDivisionCode": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Gndivisioncode"
+        },
+        "gnDivisionName": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Gndivisionname"
+        },
+        "dsDivision": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Dsdivision"
+        },
+        "district": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "District"
+        },
+        "phone": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Phone"
+        },
+        "occupation": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Occupation"
+        },
+        "civilStatus": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Civilstatus"
+        },
+        "preferredLanguage": {
+          "$ref": "#/$defs/Lang",
+          "default": "si"
+        },
+        "confirmedKeys": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Confirmedkeys",
+          "type": "array"
+        },
+        "consentAt": {
+          "anyOf": [
+            {
+              "format": "date-time",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "When the citizen accepted the privacy notice.",
+          "title": "Consentat"
+        }
+      },
+      "title": "Profile",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "profile": {
+      "$ref": "#/$defs/Profile"
+    },
+    "language": {
+      "$ref": "#/$defs/Lang",
+      "default": "si"
+    },
+    "purposeHint": {
+      "anyOf": [
+        {
+          "maxLength": 1000,
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Purposehint"
+    },
+    "inputs": {
+      "additionalProperties": {
+        "type": "string"
+      },
+      "description": "Values the citizen typed for input fields",
+      "title": "Inputs",
+      "type": "object"
+    }
+  },
+  "required": [
+    "profile"
+  ],
+  "title": "FillPlanRequest",
+  "type": "object"
+}

@@ -1,5 +1,6 @@
 "use client";
 
+import { UserRound } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -20,7 +21,7 @@ export function AppShell({ children }: { children: ReactNode }) {
   const darkHeader = pathname === "/";
 
   return (
-    <div className="min-h-dvh lg:grid lg:grid-cols-[248px_1fr]">
+    <div className="min-h-dvh lg:grid lg:grid-cols-[248px_1fr] print:block">
       <a
         href="#main"
         className="sr-only focus:not-sr-only focus:fixed focus:left-3 focus:top-3 focus:z-50 focus:rounded-lg focus:bg-gold focus:px-4 focus:py-2 focus:text-ink"
@@ -29,7 +30,7 @@ export function AppShell({ children }: { children: ReactNode }) {
       </a>
 
       {/* Desktop rail */}
-      <aside className="hidden lg:sticky lg:top-0 lg:flex lg:h-dvh lg:flex-col lg:border-r lg:border-line lg:bg-surface">
+      <aside className="hidden print:hidden lg:sticky lg:top-0 lg:flex lg:h-dvh lg:flex-col lg:border-r lg:border-line lg:bg-surface">
         <div className="px-5 pt-6 pb-4">
           <Link href="/" aria-label={t("app.name")}>
             <Image src="/brand/wordmark.webp" alt={t("app.name")} width={192} height={34} priority />
@@ -60,6 +61,17 @@ export function AppShell({ children }: { children: ReactNode }) {
           </ul>
         </nav>
         <div className="space-y-3 border-t border-line p-4">
+          <Link
+            href="/profile"
+            aria-current={pathname.startsWith("/profile") ? "page" : undefined}
+            className={cn(
+              "flex min-h-12 items-center gap-3 rounded-xl px-3 font-semibold",
+              pathname.startsWith("/profile") ? "bg-primary text-white" : "text-ink hover:bg-surface-2",
+            )}
+          >
+            <UserRound aria-hidden className="size-5" />
+            {t("nav.profile")}
+          </Link>
           <LanguageToggle />
           <TextSizeControl />
           <p className="text-xs leading-snug text-muted">{t("app.limits")}</p>
@@ -70,7 +82,7 @@ export function AppShell({ children }: { children: ReactNode }) {
         {/* Mobile header */}
         <header
           className={cn(
-            "sticky top-0 z-30 lg:hidden",
+            "sticky top-0 z-30 print:hidden lg:hidden",
             darkHeader ? "bg-primary-deep text-white" : "bg-surface/95 backdrop-blur",
           )}
         >
@@ -89,19 +101,29 @@ export function AppShell({ children }: { children: ReactNode }) {
             <div className="flex items-center gap-1">
               <TextSizeControl compact tone={darkHeader ? "dark" : "light"} />
               <LanguageToggle tone={darkHeader ? "dark" : "light"} />
+              <Link
+                href="/profile"
+                aria-label={t("nav.profile")}
+                className={cn(
+                  "flex size-10 items-center justify-center rounded-full",
+                  darkHeader ? "text-white ring-1 ring-white/25 hover:bg-white/10" : "text-primary ring-1 ring-line hover:bg-surface-2",
+                )}
+              >
+                <UserRound aria-hidden className="size-5" />
+              </Link>
             </div>
           </div>
           <div className="tricolour" aria-hidden />
         </header>
 
-        <main id="main" className="flex-1 pb-24 lg:pb-0">
+        <main id="main" className="flex-1 pb-24 print:pb-0 lg:pb-0">
           {children}
         </main>
 
         {/* Mobile bottom navigation */}
         <nav
           aria-label={t("nav.main")}
-          className="fixed inset-x-0 bottom-0 z-30 border-t border-line bg-surface/95 pb-[env(safe-area-inset-bottom)] backdrop-blur lg:hidden"
+          className="fixed inset-x-0 bottom-0 z-30 border-t print:hidden border-line bg-surface/95 pb-[env(safe-area-inset-bottom)] backdrop-blur lg:hidden"
         >
           <ul className="grid grid-cols-4">
             {NAV_ITEMS.map(({ href, label, icon: Icon, match }) => {

@@ -131,6 +131,12 @@ class Fee(StrictModel):
     amount_lkr: int | None = Field(default=None, alias="amountLkr", ge=0)
     is_free: bool = Field(alias="isFree")
     text: LocalizedText
+    short: LocalizedText | None = Field(
+        default=None, description="Card-sized value (e.g. 'Rs 120 – 250'); text holds the full rule."
+    )
+
+    def label(self, lang: Lang | str) -> str:
+        return (self.short or self.text).get(lang)
 
     @model_validator(mode="after")
     def _consistent(self) -> Fee:
@@ -143,6 +149,10 @@ class ProcessingTime(StrictModel):
     min_days: int | None = Field(default=None, alias="minDays", ge=0)
     max_days: int | None = Field(default=None, alias="maxDays", ge=0)
     text: LocalizedText
+    short: LocalizedText | None = None
+
+    def label(self, lang: Lang | str) -> str:
+        return (self.short or self.text).get(lang)
 
 
 class RequiredDocument(StrictModel):

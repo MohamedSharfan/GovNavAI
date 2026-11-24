@@ -61,3 +61,25 @@ def tokens(text: str, *, ngram: tuple[int, int] = (3, 4)) -> list[str]:
                 continue
             out.extend(f"g:{padded[i : i + n]}" for i in range(len(padded) - n + 1))
     return out
+
+
+# Words that ask ABOUT a procedure already in view (fee, time, documents, office, form).
+# They are "known" for novelty purposes in every input variety, so "gasthuwa keeyada?"
+# counts as a follow-up while "renew my passport" does not.
+FOLLOW_UP_WORDS = frozenset(
+    """
+    fee fees cost costs price charge charges pay much long time days day take takes documents document
+    papers bring need needed where office offices open hours timing form forms apply application online
+    gasthuwa gaasthuwa gasthuva keeyada kiyada kiyadha keeyak kochchara kalaya kaalaya dawas dawasak
+    lekhana lekana liyakiyawili kohenda kohed kohe kantoruwa pooraya poramaya
+    kattanam kattanamaa evvalavu evlo evalo naal naatkal neram aavanam aavanangal avanangal enge engae
+    aluvalagam padivam
+    ගාස්තුව ගාස්තු කීයද කීයක් කාලය දින ලේඛන ලියකියවිලි කොහෙද කාර්යාලය පෝරමය
+    கட்டணம் எவ்வளவு காலம் நாள் ஆவணங்கள் ஆவணம் எங்கே அலுவலகம் படிவம்
+    """.split()
+)
+
+
+def follow_up_tokens() -> frozenset[str]:
+    """FOLLOW_UP_WORDS in the same normalised word-token form as :func:`tokens`."""
+    return frozenset(t for w in FOLLOW_UP_WORDS for t in tokens(w) if t.startswith("w:"))

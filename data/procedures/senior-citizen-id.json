@@ -83,6 +83,11 @@
       "en": "Free for low-income elders – the government pays for the photo and the card. For others, no official fee is published; please ask the Kuruwita DS Social Services unit.",
       "si": "අඩු ආදායම්ලාභී වැඩිහිටියන්ට නොමිලේ – ඡායාරූපයේ සහ හැඳුනුම්පතේ වියදම රජය දරයි. අනෙක් අයට නිල ගාස්තුවක් ප්‍රකාශයට පත් කර නැත; කරුණාකර කුරුවිට ප්‍රාදේශීය ලේකම් කාර්යාලයේ සමාජ සේවා අංශයෙන් විමසන්න.",
       "ta": "குறைந்த வருமானமுள்ள முதியோருக்கு இலவசம் – புகைப்படம் மற்றும் அட்டையின் செலவை அரசு ஏற்கும். மற்றவர்களுக்கு அதிகாரப்பூர்வ கட்டணம் வெளியிடப்படவில்லை; குருவிட்ட பிரதேச செயலக சமூக சேவைகள் பிரிவில் கேளுங்கள்."
+    },
+    "short": {
+      "en": "Free for low income",
+      "si": "අඩු ආදායම්ලාභීන්ට නොමිලේ",
+      "ta": "குறைந்த வருமானத்தினருக்கு இலவசம்"
     }
   },
   "processingTime": {
@@ -92,6 +97,11 @@
       "en": "About 2 to 4 weeks (estimate only – no official time is published, so please check with the DS office).",
       "si": "සති 2 සිට 4 දක්වා පමණ (ඇස්තමේන්තුවක් පමණි – නිල කාලයක් ප්‍රකාශයට පත් කර නැති නිසා ප්‍රාදේශීය ලේකම් කාර්යාලයෙන් විමසන්න).",
       "ta": "சுமார் 2 முதல் 4 வாரங்கள் (மதிப்பீடு மட்டும் – அதிகாரப்பூர்வ கால அளவு வெளியிடப்படவில்லை, எனவே பிரதேச செயலகத்தில் கேளுங்கள்)."
+    },
+    "short": {
+      "en": "2 – 4 weeks",
+      "si": "සති 2 – 4",
+      "ta": "2 – 4 வாரம்"
     }
   },
   "requiredDocuments": [
@@ -190,7 +200,9 @@
       "ta": "பிரதேச செயலாளர் அனுமதித்த பின் அட்டை வழங்கப்படும். அதை பிரதேச செயலகத்தில் அல்லது கிராம அலுவலர் மூலம் பெற்றுக்கொள்ளுங்கள்."
     }
   ],
-  "formIds": ["nce-elders-id-application"],
+  "formIds": [
+    "nce-elders-id-application"
+  ],
   "sources": [
     {
       "id": "kuruwita-ds-elders-id-form",
@@ -226,21 +238,34 @@
     }
   ],
   "fieldSources": {
-    "fee": ["kuruwita-ds-elders-id-form"],
-    "processingTime": ["welipitiya-ds-social-welfare"],
-    "officeFlow": ["kuruwita-ds-elders-id-form", "welipitiya-ds-social-welfare"],
+    "fee": [
+      "kuruwita-ds-elders-id-form"
+    ],
+    "processingTime": [
+      "welipitiya-ds-social-welfare"
+    ],
+    "officeFlow": [
+      "kuruwita-ds-elders-id-form",
+      "welipitiya-ds-social-welfare"
+    ],
     "requiredDocuments": [
       "kuruwita-ds-downloads",
       "kuruwita-ds-elders-id-form",
       "welipitiya-ds-social-welfare"
     ],
-    "eligibility": ["mrds-national-secretariat-elders", "welipitiya-ds-social-welfare"],
+    "eligibility": [
+      "mrds-national-secretariat-elders",
+      "welipitiya-ds-social-welfare"
+    ],
     "steps": [
       "kuruwita-ds-downloads",
       "kuruwita-ds-elders-id-form",
       "welipitiya-ds-social-welfare"
     ],
-    "formIds": ["kuruwita-ds-downloads", "kuruwita-ds-elders-id-form"]
+    "formIds": [
+      "kuruwita-ds-downloads",
+      "kuruwita-ds-elders-id-form"
+    ]
   },
   "verification": {
     "status": "approved",

@@ -64,6 +64,18 @@
         },
         "text": {
           "$ref": "#/$defs/LocalizedText"
+        },
+        "short": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/LocalizedText"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Card-sized value (e.g. 'Rs 120 – 250'); text holds the full rule."
         }
       },
       "required": [
@@ -156,6 +168,17 @@
         },
         "text": {
           "$ref": "#/$defs/LocalizedText"
+        },
+        "short": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/LocalizedText"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
         }
       },
       "required": [

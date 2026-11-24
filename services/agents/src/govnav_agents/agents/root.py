@@ -181,7 +181,8 @@ class GovNavRoot(BaseAgent):
                 agent="retriever",
                 label="RETRIEVE",
                 ms=result.latency_ms,
-                detail=f"{result.embedder}; top={candidates[0]['id'] if candidates else '-'}"
+                detail=f"{result.embedder}; novelty={result.novelty:.2f}; "
+                f"top={candidates[0]['id'] if candidates else '-'}"
                 f" ({candidates[0]['confidence']:.2f})"
                 if candidates
                 else result.embedder,
@@ -229,7 +230,10 @@ class GovNavRoot(BaseAgent):
         threshold = deps.settings.retrieval_threshold
         chosen = route.procedure_id if route.procedure_id in cand_by_id else None
         retrieval_conf = float(cand_by_id[chosen]["confidence"]) if chosen else 0.0
-        is_follow_up = chosen is not None and chosen == current
+        # A short follow-up ("what's the fee?") may keep the procedure in view, but only if
+        # the question is made of words our records know: "renew my passport" must not
+        # inherit the income certificate just because it came next.
+        is_follow_up = chosen is not None and chosen == current and result.novelty < 0.34
         card: AnswerCard | DeclineCard | GreetingCard
         intent = route.intent
 
@@ -305,8 +309,8 @@ class GovNavRoot(BaseAgent):
                 text=text,
                 facts=FactCard(
                     office=office_label(procedure.office_type, lang),
-                    fee=procedure.fee.text.get(lang),
-                    time=procedure.processing_time.text.get(lang),
+                    fee=procedure.fee.label(lang),
+                    time=procedure.processing_time.label(lang),
                     is_free=procedure.fee.is_free,
                 ),
                 source=SourceChip(

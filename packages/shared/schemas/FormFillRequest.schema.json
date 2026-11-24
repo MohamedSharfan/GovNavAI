@@ -1,0 +1,20 @@
+{
+  "additionalProperties": false,
+  "description": "The citizen-confirmed values to print. Processed in memory, never stored.",
+  "properties": {
+    "values": {
+      "additionalProperties": {
+        "maxLength": 400,
+        "type": "string"
+      },
+      "maxProperties": 80,
+      "title": "Values",
+      "type": "object"
+    }
+  },
+  "required": [
+    "values"
+  ],
+  "title": "FormFillRequest",
+  "type": "object"
+}

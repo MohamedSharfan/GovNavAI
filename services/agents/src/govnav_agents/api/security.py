@@ -35,13 +35,15 @@ class SecurityHeadersMiddleware(BaseHTTPMiddleware):
 class BodySizeLimitMiddleware(BaseHTTPMiddleware):
     """Reject oversized bodies early (uploads use their own, larger limit per route)."""
 
-    def __init__(self, app: ASGIApp, max_bytes: int = 64 * 1024, upload_max_bytes: int = 12 * 1024 * 1024):
+    def __init__(self, app: ASGIApp, max_bytes: int = 64 * 1024, upload_max_bytes: int = 16 * 1024 * 1024):
         super().__init__(app)
         self.max_bytes = max_bytes
         self.upload_max_bytes = upload_max_bytes
 
     async def dispatch(self, request: Request, call_next: RequestResponseEndpoint) -> Response:
-        limit = self.upload_max_bytes if "/uploads/" in request.url.path else self.max_bytes
+        path = request.url.path
+        is_upload = "/uploads/" in path or path.startswith("/v1/officer/forms/")
+        limit = self.upload_max_bytes if is_upload else self.max_bytes
         length = request.headers.get("content-length")
         if length and length.isdigit() and int(length) > limit:
             return JSONResponse({"detail": "request too large"}, status_code=413)

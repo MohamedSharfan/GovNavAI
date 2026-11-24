@@ -1,0 +1,278 @@
+{
+  "$defs": {
+    "BBox": {
+      "additionalProperties": false,
+      "description": "Normalised bounding box, origin top-left, all values 0..1.",
+      "properties": {
+        "x": {
+          "maximum": 1,
+          "minimum": 0,
+          "title": "X",
+          "type": "number"
+        },
+        "y": {
+          "maximum": 1,
+          "minimum": 0,
+          "title": "Y",
+          "type": "number"
+        },
+        "w": {
+          "exclusiveMinimum": 0,
+          "maximum": 1,
+          "title": "W",
+          "type": "number"
+        },
+        "h": {
+          "exclusiveMinimum": 0,
+          "maximum": 1,
+          "title": "H",
+          "type": "number"
+        }
+      },
+      "required": [
+        "x",
+        "y",
+        "w",
+        "h"
+      ],
+      "title": "BBox",
+      "type": "object"
+    },
+    "FieldType": {
+      "enum": [
+        "text",
+        "multiline",
+        "date",
+        "nic",
+        "phone",
+        "checkbox",
+        "signature"
+      ],
+      "title": "FieldType",
+      "type": "string"
+    },
+    "FillPlanField": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "title": "Id",
+          "type": "string"
+        },
+        "number": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Number"
+        },
+        "label": {
+          "$ref": "#/$defs/LocalizedText"
+        },
+        "page": {
+          "title": "Page",
+          "type": "integer"
+        },
+        "bbox": {
+          "$ref": "#/$defs/BBox"
+        },
+        "type": {
+          "$ref": "#/$defs/FieldType"
+        },
+        "status": {
+          "$ref": "#/$defs/FillStatus"
+        },
+        "value": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Value"
+        },
+        "source": {
+          "anyOf": [
+            {
+              "enum": [
+                "profile",
+                "derived",
+                "ai",
+                "citizen"
+              ],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Source"
+        },
+        "optional": {
+          "default": false,
+          "title": "Optional",
+          "type": "boolean"
+        },
+        "hint": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/LocalizedText"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "maxChars": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Maxchars"
+        }
+      },
+      "required": [
+        "id",
+        "label",
+        "page",
+        "bbox",
+        "type",
+        "status"
+      ],
+      "title": "FillPlanField",
+      "type": "object"
+    },
+    "FillStatus": {
+      "enum": [
+        "auto",
+        "confirm",
+        "input",
+        "manual",
+        "officer",
+        "missing"
+      ],
+      "title": "FillStatus",
+      "type": "string"
+    },
+    "LocalizedText": {
+      "additionalProperties": false,
+      "description": "A user-facing string in all three official languages.",
+      "properties": {
+        "en": {
+          "minLength": 1,
+          "title": "En",
+          "type": "string"
+        },
+        "si": {
+          "minLength": 1,
+          "title": "Si",
+          "type": "string"
+        },
+        "ta": {
+          "minLength": 1,
+          "title": "Ta",
+          "type": "string"
+        }
+      },
+      "required": [
+        "en",
+        "si",
+        "ta"
+      ],
+      "title": "LocalizedText",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "description": "form_fill_agent output: every field of the official form, colour-coded by status.",
+  "properties": {
+    "formId": {
+      "title": "Formid",
+      "type": "string"
+    },
+    "code": {
+      "title": "Code",
+      "type": "string"
+    },
+    "name": {
+      "$ref": "#/$defs/LocalizedText"
+    },
+    "pageCount": {
+      "title": "Pagecount",
+      "type": "integer"
+    },
+    "verifiedYear": {
+      "anyOf": [
+        {
+          "type": "integer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Verifiedyear"
+    },
+    "demoData": {
+      "title": "Demodata",
+      "type": "boolean"
+    },
+    "sourceUrl": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Sourceurl"
+    },
+    "fields": {
+      "items": {
+        "$ref": "#/$defs/FillPlanField"
+      },
+      "title": "Fields",
+      "type": "array"
+    },
+    "filledPct": {
+      "maximum": 100,
+      "minimum": 0,
+      "title": "Filledpct",
+      "type": "integer"
+    },
+    "manualSteps": {
+      "items": {
+        "$ref": "#/$defs/LocalizedText"
+      },
+      "title": "Manualsteps",
+      "type": "array"
+    }
+  },
+  "required": [
+    "formId",
+    "code",
+    "name",
+    "pageCount",
+    "demoData",
+    "fields",
+    "filledPct"
+  ],
+  "title": "FillPlan",
+  "type": "object"
+}

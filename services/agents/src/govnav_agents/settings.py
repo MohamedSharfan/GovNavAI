@@ -24,6 +24,7 @@ class Settings(BaseSettings):
     google_cloud_project: str | None = Field(default=None, alias="GOOGLE_CLOUD_PROJECT")
     google_cloud_location: str = Field(default="asia-south1", alias="GOOGLE_CLOUD_LOCATION")
     officer_emails: str = Field(default="", alias="GOVNAV_OFFICER_EMAILS")
+    officer_token: str | None = Field(default=None, alias="GOVNAV_OFFICER_TOKEN")
     port: int = Field(default=8080, alias="PORT")
 
     @property

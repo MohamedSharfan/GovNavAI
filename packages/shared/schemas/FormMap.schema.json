@@ -66,6 +66,7 @@
       "enum": [
         "auto",
         "confirm",
+        "input",
         "manual",
         "officer"
       ],
@@ -152,6 +153,12 @@
           ],
           "default": null,
           "title": "Fontsize"
+        },
+        "optional": {
+          "default": false,
+          "description": "Only some applicants fill it (e.g. land income).",
+          "title": "Optional",
+          "type": "boolean"
         },
         "hint": {
           "anyOf": [

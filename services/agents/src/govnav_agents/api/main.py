@@ -24,6 +24,10 @@ from govnav_agents.api.security import (
     client_key,
     configure_logging,
 )
+from govnav_agents.forms.agent import FormFillAgent
+from govnav_agents.forms.api import router as forms_router
+from govnav_agents.forms.studio import gemini_detector
+from govnav_agents.llm.models import MODELS
 from govnav_agents.profile.extract import (
     MAX_IMAGE_BYTES,
     InvalidImageError,
@@ -79,6 +83,12 @@ def create_app(deps: Deps | None = None) -> FastAPI:
         app.state.ask = AskService(d)
         app.state.ask_limiter = RateLimiter(rate_per_min=20, burst=8)
         app.state.upload_limiter = RateLimiter(rate_per_min=6, burst=3)
+        app.state.form_agent = FormFillAgent(d.mode)
+        app.state.form_detector = (
+            gemini_detector(d.settings.gemini_api_key, MODELS.pro)
+            if d.mode == "gemini" and d.settings.gemini_api_key
+            else None
+        )
         log.info("GovNavAI agent service %s ready (mode=%s)", __version__, d.mode)
         yield
 
@@ -95,7 +105,8 @@ def create_app(deps: Deps | None = None) -> FastAPI:
         CORSMiddleware,
         allow_origins=settings.cors_origin_list,
         allow_methods=["GET", "POST", "PATCH"],
-        allow_headers=["content-type", "authorization", "x-firebase-appcheck"],
+        allow_headers=["content-type", "authorization", "x-firebase-appcheck", "x-officer-token"],
+        expose_headers=["content-disposition"],
         max_age=600,
     )
 
@@ -109,6 +120,8 @@ def create_app(deps: Deps | None = None) -> FastAPI:
     async def _unhandled(_: Request, exc: Exception) -> JSONResponse:
         log.exception("unhandled error: %s", type(exc).__name__)
         return JSONResponse({"detail": "internal error"}, status_code=500)
+
+    app.include_router(forms_router)
 
     @app.get("/healthz")
     async def healthz(d: DepsDep) -> dict[str, Any]:

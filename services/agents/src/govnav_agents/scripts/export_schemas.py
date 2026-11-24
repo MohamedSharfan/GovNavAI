@@ -26,6 +26,9 @@ EXPORTED: tuple[type[BaseModel], ...] = (
     schemas.AskRequest,
     schemas.AskResponse,
     schemas.ProfileExtractResponse,
+    schemas.FillPlan,
+    schemas.FillPlanRequest,
+    schemas.FormFillRequest,
 )
 
 

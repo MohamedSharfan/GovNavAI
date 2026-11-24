@@ -1,0 +1,18 @@
+{
+  "name": "govnavai",
+  "private": true,
+  "description": "GovNavAI: trilingual Sri Lankan government-services navigator that ends in a filled official form.",
+  "packageManager": "pnpm@10.18.1",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev:web": "pnpm --filter @govnav/web dev",
+    "dev:agents": "cd services/agents && uv run govnav-api",
+    "build": "pnpm -r build",
+    "lint": "pnpm -r lint",
+    "typecheck": "pnpm -r typecheck",
+    "test": "pnpm -r test && cd services/agents && uv run pytest",
+    "schemas": "cd services/agents && uv run python -m govnav_agents.scripts.export_schemas && cd ../.. && pnpm --filter @govnav/shared gen"
+  }
+}

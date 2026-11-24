@@ -6,7 +6,7 @@
 
 GovNavAI is a trilingual (සිංහල · தமிழ் · English) web app. It takes a citizen from "what do I need?" to an official government form that is already filled in and ready to print and sign. It also gives the right office, fee, processing time and document checklist, each one cited from a verified knowledge base.
 
-Team ByteMe, University of Ruhuna · DevFest Sri Lanka 2026, Government Digitalisation track.
+Team ByteMe from University of Ruhuna · DevFest Sri Lanka 2026, Government Digitalisation track.
 
 > 🚧 Under active development. See [`docs/PLAN.md`](docs/PLAN.md) for the build plan and [`docs/DECISIONS.md`](docs/DECISIONS.md) for the decision log.
 

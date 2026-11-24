@@ -228,9 +228,7 @@ class GeoPoint(StrictModel):
 
 
 class OpeningHours(StrictModel):
-    days: list[Annotated[int, Field(ge=0, le=6)]] = Field(
-        min_length=1, description="0=Monday … 6=Sunday"
-    )
+    days: list[Annotated[int, Field(ge=0, le=6)]] = Field(min_length=1, description="0=Monday … 6=Sunday")
     open: str = Field(pattern=r"^\d{2}:\d{2}$")
     close: str = Field(pattern=r"^\d{2}:\d{2}$")
 

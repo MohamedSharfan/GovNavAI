@@ -497,7 +497,7 @@ class RouteDecision(StrictModel):
 class InfoAnswer(StrictModel):
     """Output of info_agent: plain-language text written only from record fields."""
 
-    text: str = Field(min_length=1, max_length=900)
+    text: str = Field(min_length=1, max_length=1200)
     follow_up: str | None = Field(default=None, alias="followUp", max_length=200)
 
 

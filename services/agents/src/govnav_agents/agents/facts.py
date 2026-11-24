@@ -79,15 +79,15 @@ def check_grounding(
 
 _TEMPLATES: dict[Lang, str] = {
     Lang.EN: (
-        "You can get the {procedure} through the {office}. {flow} "
+        "You can get the {procedure} through the {office}. "
         "Fee: {fee}. Usually takes {time}. Bring {n} document(s); see your checklist."
     ),
     Lang.SI: (
-        "{procedure} {office} හරහා ලබා ගත හැක. {flow} "
+        "{procedure} {office} හරහා ලබා ගත හැක. "
         "ගාස්තුව: {fee}. සාමාන්‍යයෙන් {time}. ලේඛන {n}ක් රැගෙන යන්න; ඔබේ ලැයිස්තුව බලන්න."
     ),
     Lang.TA: (
-        "{procedure} {office} மூலம் பெறலாம். {flow} "
+        "{procedure} {office} மூலம் பெறலாம். "
         "கட்டணம்: {fee}. பொதுவாக {time}. {n} ஆவணங்களைக் கொண்டு செல்லுங்கள்; உங்கள் பட்டியலைப் பாருங்கள்."
     ),
 }
@@ -98,7 +98,6 @@ def template_answer(p: Procedure, lang: Lang) -> str:
     return _TEMPLATES[lang].format(
         procedure=p.name.get(lang),
         office=office_label(p.office_type, lang),
-        flow=p.office_flow.get(lang),
         fee=p.fee.text.get(lang),
         time=p.processing_time.text.get(lang),
         n=len(p.required_documents),

@@ -70,3 +70,28 @@ def test_grounding_guard_rejects_invented_numbers(deps: Deps) -> None:
     assert ok.ok
     assert not bad.ok
     assert set(bad.unsupported) == {"500", "14"}
+
+
+async def test_failing_info_agent_falls_back_to_template(deps: Deps) -> None:
+    """A model/schema failure inside a sub-agent must never surface as a 500."""
+    service = AskService(deps)
+
+    def boom(system: str, user: str) -> dict[str, object]:
+        return {"text": "x" * 5000}  # violates InfoAnswer.max_length -> ADK raises
+
+    service.root.info_agent.model.handler = boom  # type: ignore[union-attr]
+    resp = await service.ask(AskRequest(message="I need an income certificate"))
+    assert resp.card.kind == "answer"
+    assert resp.card.grounded is False
+    assert "Income certificate" in resp.card.text
+
+
+async def test_failing_router_declines_safely(deps: Deps) -> None:
+    service = AskService(deps)
+
+    def boom(system: str, user: str) -> dict[str, object]:
+        raise RuntimeError("model down")
+
+    service.root.router_agent.model.handler = boom  # type: ignore[union-attr]
+    resp = await service.ask(AskRequest(message="I need an income certificate"))
+    assert resp.card.kind == "decline"

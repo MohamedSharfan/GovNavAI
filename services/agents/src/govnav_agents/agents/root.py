@@ -194,8 +194,11 @@ class GovNavRoot(BaseAgent):
 
         # 2. router_agent (LLM, structured output)
         t0 = time.perf_counter()
-        async for ev in self.router_agent.run_async(ctx):
-            yield ev
+        try:
+            async for ev in self.router_agent.run_async(ctx):
+                yield ev
+        except Exception as exc:  # model/schema failure -> falls through to a safe decline
+            log.warning("router_agent failed: %s", type(exc).__name__)
         try:
             route = RouteDecision.model_validate(ctx.session.state.get(S_ROUTE) or {})
         except ValidationError as exc:
@@ -268,8 +271,11 @@ class GovNavRoot(BaseAgent):
 
             # 4. info_agent (LLM, writes only from the record)
             t0 = time.perf_counter()
-            async for ev in self.info_agent.run_async(ctx):
-                yield ev
+            try:
+                async for ev in self.info_agent.run_async(ctx):
+                    yield ev
+            except Exception as exc:  # model/schema failure -> verified template below
+                log.warning("info_agent failed: %s", type(exc).__name__)
             try:
                 info = InfoAnswer.model_validate(ctx.session.state.get(S_INFO) or {})
                 text = info.text

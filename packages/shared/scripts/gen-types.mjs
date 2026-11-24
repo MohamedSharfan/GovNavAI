@@ -22,6 +22,8 @@ function stripPropertyTitles(node, isDefinition = false) {
   if (!isDefinition && node.type !== "object") delete node.title;
   for (const [key, value] of Object.entries(node)) {
     if (key === "$defs") Object.values(value).forEach((d) => stripPropertyTitles(d, true));
+    // `properties` is a name → schema map: a property may itself be called "title".
+    else if (key === "properties") Object.values(value).forEach((d) => stripPropertyTitles(d));
     else stripPropertyTitles(value);
   }
 }

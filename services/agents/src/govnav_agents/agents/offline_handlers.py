@@ -92,9 +92,9 @@ def offline_route(system: str, user: str) -> dict[str, Any]:
 
 
 _TEMPLATES = {
-    "en": "You can get the {procedure} through the {office}. {flow} Fee: {fee}. Usually takes {time}.",
-    "si": "{procedure} {office} හරහා ලබා ගත හැක. {flow} ගාස්තුව: {fee}. සාමාන්‍යයෙන් {time}.",
-    "ta": "{procedure} {office} மூலம் பெறலாம். {flow} கட்டணம்: {fee}. பொதுவாக {time}.",
+    "en": "You can get the {procedure} through the {office}. Fee: {fee}. Usually takes {time}.",
+    "si": "{procedure} {office} හරහා ලබා ගත හැක. ගාස්තුව: {fee}. සාමාන්‍යයෙන් {time}.",
+    "ta": "{procedure} {office} மூலம் பெறலாம். கட்டணம்: {fee}. பொதுவாக {time}.",
 }
 _SAMPLE_NOTE = {
     "en": " These details are sample data; please confirm with the office.",
@@ -115,7 +115,6 @@ def offline_info(system: str, user: str) -> dict[str, Any]:
     text = _TEMPLATES[lang].format(
         procedure=facts["procedure"],
         office=facts["office"],
-        flow=facts["office_flow"],
         fee=facts["fee"],
         time=facts["processing_time"],
     )

@@ -21,7 +21,7 @@ export function AppShell({ children }: { children: ReactNode }) {
   const darkHeader = pathname === "/";
 
   return (
-    <div className="min-h-dvh lg:grid lg:grid-cols-[248px_1fr]">
+    <div className="min-h-dvh lg:grid lg:grid-cols-[248px_1fr] print:block">
       <a
         href="#main"
         className="sr-only focus:not-sr-only focus:fixed focus:left-3 focus:top-3 focus:z-50 focus:rounded-lg focus:bg-gold focus:px-4 focus:py-2 focus:text-ink"
@@ -30,7 +30,7 @@ export function AppShell({ children }: { children: ReactNode }) {
       </a>
 
       {/* Desktop rail */}
-      <aside className="hidden lg:sticky lg:top-0 lg:flex lg:h-dvh lg:flex-col lg:border-r lg:border-line lg:bg-surface">
+      <aside className="hidden print:hidden lg:sticky lg:top-0 lg:flex lg:h-dvh lg:flex-col lg:border-r lg:border-line lg:bg-surface">
         <div className="px-5 pt-6 pb-4">
           <Link href="/" aria-label={t("app.name")}>
             <Image src="/brand/wordmark.webp" alt={t("app.name")} width={192} height={34} priority />
@@ -82,7 +82,7 @@ export function AppShell({ children }: { children: ReactNode }) {
         {/* Mobile header */}
         <header
           className={cn(
-            "sticky top-0 z-30 lg:hidden",
+            "sticky top-0 z-30 print:hidden lg:hidden",
             darkHeader ? "bg-primary-deep text-white" : "bg-surface/95 backdrop-blur",
           )}
         >
@@ -116,14 +116,14 @@ export function AppShell({ children }: { children: ReactNode }) {
           <div className="tricolour" aria-hidden />
         </header>
 
-        <main id="main" className="flex-1 pb-24 lg:pb-0">
+        <main id="main" className="flex-1 pb-24 print:pb-0 lg:pb-0">
           {children}
         </main>
 
         {/* Mobile bottom navigation */}
         <nav
           aria-label={t("nav.main")}
-          className="fixed inset-x-0 bottom-0 z-30 border-t border-line bg-surface/95 pb-[env(safe-area-inset-bottom)] backdrop-blur lg:hidden"
+          className="fixed inset-x-0 bottom-0 z-30 border-t print:hidden border-line bg-surface/95 pb-[env(safe-area-inset-bottom)] backdrop-blur lg:hidden"
         >
           <ul className="grid grid-cols-4">
             {NAV_ITEMS.map(({ href, label, icon: Icon, match }) => {

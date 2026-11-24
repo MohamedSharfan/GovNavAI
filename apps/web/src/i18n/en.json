@@ -174,5 +174,37 @@
     "law": "Personal Data Protection Act, No. 9 of 2022",
     "accept": "I understand, continue",
     "decline": "Not now"
+  },
+  "visitPack": {
+    "title": "Visit pack",
+    "subtitle": "Everything for one successful visit",
+    "goTo": "Go to",
+    "hours": "Opening hours",
+    "call": "Call",
+    "directions": "Directions",
+    "bring": "Bring these",
+    "form": "Official form",
+    "formReady": "Filled form ready ({pct}% filled)",
+    "formNotYet": "Not prepared yet",
+    "byHand": "Do this at the office",
+    "scanMe": "Officer: scan to see this request",
+    "save": "Save or print",
+    "share": "Share on WhatsApp",
+    "issued": "Prepared {date}",
+    "offline": "Saved on this phone. Opens without internet.",
+    "open": "Make my visit pack",
+    "noOffice": "Ask your Grama Niladhari which office to visit.",
+    "closed": "Closed",
+    "shareText": "GovNavAI visit pack: {procedure}. Go to {office}. Bring {count} documents.",
+    "notFound": "This visit pack is not on this phone. Open the procedure and make it again."
+  },
+  "hours": {
+    "d0": "Mon",
+    "d1": "Tue",
+    "d2": "Wed",
+    "d3": "Thu",
+    "d4": "Fri",
+    "d5": "Sat",
+    "d6": "Sun"
   }
 }

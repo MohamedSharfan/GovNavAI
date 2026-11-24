@@ -108,6 +108,11 @@ export interface CitizenRequest {
   formId?: string | null;
   purpose?: string | null;
   filledValues?: Filledvalues;
+  formFilledPct?: number | null;
+  /**
+   * e.g. 'Sign field 06 in front of the GN'
+   */
+  manualSteps?: LocalizedText[];
   visitPackCode?: string | null;
   outcome?: VisitOutcome;
 }
@@ -116,6 +121,14 @@ export interface Checklist {
 }
 export interface Filledvalues {
   [k: string]: string | undefined;
+}
+/**
+ * A user-facing string in all three official languages.
+ */
+export interface LocalizedText {
+  en: string;
+  si: string;
+  ta: string;
 }
 
 // ---- District.schema.json ----
@@ -134,11 +147,6 @@ export interface District {
 /**
  * A user-facing string in all three official languages.
  */
-export interface LocalizedText {
-  en: string;
-  si: string;
-  ta: string;
-}
 export interface DsDivision {
   id: string;
   name: LocalizedText;

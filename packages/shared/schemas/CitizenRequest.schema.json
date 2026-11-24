@@ -10,6 +10,34 @@
       "title": "Lang",
       "type": "string"
     },
+    "LocalizedText": {
+      "additionalProperties": false,
+      "description": "A user-facing string in all three official languages.",
+      "properties": {
+        "en": {
+          "minLength": 1,
+          "title": "En",
+          "type": "string"
+        },
+        "si": {
+          "minLength": 1,
+          "title": "Si",
+          "type": "string"
+        },
+        "ta": {
+          "minLength": 1,
+          "title": "Ta",
+          "type": "string"
+        }
+      },
+      "required": [
+        "en",
+        "si",
+        "ta"
+      ],
+      "title": "LocalizedText",
+      "type": "object"
+    },
     "RequestStatus": {
       "enum": [
         "exploring",
@@ -95,6 +123,28 @@
       },
       "title": "Filledvalues",
       "type": "object"
+    },
+    "formFilledPct": {
+      "anyOf": [
+        {
+          "maximum": 100,
+          "minimum": 0,
+          "type": "integer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Formfilledpct"
+    },
+    "manualSteps": {
+      "description": "e.g. 'Sign field 06 in front of the GN'",
+      "items": {
+        "$ref": "#/$defs/LocalizedText"
+      },
+      "title": "Manualsteps",
+      "type": "array"
     },
     "visitPackCode": {
       "anyOf": [

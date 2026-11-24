@@ -44,7 +44,8 @@ export function ChatView({ procedureCount }: { procedureCount: number | null }) 
         setMessages((m) => [...m, { id: crypto.randomUUID(), role: "assistant", response: res }]);
         if (res.card.kind === "answer") {
           setActiveProcedure(res.card.procedureId);
-          void touchRequest(res.card.procedureId, res.language);
+          // The citizen's own words become the hint for the form's "purpose of request".
+          void touchRequest(res.card.procedureId, res.language, { purpose: text });
         }
       } catch (err) {
         const key: MessageKey =

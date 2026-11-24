@@ -1,0 +1,421 @@
+{
+  "$defs": {
+    "AdminArea": {
+      "additionalProperties": false,
+      "properties": {
+        "province": {
+          "title": "Province",
+          "type": "string"
+        },
+        "district": {
+          "title": "District",
+          "type": "string"
+        },
+        "dsDivision": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Dsdivision"
+        },
+        "gnCode": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Gncode"
+        }
+      },
+      "required": [
+        "province",
+        "district"
+      ],
+      "title": "AdminArea",
+      "type": "object"
+    },
+    "GeoPoint": {
+      "additionalProperties": false,
+      "properties": {
+        "lat": {
+          "description": "Sri Lanka latitude range",
+          "maximum": 10.0,
+          "minimum": 5.5,
+          "title": "Lat",
+          "type": "number"
+        },
+        "lng": {
+          "description": "Sri Lanka longitude range",
+          "maximum": 82.0,
+          "minimum": 79.4,
+          "title": "Lng",
+          "type": "number"
+        }
+      },
+      "required": [
+        "lat",
+        "lng"
+      ],
+      "title": "GeoPoint",
+      "type": "object"
+    },
+    "LocalizedText": {
+      "additionalProperties": false,
+      "description": "A user-facing string in all three official languages.",
+      "properties": {
+        "en": {
+          "minLength": 1,
+          "title": "En",
+          "type": "string"
+        },
+        "si": {
+          "minLength": 1,
+          "title": "Si",
+          "type": "string"
+        },
+        "ta": {
+          "minLength": 1,
+          "title": "Ta",
+          "type": "string"
+        }
+      },
+      "required": [
+        "en",
+        "si",
+        "ta"
+      ],
+      "title": "LocalizedText",
+      "type": "object"
+    },
+    "OfficeType": {
+      "enum": [
+        "GN",
+        "DS",
+        "DISTRICT",
+        "RGD",
+        "DRP",
+        "LAND_REGISTRY",
+        "OTHER"
+      ],
+      "title": "OfficeType",
+      "type": "string"
+    },
+    "OpeningHours": {
+      "additionalProperties": false,
+      "properties": {
+        "days": {
+          "description": "0=Monday … 6=Sunday",
+          "items": {
+            "maximum": 6,
+            "minimum": 0,
+            "type": "integer"
+          },
+          "minItems": 1,
+          "title": "Days",
+          "type": "array"
+        },
+        "open": {
+          "pattern": "^\\d{2}:\\d{2}$",
+          "title": "Open",
+          "type": "string"
+        },
+        "close": {
+          "pattern": "^\\d{2}:\\d{2}$",
+          "title": "Close",
+          "type": "string"
+        }
+      },
+      "required": [
+        "days",
+        "open",
+        "close"
+      ],
+      "title": "OpeningHours",
+      "type": "object"
+    },
+    "QueueStatus": {
+      "enum": [
+        "normal",
+        "busy"
+      ],
+      "title": "QueueStatus",
+      "type": "string"
+    },
+    "RecordStatus": {
+      "enum": [
+        "draft",
+        "approved"
+      ],
+      "title": "RecordStatus",
+      "type": "string"
+    },
+    "SourceKind": {
+      "enum": [
+        "circular",
+        "gazette",
+        "act",
+        "website",
+        "form",
+        "office_notice",
+        "field_visit"
+      ],
+      "title": "SourceKind",
+      "type": "string"
+    },
+    "SourceRef": {
+      "additionalProperties": false,
+      "description": "An authorising or informing source for one or more facts.",
+      "properties": {
+        "id": {
+          "maxLength": 64,
+          "minLength": 2,
+          "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+          "title": "Id",
+          "type": "string"
+        },
+        "title": {
+          "title": "Title",
+          "type": "string"
+        },
+        "url": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Url"
+        },
+        "kind": {
+          "$ref": "#/$defs/SourceKind"
+        },
+        "section": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Section"
+        },
+        "publisher": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Publisher"
+        },
+        "retrievedAt": {
+          "format": "date",
+          "title": "Retrievedat",
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "title",
+        "kind",
+        "retrievedAt"
+      ],
+      "title": "SourceRef",
+      "type": "object"
+    },
+    "Verification": {
+      "additionalProperties": false,
+      "description": "Human-in-the-loop provenance kept on every record.",
+      "properties": {
+        "status": {
+          "$ref": "#/$defs/RecordStatus"
+        },
+        "sourceRef": {
+          "description": "Primary SourceRef id",
+          "title": "Sourceref",
+          "type": "string"
+        },
+        "verifiedBy": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Verifiedby"
+        },
+        "verifiedAt": {
+          "anyOf": [
+            {
+              "format": "date",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Verifiedat"
+        },
+        "demoData": {
+          "default": false,
+          "description": "True when one or more facts could not be confirmed from an official source.",
+          "title": "Demodata",
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "status",
+        "sourceRef"
+      ],
+      "title": "Verification",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "maxLength": 64,
+      "minLength": 2,
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+      "title": "Id",
+      "type": "string"
+    },
+    "type": {
+      "$ref": "#/$defs/OfficeType"
+    },
+    "name": {
+      "$ref": "#/$defs/LocalizedText"
+    },
+    "address": {
+      "$ref": "#/$defs/LocalizedText"
+    },
+    "location": {
+      "$ref": "#/$defs/GeoPoint"
+    },
+    "phone": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Phone"
+    },
+    "email": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Email"
+    },
+    "website": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Website"
+    },
+    "hours": {
+      "items": {
+        "$ref": "#/$defs/OpeningHours"
+      },
+      "title": "Hours",
+      "type": "array"
+    },
+    "hoursNote": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/LocalizedText"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "handles": {
+      "description": "Procedure ids handled here",
+      "items": {
+        "type": "string"
+      },
+      "title": "Handles",
+      "type": "array"
+    },
+    "adminArea": {
+      "$ref": "#/$defs/AdminArea"
+    },
+    "placeId": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Placeid"
+    },
+    "queueStatus": {
+      "$ref": "#/$defs/QueueStatus",
+      "default": "normal"
+    },
+    "sources": {
+      "items": {
+        "$ref": "#/$defs/SourceRef"
+      },
+      "minItems": 1,
+      "title": "Sources",
+      "type": "array"
+    },
+    "verification": {
+      "$ref": "#/$defs/Verification"
+    }
+  },
+  "required": [
+    "id",
+    "type",
+    "name",
+    "address",
+    "location",
+    "adminArea",
+    "sources",
+    "verification"
+  ],
+  "title": "Office",
+  "type": "object"
+}

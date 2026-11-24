@@ -8,7 +8,7 @@ from contextlib import asynccontextmanager
 from typing import Annotated, Any
 
 import uvicorn
-from fastapi import Depends, FastAPI, HTTPException, Query, Request
+from fastapi import Depends, FastAPI, File, HTTPException, Query, Request, UploadFile
 from fastapi.exceptions import RequestValidationError
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
@@ -24,7 +24,20 @@ from govnav_agents.api.security import (
     client_key,
     configure_logging,
 )
-from govnav_agents.schemas import AskRequest, AskResponse, Lang, OfficeType, Procedure
+from govnav_agents.profile.extract import (
+    MAX_IMAGE_BYTES,
+    InvalidImageError,
+    PhotoReadingUnavailableError,
+    extract_profile,
+)
+from govnav_agents.schemas import (
+    AskRequest,
+    AskResponse,
+    Lang,
+    OfficeType,
+    Procedure,
+    ProfileExtractResponse,
+)
 from govnav_agents.settings import get_settings
 
 log = logging.getLogger("govnav.api")
@@ -65,6 +78,7 @@ def create_app(deps: Deps | None = None) -> FastAPI:
         app.state.deps = d
         app.state.ask = AskService(d)
         app.state.ask_limiter = RateLimiter(rate_per_min=20, burst=8)
+        app.state.upload_limiter = RateLimiter(rate_per_min=6, burst=3)
         log.info("GovNavAI agent service %s ready (mode=%s)", __version__, d.mode)
         yield
 
@@ -113,6 +127,30 @@ def create_app(deps: Deps | None = None) -> FastAPI:
             raise HTTPException(status_code=429, detail="too many requests, please wait a moment")
         service: AskService = request.app.state.ask
         return await service.ask(body)
+
+    @app.post(
+        "/v1/uploads/profile-extract",
+        response_model=ProfileExtractResponse,
+        response_model_by_alias=True,
+    )
+    async def profile_extract(
+        request: Request,
+        d: DepsDep,
+        photo: Annotated[UploadFile, File(description="NIC or utility-bill photo")],
+    ) -> ProfileExtractResponse:
+        """Read an NIC/bill photo into reviewable profile fields. The image is never stored."""
+        if not request.app.state.upload_limiter.allow(client_key(request)):
+            raise HTTPException(status_code=429, detail="too many uploads, please wait a moment")
+        data = await photo.read(MAX_IMAGE_BYTES + 1)
+        await photo.close()
+        try:
+            return await extract_profile(data, d.vision)
+        except InvalidImageError as exc:
+            raise HTTPException(status_code=415, detail=str(exc)) from None
+        except PhotoReadingUnavailableError:
+            raise HTTPException(status_code=503, detail="photo_reading_unavailable") from None
+        finally:
+            del data
 
     @app.get("/v1/procedures")
     async def list_procedures(d: DepsDep) -> dict[str, Any]:

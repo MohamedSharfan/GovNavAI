@@ -25,6 +25,7 @@ EXPORTED: tuple[type[BaseModel], ...] = (
     schemas.RouteDecision,
     schemas.AskRequest,
     schemas.AskResponse,
+    schemas.ProfileExtractResponse,
 )
 
 

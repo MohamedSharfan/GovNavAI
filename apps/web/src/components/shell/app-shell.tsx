@@ -1,5 +1,6 @@
 "use client";
 
+import { UserRound } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -60,6 +61,17 @@ export function AppShell({ children }: { children: ReactNode }) {
           </ul>
         </nav>
         <div className="space-y-3 border-t border-line p-4">
+          <Link
+            href="/profile"
+            aria-current={pathname.startsWith("/profile") ? "page" : undefined}
+            className={cn(
+              "flex min-h-12 items-center gap-3 rounded-xl px-3 font-semibold",
+              pathname.startsWith("/profile") ? "bg-primary text-white" : "text-ink hover:bg-surface-2",
+            )}
+          >
+            <UserRound aria-hidden className="size-5" />
+            {t("nav.profile")}
+          </Link>
           <LanguageToggle />
           <TextSizeControl />
           <p className="text-xs leading-snug text-muted">{t("app.limits")}</p>
@@ -89,6 +101,16 @@ export function AppShell({ children }: { children: ReactNode }) {
             <div className="flex items-center gap-1">
               <TextSizeControl compact tone={darkHeader ? "dark" : "light"} />
               <LanguageToggle tone={darkHeader ? "dark" : "light"} />
+              <Link
+                href="/profile"
+                aria-label={t("nav.profile")}
+                className={cn(
+                  "flex size-10 items-center justify-center rounded-full",
+                  darkHeader ? "text-white ring-1 ring-white/25 hover:bg-white/10" : "text-primary ring-1 ring-line hover:bg-surface-2",
+                )}
+              >
+                <UserRound aria-hidden className="size-5" />
+              </Link>
             </div>
           </div>
           <div className="tricolour" aria-hidden />

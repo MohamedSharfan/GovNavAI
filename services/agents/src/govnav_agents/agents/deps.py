@@ -10,6 +10,7 @@ from typing import Literal
 from govnav_agents.kb.repository import LocalKnowledgeBase
 from govnav_agents.llm.models import MODELS
 from govnav_agents.paths import INDEX_DIR
+from govnav_agents.profile.extract import Extractor, gemini_extractor
 from govnav_agents.retrieval.embeddings import CachedEmbedder, Embedder, GeminiEmbedder, NgramEmbedder
 from govnav_agents.retrieval.hybrid import HybridRetriever
 from govnav_agents.settings import Settings, get_settings
@@ -23,6 +24,7 @@ class Deps:
     kb: LocalKnowledgeBase
     retriever: HybridRetriever
     mode: Literal["gemini", "offline"]
+    vision: Extractor | None = None
 
 
 def build_deps(settings: Settings | None = None, kb: LocalKnowledgeBase | None = None) -> Deps:
@@ -38,7 +40,12 @@ def build_deps(settings: Settings | None = None, kb: LocalKnowledgeBase | None =
         embedder = NgramEmbedder()
     retriever = HybridRetriever(kb.procedures(), embedder)
     log.info("deps ready: mode=%s procedures=%d embedder=%s", mode, len(kb.procedures()), embedder.model_id)
-    return Deps(settings=settings, kb=kb, retriever=retriever, mode=mode)
+    vision = (
+        gemini_extractor(settings.gemini_api_key, MODELS.flash)
+        if mode == "gemini" and settings.gemini_api_key
+        else None
+    )
+    return Deps(settings=settings, kb=kb, retriever=retriever, mode=mode, vision=vision)
 
 
 @lru_cache(maxsize=1)

@@ -1,0 +1,29 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "agents",
+      "runtimeExecutable": "uv",
+      "runtimeArgs": [
+        "--directory",
+        "services/agents",
+        "run",
+        "govnav-api"
+      ],
+      "port": 8787,
+      "env": {
+        "PORT": "8787"
+      }
+    },
+    {
+      "name": "web",
+      "runtimeExecutable": "pnpm",
+      "runtimeArgs": [
+        "--filter",
+        "@govnav/web",
+        "dev"
+      ],
+      "port": 3000
+    }
+  ]
+}

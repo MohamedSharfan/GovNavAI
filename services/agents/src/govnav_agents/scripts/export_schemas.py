@@ -37,7 +37,8 @@ def main() -> None:
     for model in EXPORTED:
         schema = model.model_json_schema(by_alias=True, mode="serialization")
         path: Path = OUT_DIR / f"{model.__name__}.schema.json"
-        path.write_text(json.dumps(schema, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+        text = json.dumps(schema, ensure_ascii=False, indent=2) + chr(10)
+        path.write_text(text, encoding="utf-8", newline=chr(10))  # LF on every OS
         print(f"wrote {path.relative_to(REPO_ROOT)}")
 
 

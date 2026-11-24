@@ -371,11 +371,16 @@ export interface Fee {
   amountLkr?: number | null;
   isFree: boolean;
   text: LocalizedText;
+  /**
+   * Card-sized value (e.g. 'Rs 120 – 250'); text holds the full rule.
+   */
+  short?: LocalizedText | null;
 }
 export interface ProcessingTime {
   minDays?: number | null;
   maxDays?: number | null;
   text: LocalizedText;
+  short?: LocalizedText | null;
 }
 export interface RequiredDocument {
   id: string;

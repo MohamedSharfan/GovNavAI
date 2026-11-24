@@ -28,9 +28,11 @@ def record_facts(p: Procedure, lang: Lang) -> dict[str, Any]:
         "summary": p.summary.get(lang),
         "office": office_label(p.office_type, lang),
         "office_flow": p.office_flow.get(lang),
-        "fee": p.fee.text.get(lang),
+        "fee": p.fee.label(lang),
+        "fee_details": p.fee.text.get(lang),
         "is_free": p.fee.is_free,
-        "processing_time": p.processing_time.text.get(lang),
+        "processing_time": p.processing_time.label(lang),
+        "processing_time_details": p.processing_time.text.get(lang),
         "documents": [
             d.name.get(lang) + (f" ({d.conditional.get(lang)})" if d.conditional else "")
             for d in p.required_documents
@@ -98,7 +100,7 @@ def template_answer(p: Procedure, lang: Lang) -> str:
     return _TEMPLATES[lang].format(
         procedure=p.name.get(lang),
         office=office_label(p.office_type, lang),
-        fee=p.fee.text.get(lang),
-        time=p.processing_time.text.get(lang),
+        fee=p.fee.label(lang),
+        time=p.processing_time.label(lang),
         n=len(p.required_documents),
     )

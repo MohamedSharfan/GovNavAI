@@ -24,7 +24,7 @@ import numpy as np
 from rank_bm25 import BM25Okapi
 
 from govnav_agents.retrieval.embeddings import Embedder, NgramEmbedder
-from govnav_agents.retrieval.text import tokens
+from govnav_agents.retrieval.text import follow_up_tokens, tokens
 from govnav_agents.schemas import Procedure
 
 log = logging.getLogger(__name__)
@@ -75,6 +75,8 @@ class SearchResult:
     hits: list[Hit]
     latency_ms: int
     embedder: str
+    novelty: float = 0.0
+    """Share of the query's words found in NO verified record (0 = all known, 1 = all unknown)."""
     notes: list[str] = field(default_factory=list)
 
     @property
@@ -140,6 +142,7 @@ class HybridRetriever:
                 df[t] = df.get(t, 0) + 1
         self._idf = {t: math.log((n + 1) / (c + 0.5)) for t, c in df.items()}
         self._idf_unseen = math.log((n + 1) / 0.5)
+        self._follow_up = follow_up_tokens()
         self._bm25 = BM25Okapi(self._view_tokens)
         t0 = time.perf_counter()
         self._matrix = self.embedder.embed([v.text for v in self.views], "RETRIEVAL_DOCUMENT")
@@ -218,5 +221,14 @@ class HybridRetriever:
             hits=hits,
             latency_ms=int((time.perf_counter() - t0) * 1000),
             embedder=self.embedder.model_id,
+            novelty=self.novelty(q_tokens),
             notes=notes,
         )
+
+    def novelty(self, q_tokens: list[str]) -> float:
+        """Fraction of whole-word query tokens that no procedure view contains."""
+        query_words = {t for t in q_tokens if t.startswith("w:")}
+        if not query_words:
+            return 0.0
+        unseen = [t for t in query_words if t not in self._idf and t not in self._follow_up]
+        return round(len(unseen) / len(query_words), 4)

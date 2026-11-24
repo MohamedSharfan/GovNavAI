@@ -87,6 +87,11 @@
       "en": "Rs 120 per extract (normal service). Rs 200 per extract (fast service). Pay in cash at the Land Registry, or pay into the Registrar General's Bank of Ceylon account and bring the receipt. Ask the registry which account number to use (the website and the printed form show different numbers).",
       "si": "එක් උපුටනයකට රු. 120 (සාමාන්‍ය සේවාව). එක් උපුටනයකට රු. 200 (ඉක්මන් සේවාව). ඉඩම් රෙජිස්ට්‍රාර් කාර්යාලයේ මුදලින් ගෙවන්න, නැත්නම් ලංකා බැංකුවේ රෙජිස්ට්‍රාර් ජනරාල්ගේ ගිණුමට බැර කර රිසිට්පත ගෙනෙන්න. කුමන ගිණුම් අංකයද කියා කාර්යාලයෙන් අසන්න (වෙබ් අඩවියේ සහ මුද්‍රිත ආකෘතියේ අංක වෙනස්).",
       "ta": "ஒரு சாற்றுக்கு ரூ. 120 (சாதாரண சேவை). ஒரு சாற்றுக்கு ரூ. 200 (துரித சேவை). காணிப் பதிவகத்தில் பணமாகச் செலுத்துங்கள், அல்லது இலங்கை வங்கியில் பதிவாளர் நாயகத்தின் கணக்கில் வைப்பிலிட்டுப் பற்றுச்சீட்டைக் கொண்டுவாருங்கள். எந்தக் கணக்கு இலக்கம் என்று பதிவகத்தில் கேளுங்கள் (இணையத்தளத்திலும் அச்சிட்ட படிவத்திலும் வெவ்வேறு இலக்கங்கள் உள்ளன)."
+    },
+    "short": {
+      "en": "Rs 120 – 200",
+      "si": "රු. 120 – 200",
+      "ta": "ரூ. 120 – 200"
     }
   },
   "processingTime": {
@@ -96,6 +101,11 @@
       "en": "Online requests take about 5 working days. For counter applications, no official time is published – ask the registry when you hand it in.",
       "si": "Online ඉල්ලීම්වලට වැඩ කරන දින 5ක් පමණ ගතවේ. කවුන්ටරයෙන් භාර දෙන ඉල්ලීම්වලට නිල කාලයක් ප්‍රකාශයට පත් කර නැත – භාර දෙන විට කාර්යාලයෙන් අසන්න.",
       "ta": "இணைய விண்ணப்பங்களுக்கு சுமார் 5 வேலை நாட்கள் ஆகும். கருமபீடத்தில் கொடுக்கும் விண்ணப்பங்களுக்கு அதிகாரப்பூர்வ கால அளவு வெளியிடப்படவில்லை – கொடுக்கும்போது பதிவகத்தில் கேளுங்கள்."
+    },
+    "short": {
+      "en": "About 5 working days",
+      "si": "වැඩ කරන දින 5ක් පමණ",
+      "ta": "சுமார் 5 வேலை நாள்"
     }
   },
   "requiredDocuments": [
@@ -291,18 +301,38 @@
     }
   ],
   "fieldSources": {
-    "fee": ["rgd-extract-service", "rgd-a32a-form"],
-    "processingTime": ["rgd-online-deed-extract"],
-    "officeFlow": ["rgd-extract-service", "rgd-a32a-form", "rgd-online-deed-extract"],
-    "requiredDocuments": ["rgd-a32a-form", "rgd-extract-service", "rgd-a33a-form"],
-    "eligibility": ["rgd-extract-service"],
+    "fee": [
+      "rgd-extract-service",
+      "rgd-a32a-form"
+    ],
+    "processingTime": [
+      "rgd-online-deed-extract"
+    ],
+    "officeFlow": [
+      "rgd-extract-service",
+      "rgd-a32a-form",
+      "rgd-online-deed-extract"
+    ],
+    "requiredDocuments": [
+      "rgd-a32a-form",
+      "rgd-extract-service",
+      "rgd-a33a-form"
+    ],
+    "eligibility": [
+      "rgd-extract-service"
+    ],
     "steps": [
       "rgd-extract-service",
       "rgd-a32a-form",
       "rgd-a33a-form",
       "rgd-online-deed-extract"
     ],
-    "formIds": ["rgd-land-forms", "rgd-a32a-form", "rgd-a33a-form", "rgd-faqs"]
+    "formIds": [
+      "rgd-land-forms",
+      "rgd-a32a-form",
+      "rgd-a33a-form",
+      "rgd-faqs"
+    ]
   },
   "verification": {
     "status": "approved",

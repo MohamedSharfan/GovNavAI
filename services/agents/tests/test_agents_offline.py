@@ -95,3 +95,10 @@ async def test_failing_router_declines_safely(deps: Deps) -> None:
     service.root.router_agent.model.handler = boom  # type: ignore[union-attr]
     resp = await service.ask(AskRequest(message="I need an income certificate"))
     assert resp.card.kind == "decline"
+
+
+async def test_out_of_scope_follow_up_does_not_inherit_procedure(service: AskService) -> None:
+    first = await service.ask(AskRequest(message="I need an income certificate"))
+    assert first.card.kind == "answer"
+    oos = await service.ask(AskRequest(message="How do I renew my passport?", sessionId=first.session_id))
+    assert oos.card.kind == "decline"

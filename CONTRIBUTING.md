@@ -5,7 +5,7 @@
 | Member | Owns |
 |---|---|
 | **Member 1: Mohamed Sharfan** | Monorepo and tooling, shared schemas, knowledge base and seed data, ADK agent service (router, info, checklist, form-locator, office agents), retrieval, citizen web app, profile-from-documents, offices/Maps, officer console (Procedure editor, Counter view, Insights), voice, evals, deployment, docs |
-| **Member 2** | **Form pipeline**: Form Studio (Gemini vision field detection + overlay editor), `form_map.json` files, PDF overlay with Noto Sans Sinhala/Tamil, `form_fill_agent`, filled-form preview (PDF.js) and download |
+| **Member 2** | **Razim Mohamed**: Form Studio (Gemini vision field detection + overlay editor), `form_map.json` files, PDF overlay with Noto Sans Sinhala/Tamil, `form_fill_agent`, filled-form preview (PDF.js) and download |
 
 Shared contracts (`schemas.py`, the API shape) change only through a PR that both members review.
 

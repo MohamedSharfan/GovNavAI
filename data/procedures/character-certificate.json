@@ -1,0 +1,262 @@
+{
+  "id": "character-certificate",
+  "version": 1,
+  "category": "welfare-certificates",
+  "name": {
+    "en": "Character Certificate (from the Grama Niladhari)",
+    "si": "චරිත සහතිකය (ග්‍රාම නිලධාරීගෙන්)",
+    "ta": "நன்னடத்தைச் சான்றிதழ் (கிராம உத்தியோகத்தரிடமிருந்து)"
+  },
+  "summary": {
+    "en": "A certificate from your Grama Niladhari saying that you live in their division and are of good character. Employers, schools, universities and many applications ask for it. The GN gives it to you directly, often in about 15 minutes. Since February 2020 it no longer needs the Divisional Secretary's signature in most cases.",
+    "si": "ඔබ ග්‍රාම නිලධාරී වසමේ පදිංචිකරුවෙක් බවත් හොඳ චරිතයක් ඇති කෙනෙක් බවත් ග්‍රාම නිලධාරී සහතික කරන ලියවිල්ලයි. රැකියා ආයතන, පාසල්, විශ්වවිද්‍යාල සහ බොහෝ අයදුම්පත් සඳහා මෙය ඉල්ලනවා. ග්‍රාම නිලධාරී එය ඔබට කෙලින්ම දෙනවා, බොහෝ විට විනාඩි 15 කින් පමණ. 2020 පෙබරවාරියේ සිට බොහෝ අවස්ථාවලදී ප්‍රාදේශීය ලේකම්ගේ අත්සන ඕනේ නැහැ.",
+    "ta": "நீங்கள் கிராம உத்தியோகத்தர் பிரிவில் வசிப்பவர் என்றும் நல்ல நடத்தை உடையவர் என்றும் கிராம உத்தியோகத்தர் உறுதிப்படுத்தும் சான்றிதழ். வேலை வழங்குநர்கள், பாடசாலைகள், பல்கலைக்கழகங்கள் மற்றும் பல விண்ணப்பங்களுக்கு இது கேட்கப்படும். கிராம உத்தியோகத்தர் இதை நேரடியாக, பெரும்பாலும் சுமார் 15 நிமிடங்களில் தருவார். 2020 பெப்ரவரி முதல் பெரும்பாலான சந்தர்ப்பங்களில் பிரதேச செயலாளரின் கையொப்பம் தேவையில்லை."
+  },
+  "synonyms": [
+    "character certificate",
+    "character cert",
+    "certificate of character",
+    "good character certificate",
+    "charitha sahathikaya",
+    "charitha sahathika",
+    "charitha certificate",
+    "චරිත සහතිකය",
+    "චරිත සහතිකයක්",
+    "GS certificate",
+    "grama sevaka certificate",
+    "GS sahathikaya",
+    "GN certificate",
+    "grama niladhari certificate",
+    "nannadathai saanrithal",
+    "nannadathai saanridhal",
+    "character saanrithal",
+    "நன்னடத்தைச் சான்றிதழ்",
+    "நன்னடத்தை சான்றிதழ்",
+    "DS 4",
+    "DS4",
+    "residence and character certificate"
+  ],
+  "exampleQuestions": {
+    "en": [
+      "How do I get a character certificate from the Grama Niladhari?",
+      "Does my character certificate need the Divisional Secretary's signature?",
+      "I need a character certificate for a job application, what should I bring?",
+      "How long does the GN take to give a character certificate?"
+    ],
+    "si": [
+      "ග්‍රාම නිලධාරීගෙන් චරිත සහතිකයක් ගන්නේ කොහොමද?",
+      "චරිත සහතිකයට ප්‍රාදේශීය ලේකම්ගේ අත්සන ඕනද?",
+      "රැකියාවකට චරිත සහතිකයක් ඕනේ, මොනවද අරන් යන්න ඕනේ?",
+      "චරිත සහතිකයක් ගන්න කොච්චර වෙලා යනවද?"
+    ],
+    "ta": [
+      "கிராம உத்தியோகத்தரிடம் நன்னடத்தைச் சான்றிதழ் எப்படிப் பெறுவது?",
+      "நன்னடத்தைச் சான்றிதழுக்கு பிரதேச செயலாளர் கையொப்பம் தேவையா?",
+      "வேலை விண்ணப்பத்துக்கு நன்னடத்தைச் சான்றிதழ் வேண்டும், என்ன கொண்டு போக வேண்டும்?",
+      "நன்னடத்தைச் சான்றிதழ் கிடைக்க எவ்வளவு நேரம் ஆகும்?"
+    ],
+    "singlish": [
+      "GS mahattayagen charitha sahathikayak ganne kohomada?",
+      "charitha sahathikayata DS signature eka one da?",
+      "job ekata character certificate ekak one, mokadda ganna one?",
+      "character certificate eka ganna kochchara welawa yanawada?"
+    ],
+    "tanglish": [
+      "GS kitta character certificate eppadi edukkirathu?",
+      "character certificate ku DS sign venuma?",
+      "job ku nannadathai certificate venum, enna kondu poganum?",
+      "nannadathai saanrithal kidaikka evlo neram aagum?"
+    ]
+  },
+  "officeType": "GN",
+  "officeFlow": {
+    "en": "Only one office: the Grama Niladhari of the division where you live issues the certificate directly. Since 10 February 2020 the Divisional Secretary does not need to sign it in most cases. If the place asking for it still wants the DS signature, ask them first.",
+    "si": "එක් කාර්යාලයක් පමණයි: ඔබ පදිංචි වසමේ ග්‍රාම නිලධාරී සහතිකය කෙලින්ම නිකුත් කරනවා. 2020 පෙබරවාරි 10 සිට බොහෝ අවස්ථාවලදී ප්‍රාදේශීය ලේකම් අත්සන් කරන්න ඕනේ නැහැ. ඉල්ලන ආයතනය තවමත් ප්‍රාදේශීය ලේකම්ගේ අත්සන ඉල්ලනවා නම්, මුලින්ම ඔවුන්ගෙන් අහලා බලන්න.",
+    "ta": "ஒரே அலுவலகம்: நீங்கள் வசிக்கும் பிரிவின் கிராம உத்தியோகத்தர் சான்றிதழை நேரடியாக வழங்குவார். 2020 பெப்ரவரி 10 முதல் பெரும்பாலான சந்தர்ப்பங்களில் பிரதேச செயலாளர் கையொப்பமிடத் தேவையில்லை. கேட்கும் நிறுவனம் இன்னும் பிரதேச செயலாளர் கையொப்பம் கேட்டால், முதலில் அவர்களிடம் விசாரியுங்கள்."
+  },
+  "fee": {
+    "amountLkr": null,
+    "isFree": true,
+    "text": {
+      "en": "Free (no fee is listed)",
+      "si": "නොමිලේ (ගාස්තුවක් සඳහන් කර නැත)",
+      "ta": "இலவசம் (கட்டணம் எதுவும் குறிப்பிடப்படவில்லை)"
+    },
+    "short": {
+      "en": "Free",
+      "si": "නොමිලේ",
+      "ta": "இலவசம்"
+    }
+  },
+  "processingTime": {
+    "minDays": 0,
+    "maxDays": 3,
+    "text": {
+      "en": "About 15 minutes if you bring the supporting documents; up to 3 days if the GN must personally check that you live there",
+      "si": "අවශ්‍ය ලියවිලි රැගෙන ගියොත් විනාඩි 15 ක් පමණ; ඔබ එහි පදිංචිද කියා ග්‍රාම නිලධාරී තමන්ම පරීක්ෂා කරන්න ඕනේ නම් දින 3 ක් දක්වා",
+      "ta": "தேவையான ஆவணங்களைக் கொண்டு சென்றால் சுமார் 15 நிமிடம்; நீங்கள் அங்கு வசிக்கிறீர்களா என கிராம உத்தியோகத்தர் நேரில் சரிபார்க்க வேண்டுமானால் 3 நாட்கள் வரை"
+    },
+    "short": {
+      "en": "15 min – 3 days",
+      "si": "මිනිත්තු 15 – දින 3",
+      "ta": "15 நிமிடம் – 3 நாள்"
+    }
+  },
+  "requiredDocuments": [
+    {
+      "id": "nic",
+      "name": {
+        "en": "National Identity Card, or another document that proves who you are",
+        "si": "ජාතික හැඳුනුම්පත, හෝ ඔබ කවුද කියා ඔප්පු කරන වෙනත් ලියවිල්ලක්",
+        "ta": "தேசிய அடையாள அட்டை, அல்லது நீங்கள் யார் என்பதை நிரூபிக்கும் வேறு ஆவணம்"
+      },
+      "aiCanPrefill": false
+    },
+    {
+      "id": "request-letter",
+      "name": {
+        "en": "Short request letter with your full name, address and why you need the certificate (for example, the job or institution)",
+        "si": "ඔබේ සම්පූර්ණ නම, ලිපිනය සහ සහතිකය ඕනේ ඇයි (උදා: රැකියාව හෝ ආයතනය) සඳහන් කෙටි ඉල්ලීම් ලිපියක්",
+        "ta": "உங்கள் முழுப் பெயர், முகவரி, சான்றிதழ் ஏன் தேவை (உதா: வேலை அல்லது நிறுவனம்) என்பதைக் குறிப்பிடும் சிறு கோரிக்கைக் கடிதம்"
+      },
+      "aiCanPrefill": true
+    },
+    {
+      "id": "institution-form",
+      "name": {
+        "en": "The form from the place asking for the certificate",
+        "si": "සහතිකය ඉල්ලන ආයතනය දුන් පෝරමය",
+        "ta": "சான்றிதழைக் கேட்கும் நிறுவனம் தந்த படிவம்"
+      },
+      "conditional": {
+        "en": "If the employer, school or university gave you its own form",
+        "si": "රැකියා ආයතනය, පාසල හෝ විශ්වවිද්‍යාලය තමන්ගේම පෝරමයක් දුන්නා නම්",
+        "ta": "வேலை வழங்குநர், பாடசாலை அல்லது பல்கலைக்கழகம் தனிப் படிவம் தந்திருந்தால்"
+      },
+      "aiCanPrefill": false
+    },
+    {
+      "id": "proof-of-residence",
+      "name": {
+        "en": "Proof that you live there: letter of leaving from your old area, house deed, or assessment, water or electricity bills",
+        "si": "ඔබ එහි පදිංචි බවට සාක්ෂි: පරණ පදිංචියෙන් ඉවත්වීමේ ලිපිය, නිවසේ ඔප්පුව, හෝ වරිපනම්, ජල හෝ විදුලි බිල්පත්",
+        "ta": "நீங்கள் அங்கு வசிப்பதற்கான ஆதாரம்: முன்னைய இடத்திலிருந்து விலகிய கடிதம், வீட்டு உறுதிப்பத்திரம், அல்லது சொத்து வரி, நீர், மின்சாரக் கட்டணப் பட்டியல்கள்"
+      },
+      "conditional": {
+        "en": "Only if your name is not on the voters' list of that GN division",
+        "si": "එම ග්‍රාම නිලධාරී වසමේ ඡන්ද හිමි නාම ලේඛනයේ ඔබේ නම නැත්නම් පමණයි",
+        "ta": "அந்தக் கிராம உத்தியோகத்தர் பிரிவின் வாக்காளர் பட்டியலில் உங்கள் பெயர் இல்லாவிட்டால் மட்டும்"
+      },
+      "aiCanPrefill": false
+    }
+  ],
+  "eligibility": {
+    "en": "Anyone who lives permanently in the Grama Niladhari division. The GN must be satisfied that you live there, and may check this in person.",
+    "si": "ග්‍රාම නිලධාරී වසමේ ස්ථිරව පදිංචි ඕනෑම කෙනෙකුට. ඔබ එහි පදිංචි බව ග්‍රාම නිලධාරී සෑහීමකට පත් විය යුතුයි, ඒ සඳහා ඔහු/ඇය තමන්ම පරීක්ෂා කරන්නත් පුළුවන්.",
+    "ta": "கிராம உத்தியோகத்தர் பிரிவில் நிரந்தரமாக வசிக்கும் எவரும். நீங்கள் அங்கு வசிப்பதை கிராம உத்தியோகத்தர் உறுதிசெய்ய வேண்டும், இதற்காக அவர் நேரில் சரிபார்க்கலாம்."
+  },
+  "steps": [
+    {
+      "en": "Find your Grama Niladhari: the GN of the division where you live permanently.",
+      "si": "ඔබ ස්ථිරව පදිංචි වසමේ ග්‍රාම නිලධාරී කවුද කියා සොයාගන්න.",
+      "ta": "நீங்கள் நிரந்தரமாக வசிக்கும் பிரிவின் கிராம உத்தியோகத்தர் யார் என்று கண்டுபிடியுங்கள்."
+    },
+    {
+      "en": "Visit the GN with your NIC and a short letter saying why you need the certificate. If the place asking for it gave you its own form, bring that too.",
+      "si": "ජාතික හැඳුනුම්පතයි, සහතිකය ඕනේ ඇයි කියා ලියූ කෙටි ලිපියකුයි අරන් ග්‍රාම නිලධාරී හමුවෙන්න. ඉල්ලන ආයතනය පෝරමයක් දුන්නා නම් ඒකත් අරන් යන්න.",
+      "ta": "அடையாள அட்டையுடனும், சான்றிதழ் ஏன் தேவை என்று எழுதிய சிறு கடிதத்துடனும் கிராம உத்தியோகத்தரைச் சந்தியுங்கள். கேட்கும் நிறுவனம் படிவம் தந்திருந்தால் அதையும் கொண்டு செல்லுங்கள்."
+    },
+    {
+      "en": "If your name is not on the voters' list for that division, show proof that you live there. The GN may take up to 3 days to check.",
+      "si": "එම වසමේ ඡන්ද හිමි නාම ලේඛනයේ ඔබේ නම නැත්නම් පදිංචියට සාක්ෂි පෙන්වන්න. පරීක්ෂා කරන්න ග්‍රාම නිලධාරීට දින 3 ක් දක්වා ගත විය හැකියි.",
+      "ta": "அந்தப் பிரிவின் வாக்காளர் பட்டியலில் உங்கள் பெயர் இல்லாவிட்டால் வதிவிட ஆதாரத்தைக் காட்டுங்கள். சரிபார்க்க கிராம உத்தியோகத்தருக்கு 3 நாட்கள் வரை ஆகலாம்."
+    },
+    {
+      "en": "The GN signs the certificate and puts the official seal and name stamp. Check that your name, NIC number and address are correct.",
+      "si": "ග්‍රාම නිලධාරී සහතිකයට අත්සන් කරලා නිල මුද්‍රාවයි නාම මුද්‍රාවයි තබනවා. නම, හැඳුනුම්පත් අංකය, ලිපිනය හරිද කියා බලන්න.",
+      "ta": "கிராம உத்தியோகத்தர் கையொப்பமிட்டு உத்தியோகபூர்வ முத்திரையும் பெயர் முத்திரையும் இடுவார். பெயர், அடையாள அட்டை இலக்கம், முகவரி சரியா எனப் பாருங்கள்."
+    },
+    {
+      "en": "For use abroad: the Foreign Ministry can confirm only where you live and who depends on you, not your character. For that, the GN certificate must be on form DS 4 with the DS office stamp, so visit the Divisional Secretariat too.",
+      "si": "විදේශයක භාවිතයට නම්: විදේශ කටයුතු අමාත්‍යාංශයට සහතික කළ හැක්කේ ඔබ පදිංචි තැන සහ ඔබ මත යැපෙන අය ගැන පමණයි, චරිතය ගැන නොවෙයි. ඒ සඳහා ග්‍රාම නිලධාරී සහතිකය DS 4 පෝරමයේ තිබිය යුතු අතර ප්‍රාදේශීය ලේකම් කාර්යාල මුද්‍රාවත් ඕනේ. ඒ නිසා ප්‍රාදේශීය ලේකම් කාර්යාලයටත් යන්න.",
+      "ta": "வெளிநாட்டுப் பயன்பாட்டுக்கு: வெளிநாட்டு அலுவல்கள் அமைச்சு நீங்கள் வசிக்கும் இடத்தையும் உங்களைச் சார்ந்திருப்பவர்களையும் மட்டுமே உறுதிப்படுத்தும், நன்னடத்தையை அல்ல. அதற்கு கிராம உத்தியோகத்தர் சான்றிதழ் DS 4 படிவத்தில் பிரதேச செயலக முத்திரையுடன் இருக்க வேண்டும், எனவே பிரதேச செயலகத்துக்கும் செல்லுங்கள்."
+    }
+  ],
+  "formIds": [
+    "ds4-gn-residence-character-certificate"
+  ],
+  "sources": [
+    {
+      "id": "kuruwita-ds-citizen-charter",
+      "title": "Citizen Charter - Kuruwita Divisional Secretariat (පුරවැසි ප්‍රඥප්තිය - කුරුවිට ප්‍රාදේශීය ලේකම් කාර්යාලය)",
+      "url": "http://kuruvita.ds.gov.lk/images/_.pdf",
+      "kind": "office_notice",
+      "section": "p.6 GN service 01 (issuing character / residence certificates: 15 minutes with supporting certificates, 3 days if residence must be confirmed personally)",
+      "publisher": "Divisional Secretariat, Kuruwita",
+      "retrievedAt": "2026-11-24"
+    },
+    {
+      "id": "sundaytimes-ds-signature-2020",
+      "title": "DS's signature no longer necessary for Grama Niladhari certificates (Sunday Times, 6 Feb 2020)",
+      "url": "https://sundaytimes.lk/online/news-online/dss-signature-no-longer-necessary-for-grama-niladhari-certificates/2-1114622",
+      "kind": "website",
+      "publisher": "The Sunday Times (reporting the Ministry of Public Administration)",
+      "retrievedAt": "2026-11-24"
+    },
+    {
+      "id": "mfa-gn-certificates",
+      "title": "Grama Niladari Certificates - Consular Affairs",
+      "url": "https://www.mfa.gov.lk/grama-niladari-certificates",
+      "kind": "website",
+      "publisher": "Ministry of Foreign Affairs, Sri Lanka",
+      "retrievedAt": "2026-11-24"
+    },
+    {
+      "id": "nivithigala-ds-residence-checklist",
+      "title": "Certificate on Residence - documents required (Nivithigala DS)",
+      "url": "http://nivithigala.ds.gov.lk/images/PDF/App_Form/Certificate_on_Residence.pdf",
+      "kind": "office_notice",
+      "publisher": "Divisional Secretariat, Nivithigala (Ratnapura District)",
+      "retrievedAt": "2026-11-24"
+    }
+  ],
+  "fieldSources": {
+    "fee": [
+      "kuruwita-ds-citizen-charter"
+    ],
+    "processingTime": [
+      "kuruwita-ds-citizen-charter"
+    ],
+    "officeFlow": [
+      "kuruwita-ds-citizen-charter",
+      "sundaytimes-ds-signature-2020"
+    ],
+    "requiredDocuments": [
+      "nivithigala-ds-residence-checklist",
+      "kuruwita-ds-citizen-charter"
+    ],
+    "eligibility": [
+      "kuruwita-ds-citizen-charter"
+    ],
+    "steps": [
+      "kuruwita-ds-citizen-charter",
+      "nivithigala-ds-residence-checklist",
+      "mfa-gn-certificates"
+    ],
+    "formIds": [
+      "mfa-gn-certificates",
+      "sundaytimes-ds-signature-2020"
+    ],
+    "summary": [
+      "kuruwita-ds-citizen-charter",
+      "sundaytimes-ds-signature-2020"
+    ]
+  },
+  "verification": {
+    "status": "approved",
+    "sourceRef": "kuruwita-ds-citizen-charter",
+    "verifiedBy": "ByteMe research team (pending Kuruwita DS officer review)",
+    "verifiedAt": "2026-11-24",
+    "demoData": true
+  }
+}

@@ -1,0 +1,316 @@
+{
+  "id": "birth-certificate-copy",
+  "version": 1,
+  "category": "civil-registration",
+  "name": {
+    "en": "Certified copy of a birth certificate",
+    "si": "උප්පැන්න සහතිකයේ සහතික කළ පිටපතක්",
+    "ta": "பிறப்புச் சான்றிதழின் சான்றளிக்கப்பட்ட பிரதி"
+  },
+  "summary": {
+    "en": "Lost your birth certificate or need a fresh copy? You can get an official certified copy at the Registrar counter of your Divisional Secretariat (for example Kuruwita DS), or order it online through eBMD. It costs Rs 120 if you know the certificate number and date, or Rs 250 if staff must search. Births registered from 1960 to 2020 are in the computer system, so any DS can give you the copy, usually the same day.",
+    "si": "උප්පැන්න සහතිකය නැති වුණාද, නැත්නම් අලුත් පිටපතක් ඕනද? ඔබේ ප්‍රාදේශීය ලේකම් කාර්යාලයේ (උදා: කුරුවිට) රෙජිස්ට්‍රාර් කවුළුවෙන් හෝ eBMD හරහා ඔන්ලයින් ලෙස සහතික කළ පිටපතක් ගත හැක. සහතික අංකය සහ දිනය දන්නේ නම් රු. 120කි, වාර්තා සෙවීමට සිදු වුවහොත් රු. 250කි. 1960 සිට 2020 දක්වා ලියාපදිංචි උප්පැන්න පරිගණක පද්ධතියේ ඇති නිසා, ඕනෑම ප්‍රාදේශීය ලේකම් කාර්යාලයකින් සාමාන්‍යයෙන් එදිනම පිටපත ගත හැක.",
+    "ta": "பிறப்புச் சான்றிதழ் தொலைந்துவிட்டதா, அல்லது புதிய பிரதி தேவையா? உங்கள் பிரதேச செயலகத்தின் (உதா: குருவிட்ட) பதிவாளர் கருமபீடத்தில் அல்லது eBMD மூலம் இணையத்தில் சான்றளிக்கப்பட்ட பிரதியைப் பெறலாம். சான்றிதழ் இலக்கமும் திகதியும் தெரிந்தால் ரூ. 120, பதிவேடுகளைத் தேட வேண்டியிருந்தால் ரூ. 250. 1960 முதல் 2020 வரை பதிவான பிறப்புகள் கணினி அமைப்பில் உள்ளதால், எந்தப் பிரதேச செயலகத்திலும் பொதுவாக அதே நாளில் பிரதியைப் பெறலாம்."
+  },
+  "synonyms": [
+    "birth certificate copy",
+    "certified copy of birth certificate",
+    "birth cert copy",
+    "BC copy",
+    "new birth certificate copy",
+    "lost birth certificate",
+    "online birth certificate",
+    "uppanna sahathikaya",
+    "uppanna sahathike copy",
+    "uppanna copy",
+    "uppanna sahathika pitapath",
+    "uppanna certificate",
+    "pirappu saanrithal",
+    "pirappu santhithal",
+    "pirappu saandrithazh prathi",
+    "pirappu certificate copy",
+    "B 63",
+    "B63 form",
+    "eBMD",
+    "උප්පැන්න සහතිකය",
+    "උප්පැන්න පිටපත",
+    "උප්පැන්න සහතිකයේ පිටපත",
+    "பிறப்புச் சான்றிதழ்",
+    "பிறப்புச் சான்றிதழ் பிரதி"
+  ],
+  "exampleQuestions": {
+    "en": [
+      "How do I get a copy of my birth certificate in Kuruwita?",
+      "How much does a certified copy of a birth certificate cost?",
+      "Can I order my birth certificate online in Sri Lanka?",
+      "I lost my birth certificate, how do I get a new one?"
+    ],
+    "si": [
+      "කුරුවිටින් උප්පැන්න සහතිකයේ පිටපතක් ගන්නේ කොහොමද?",
+      "උප්පැන්න සහතික පිටපතකට කීයක් ගෙවන්න ඕනද?",
+      "උප්පැන්න සහතිකය ඔන්ලයින් ඉල්ලන්න පුළුවන්ද?",
+      "මගේ උප්පැන්න සහතිකය නැති වුණා, අලුත් පිටපතක් ගන්නේ කොහොමද?"
+    ],
+    "ta": [
+      "குருவிட்டயில் பிறப்புச் சான்றிதழ் பிரதியை எப்படிப் பெறுவது?",
+      "பிறப்புச் சான்றிதழ் பிரதிக்கு கட்டணம் எவ்வளவு?",
+      "பிறப்புச் சான்றிதழை இணையத்தில் கோர முடியுமா?",
+      "என் பிறப்புச் சான்றிதழ் தொலைந்துவிட்டது, புதிய பிரதி எப்படி எடுப்பது?"
+    ],
+    "singlish": [
+      "uppanna sahathike copy ekak ganna kohomada?",
+      "birth certificate copy ekata kiyada?",
+      "uppanna online ganna puluwanda?",
+      "mage birth certificate eka nathi una, aluth ekak ganne kohomada?",
+      "duwage school admission ekata uppanna copy ekak ona"
+    ],
+    "tanglish": [
+      "birth certificate copy eppadi edukkiradhu?",
+      "pirappu saandrithazh copy ku evlo fee?",
+      "birth certificate online la apply panna mudiyuma?",
+      "en birth certificate tholainjiduchu, pudhusa eppadi vaanguradhu?"
+    ]
+  },
+  "officeType": "RGD",
+  "officeFlow": {
+    "en": "Issued at the Registrar (Additional District Registrar) counter of a Divisional Secretariat, for example Kuruwita DS. Births registered from 1960 to 2020 are in the eBMD computer system, so any DS can issue the copy. For an older record that is not computerised, apply at the DS of the area where the birth was registered. You can also order online at online.ebmd.rgd.gov.lk and collect at the DS you choose or get it by Speed Post, or get it from the 'Seva Piyasa' counter at the Suhurupaya building, Battaramulla.",
+    "si": "ප්‍රාදේශීය ලේකම් කාර්යාලයක (උදා: කුරුවිට) රෙජිස්ට්‍රාර් (අතිරේක දිස්ත්‍රික් රෙජිස්ට්‍රාර්) කවුළුවෙන් නිකුත් කරයි. 1960 සිට 2020 දක්වා ලියාපදිංචි උප්පැන්න eBMD පරිගණක පද්ධතියේ ඇති නිසා ඕනෑම ප්‍රාදේශීය ලේකම් කාර්යාලයකින් පිටපත ගත හැක. පරිගණකගත නොකළ පැරණි වාර්තාවක් නම්, උපත ලියාපදිංචි කළ ප්‍රදේශයේ ප්‍රාදේශීය ලේකම් කාර්යාලයට ඉල්ලුම් කරන්න. online.ebmd.rgd.gov.lk හරහා ඔන්ලයින් ඇණවුම් කර තෝරාගත් ප්‍රාදේශීය ලේකම් කාර්යාලයෙන් හෝ Speed Post මගින් ලබා ගත හැක. බත්තරමුල්ල සුහුරුපාය ගොඩනැගිල්ලේ 'සේවා පියස' කවුළුවෙන්ද ලබා ගත හැක.",
+    "ta": "பிரதேச செயலகத்தின் (உதா: குருவிட்ட) பதிவாளர் (மேலதிக மாவட்டப் பதிவாளர்) கருமபீடத்தில் வழங்கப்படும். 1960 முதல் 2020 வரை பதிவான பிறப்புகள் eBMD கணினி அமைப்பில் உள்ளதால், எந்தப் பிரதேச செயலகமும் பிரதியை வழங்கும். கணினிமயமாக்கப்படாத பழைய பதிவு என்றால், பிறப்பு பதிவான பகுதியின் பிரதேச செயலகத்தில் விண்ணப்பியுங்கள். online.ebmd.rgd.gov.lk மூலம் இணையத்தில் ஆர்டர் செய்து, தேர்ந்த பிரதேச செயலகத்தில் அல்லது Speed Post மூலம் பெறலாம். பத்தரமுல்லை சுஹுருபாய கட்டடத்தில் உள்ள 'சேவா பியச' கருமபீடத்திலும் பெறலாம்."
+  },
+  "fee": {
+    "amountLkr": 120,
+    "isFree": false,
+    "text": {
+      "en": "Rs 120 a copy if you know the certificate number and registration date. Rs 250 if staff have to search the records (each extra copy Rs 120). Online orders add a small delivery and service charge.",
+      "si": "සහතික අංකය සහ ලියාපදිංචි දිනය දන්නේ නම් පිටපතකට රු. 120. වාර්තා සෙවීමට සිදු වුවහොත් රු. 250 (අමතර පිටපතකට රු. 120). ඔන්ලයින් ඇණවුම් සඳහා කුඩා බෙදාහැරීමේ සහ සේවා ගාස්තුවක් එකතු වේ.",
+      "ta": "சான்றிதழ் இலக்கமும் பதிவுத் திகதியும் தெரிந்தால் ஒரு பிரதிக்கு ரூ. 120. பதிவேடுகளைத் தேட வேண்டியிருந்தால் ரூ. 250 (கூடுதல் பிரதி ஒவ்வொன்றுக்கும் ரூ. 120). இணையவழி ஆர்டருக்கு சிறிய விநியோக மற்றும் சேவைக் கட்டணம் சேர்க்கப்படும்."
+    },
+    "short": {
+      "en": "Rs 120 – 250",
+      "si": "රු. 120 – 250",
+      "ta": "ரூ. 120 – 250"
+    }
+  },
+  "processingTime": {
+    "minDays": 0,
+    "maxDays": 5,
+    "text": {
+      "en": "Usually the same day at the DS registrar counter (one-day service), if the record is in the computer system. Online orders take about 5 working days. No fixed time is given for older records that are not yet computerised.",
+      "si": "වාර්තාව පරිගණක පද්ධතියේ ඇත්නම්, ප්‍රාදේශීය ලේකම් කාර්යාලයේ රෙජිස්ට්‍රාර් කවුළුවෙන් සාමාන්‍යයෙන් එදිනම ලැබේ (එක් දින සේවාව). ඔන්ලයින් ඇණවුම් සඳහා වැඩ කරන දින 5ක් පමණ ගත වේ. තවම පරිගණකගත නොකළ පැරණි වාර්තා සඳහා නියමිත කාලයක් දක්වා නැත.",
+      "ta": "பதிவு கணினி அமைப்பில் இருந்தால், பிரதேச செயலகப் பதிவாளர் கருமபீடத்தில் பொதுவாக அதே நாளில் கிடைக்கும் (ஒரு நாள் சேவை). இணையவழி ஆர்டருக்கு சுமார் 5 வேலை நாட்கள் ஆகும். இன்னும் கணினிமயமாக்கப்படாத பழைய பதிவுகளுக்கு குறிப்பிட்ட கால அவகாசம் அறிவிக்கப்படவில்லை."
+    },
+    "short": {
+      "en": "Usually same day",
+      "si": "සාමාන්‍යයෙන් එදිනම",
+      "ta": "பொதுவாக அதே நாள்"
+    }
+  },
+  "requiredDocuments": [
+    {
+      "id": "application-form-b63",
+      "name": {
+        "en": "Filled application form B 63 (Application for Birth Certificate and/or Search of Registers)",
+        "si": "පුරවන ලද B 63 අයදුම්පත (උප්පැන්න සහතිකයක් ගැනීමේ සහ/නොහොත් ලේකම් පොත් සොයා බැලීමේ ඉල්ලුම් පත්‍රය)",
+        "ta": "நிரப்பப்பட்ட B 63 விண்ணப்பப் படிவம் (பிறப்புச் சான்றிதழுக்கும் அல்லது பதிவேடுகளைத் தேடுவதற்குமான விண்ணப்பம்)"
+      },
+      "note": {
+        "en": "The printed form still shows old fees and an old bank account. Use today's fees (Rs 120 / Rs 250) and account 7039827.",
+        "si": "මුද්‍රිත අයදුම්පතේ තවමත් පැරණි ගාස්තු සහ පැරණි බැංකු ගිණුමක් ඇත. වර්තමාන ගාස්තු (රු. 120 / රු. 250) සහ ගිණුම් අංක 7039827 භාවිතා කරන්න.",
+        "ta": "அச்சிட்ட படிவத்தில் இன்னும் பழைய கட்டணங்களும் பழைய வங்கிக் கணக்கும் உள்ளன. தற்போதைய கட்டணங்களையும் (ரூ. 120 / ரூ. 250) கணக்கு 7039827 ஐயும் பயன்படுத்துங்கள்."
+      },
+      "aiCanPrefill": true,
+      "formId": "rgd-b63-birth-copy-application"
+    },
+    {
+      "id": "payment-receipt",
+      "name": {
+        "en": "Payment receipt (from the DS cashier, or a Bank of Ceylon deposit slip)",
+        "si": "ගෙවීම් රිසිට්පත (ප්‍රාදේශීය ලේකම් කාර්යාලයේ මුදල් කවුළුවෙන්, නැතහොත් ලංකා බැංකු තැන්පතු පත්‍රිකාව)",
+        "ta": "கட்டணப் பற்றுச்சீட்டு (பிரதேச செயலகக் காசாளரிடம், அல்லது இலங்கை வங்கி வைப்புச் சீட்டு)"
+      },
+      "note": {
+        "en": "If you pay at the bank, use Registrar General's account 7039827, Bank of Ceylon, Battaramulla branch, and attach the slip. ATM and online transfers are not accepted for paper applications.",
+        "si": "බැංකුවෙන් ගෙවනවා නම්, ලංකා බැංකුව බත්තරමුල්ල ශාඛාවේ රෙජිස්ට්‍රාර් ජනරාල් ගිණුම් අංක 7039827 ට බැර කර පත්‍රිකාව අමුණන්න. කඩදාසි අයදුම්පත් සඳහා ATM හෝ ඔන්ලයින් මුදල් මාරු භාර නොගනී.",
+        "ta": "வங்கியில் செலுத்தினால், இலங்கை வங்கி பத்தரமுல்லை கிளையில் உள்ள பதிவாளர் நாயகத்தின் கணக்கு 7039827 இல் வைப்பிலிட்டு சீட்டை இணையுங்கள். காகித விண்ணப்பங்களுக்கு ATM அல்லது இணையவழிப் பணப் பரிமாற்றம் ஏற்கப்படாது."
+      },
+      "aiCanPrefill": false
+    },
+    {
+      "id": "registration-details",
+      "name": {
+        "en": "Certificate number, date of registration and registrar's division (copy them from an old certificate if you have one)",
+        "si": "සහතික අංකය, ලියාපදිංචි දිනය සහ රෙජිස්ට්‍රාර් කොට්ඨාසය (පැරණි සහතිකයක් ඇත්නම් එයින් ලියා ගන්න)",
+        "ta": "சான்றிதழ் இலக்கம், பதிவுத் திகதி, பதிவாளர் பிரிவு (பழைய சான்றிதழ் இருந்தால் அதிலிருந்து எழுதிக்கொள்ளுங்கள்)"
+      },
+      "conditional": {
+        "en": "Optional, but if you know them the fee drops from Rs 250 to Rs 120",
+        "si": "අනිවාර්ය නැත, නමුත් දන්නේ නම් ගාස්තුව රු. 250 සිට රු. 120 දක්වා අඩු වේ",
+        "ta": "கட்டாயமில்லை, ஆனால் தெரிந்தால் கட்டணம் ரூ. 250 இலிருந்து ரூ. 120 ஆகக் குறையும்"
+      },
+      "aiCanPrefill": false
+    },
+    {
+      "id": "stamped-addressed-envelope",
+      "name": {
+        "en": "A stamped envelope with your own address written on it",
+        "si": "මුද්දර ඇලවූ, ඔබේම ලිපිනය ලියූ කවරයක්",
+        "ta": "முத்திரை ஒட்டி உங்கள் சொந்த முகவரி எழுதிய உறை"
+      },
+      "conditional": {
+        "en": "Only if you want the copy sent to you by post",
+        "si": "පිටපත තැපෑලෙන් ලබා ගැනීමට අවශ්‍ය නම් පමණි",
+        "ta": "பிரதியைத் தபாலில் பெற விரும்பினால் மட்டும்"
+      },
+      "aiCanPrefill": false
+    },
+    {
+      "id": "online-ebmd-details",
+      "name": {
+        "en": "Your NIC or passport number, a Sri Lankan mobile number (for the PIN) and a debit or credit card that works online (Visa or Mastercard)",
+        "si": "ඔබේ ජාතික හැඳුනුම්පත් හෝ ගමන් බලපත්‍ර අංකය, ශ්‍රී ලංකා ජංගම දුරකථන අංකයක් (PIN එක ලැබීමට) සහ ඔන්ලයින් ගෙවිය හැකි ඩෙබිට් හෝ ක්‍රෙඩිට් කාඩ්පතක් (Visa හෝ Mastercard)",
+        "ta": "உங்கள் தேசிய அடையாள அட்டை அல்லது கடவுச்சீட்டு இலக்கம், இலங்கை கைபேசி இலக்கம் (PIN பெற), இணையத்தில் செலுத்தக்கூடிய டெபிட் அல்லது கிரெடிட் அட்டை (Visa அல்லது Mastercard)"
+      },
+      "conditional": {
+        "en": "Only if you apply online through eBMD",
+        "si": "eBMD හරහා ඔන්ලයින් ඉල්ලුම් කරනවා නම් පමණි",
+        "ta": "eBMD மூலம் இணையத்தில் விண்ணப்பித்தால் மட்டும்"
+      },
+      "aiCanPrefill": false
+    }
+  ],
+  "eligibility": {
+    "en": "Anyone who has the birth details can apply. Births registered from 1 January 1960 to 31 December 2020 can be issued at any DS. To apply online you need an NIC or passport number and a Sri Lankan mobile number.",
+    "si": "උපතේ විස්තර ඇති ඕනෑම කෙනෙකුට ඉල්ලුම් කළ හැක. 1960 ජනවාරි 1 සිට 2020 දෙසැම්බර් 31 දක්වා ලියාපදිංචි උප්පැන්න ඕනෑම ප්‍රාදේශීය ලේකම් කාර්යාලයකින් ගත හැක. ඔන්ලයින් ඉල්ලුම් කිරීමට ජාතික හැඳුනුම්පත් හෝ ගමන් බලපත්‍ර අංකයක් සහ ශ්‍රී ලංකා ජංගම දුරකථන අංකයක් අවශ්‍යයි.",
+    "ta": "பிறப்பு விவரங்கள் உள்ள எவரும் விண்ணப்பிக்கலாம். 1960 ஜனவரி 1 முதல் 2020 டிசம்பர் 31 வரை பதிவான பிறப்புகளை எந்தப் பிரதேச செயலகத்திலும் பெறலாம். இணையத்தில் விண்ணப்பிக்க தேசிய அடையாள அட்டை அல்லது கடவுச்சீட்டு இலக்கமும் இலங்கை கைபேசி இலக்கமும் தேவை."
+  },
+  "steps": [
+    {
+      "en": "Write down the certificate number, registration date and registrar's division if you know them. You pay less when you do.",
+      "si": "සහතික අංකය, ලියාපදිංචි දිනය සහ රෙජිස්ට්‍රාර් කොට්ඨාසය දන්නේ නම් ලියා ගන්න. එවිට ගාස්තුව අඩුයි.",
+      "ta": "சான்றிதழ் இலக்கம், பதிவுத் திகதி, பதிவாளர் பிரிவு தெரிந்தால் எழுதிக்கொள்ளுங்கள். அப்போது கட்டணம் குறைவு."
+    },
+    {
+      "en": "Go to the Registrar counter at Kuruwita Divisional Secretariat. For a birth registered from 1960 to 2020, any DS can help. For an older record, go to the DS where the birth was registered.",
+      "si": "කුරුවිට ප්‍රාදේශීය ලේකම් කාර්යාලයේ රෙජිස්ට්‍රාර් කවුළුවට යන්න. 1960 සිට 2020 දක්වා ලියාපදිංචි උප්පැන්නයක් නම් ඕනෑම ප්‍රාදේශීය ලේකම් කාර්යාලයකින් ගත හැක. ඊට පැරණි එකක් නම් උපත ලියාපදිංචි කළ ප්‍රාදේශීය ලේකම් කාර්යාලයට යන්න.",
+      "ta": "குருவிட்ட பிரதேச செயலகத்தின் பதிவாளர் கருமபீடத்துக்குச் செல்லுங்கள். 1960 முதல் 2020 வரை பதிவான பிறப்பு என்றால் எந்தப் பிரதேச செயலகமும் உதவும். அதைவிடப் பழையது என்றால் பிறப்பு பதிவான பிரதேச செயலகத்துக்குச் செல்லுங்கள்."
+    },
+    {
+      "en": "Get form B 63 at the counter (or download it) and fill it in. GovNavAI can fill it in for you to check.",
+      "si": "B 63 අයදුම්පත කවුළුවෙන් ලබා ගන්න (නැත්නම් බාගත කරන්න) සහ පුරවන්න. GovNavAI ට එය ඔබ වෙනුවෙන් පුරවා දිය හැක, ඔබ පරීක්ෂා කරන්න.",
+      "ta": "B 63 படிவத்தைக் கருமபீடத்தில் பெற்று (அல்லது பதிவிறக்கி) நிரப்புங்கள். GovNavAI உங்களுக்காக அதை நிரப்பித் தரும், நீங்கள் சரிபார்க்கலாம்."
+    },
+    {
+      "en": "Pay at the DS cashier: Rs 120 a copy if you know the certificate number and date, or Rs 250 if staff must search the records (each extra copy Rs 120). You can also pay into Bank of Ceylon account 7039827 (Battaramulla branch) and attach the slip.",
+      "si": "ප්‍රාදේශීය ලේකම් කාර්යාලයේ මුදල් කවුළුවේ ගෙවන්න: සහතික අංකය සහ දිනය දන්නේ නම් පිටපතකට රු. 120, වාර්තා සෙවීමට සිදු වුවහොත් රු. 250 (අමතර පිටපතකට රු. 120). ලංකා බැංකු ගිණුම් අංක 7039827 (බත්තරමුල්ල ශාඛාව) ට බැර කර පත්‍රිකාව අමුණන්නත් පුළුවන්.",
+      "ta": "பிரதேச செயலகக் காசாளரிடம் செலுத்துங்கள்: சான்றிதழ் இலக்கமும் திகதியும் தெரிந்தால் ஒரு பிரதிக்கு ரூ. 120, பதிவேடுகளைத் தேட வேண்டியிருந்தால் ரூ. 250 (கூடுதல் பிரதி ஒவ்வொன்றுக்கும் ரூ. 120). இலங்கை வங்கிக் கணக்கு 7039827 (பத்தரமுல்லை கிளை) இல் வைப்பிலிட்டு சீட்டை இணைக்கவும் முடியும்."
+    },
+    {
+      "en": "Hand in the form with your receipt. If you want the copy posted to you, add a stamped envelope with your address on it.",
+      "si": "අයදුම්පත රිසිට්පත සමඟ භාර දෙන්න. පිටපත තැපෑලෙන් අවශ්‍ය නම්, මුද්දර ඇලවූ, ඔබේ ලිපිනය ලියූ කවරයක්ද දෙන්න.",
+      "ta": "படிவத்தைப் பற்றுச்சீட்டுடன் ஒப்படையுங்கள். பிரதியைத் தபாலில் பெற விரும்பினால், முத்திரை ஒட்டி உங்கள் முகவரி எழுதிய உறையையும் கொடுங்கள்."
+    },
+    {
+      "en": "Collect your certified copy. With the one-day service it is usually ready the same day, if the record is in the computer system.",
+      "si": "සහතික කළ පිටපත ලබා ගන්න. වාර්තාව පරිගණක පද්ධතියේ ඇත්නම්, එක් දින සේවාව යටතේ සාමාන්‍යයෙන් එදිනම ලැබේ.",
+      "ta": "சான்றளிக்கப்பட்ட பிரதியைப் பெற்றுக்கொள்ளுங்கள். பதிவு கணினி அமைப்பில் இருந்தால், ஒரு நாள் சேவையில் பொதுவாக அதே நாளில் தயாராகும்."
+    },
+    {
+      "en": "Or apply from home at online.ebmd.rgd.gov.lk: confirm your phone with the PIN, enter the birth details, then pay by card using the link sent by SMS. Collect the copy at the DS you chose, or get it by Speed Post (about 5 working days). A small delivery and service charge is added.",
+      "si": "නැතහොත් නිවසේ සිටම online.ebmd.rgd.gov.lk හරහා ඉල්ලුම් කරන්න: PIN එකෙන් දුරකථනය තහවුරු කර, උපතේ විස්තර ඇතුළත් කර, SMS මගින් එන සබැඳියෙන් කාඩ්පතෙන් ගෙවන්න. ඔබ තෝරාගත් ප්‍රාදේශීය ලේකම් කාර්යාලයෙන් පිටපත ලබා ගන්න, නැතහොත් Speed Post මගින් ගෙන්වා ගන්න (වැඩ කරන දින 5ක් පමණ). කුඩා බෙදාහැරීමේ සහ සේවා ගාස්තුවක් එකතු වේ.",
+      "ta": "அல்லது வீட்டிலிருந்தே online.ebmd.rgd.gov.lk மூலம் விண்ணப்பியுங்கள்: PIN மூலம் கைபேசியை உறுதிப்படுத்தி, பிறப்பு விவரங்களை உள்ளிட்டு, SMS மூலம் வரும் இணைப்பில் அட்டை மூலம் செலுத்துங்கள். நீங்கள் தேர்ந்த பிரதேச செயலகத்தில் பிரதியைப் பெறலாம், அல்லது Speed Post மூலம் பெறலாம் (சுமார் 5 வேலை நாட்கள்). சிறிய விநியோக மற்றும் சேவைக் கட்டணம் சேர்க்கப்படும்."
+    }
+  ],
+  "formIds": [
+    "rgd-b63-birth-copy-application"
+  ],
+  "sources": [
+    {
+      "id": "rgd-birth-copies",
+      "title": "Obtain certified copies / translations of birth certificates",
+      "url": "https://rgd.gov.lk/web/index.php/en/services/civil-registration/birth/obtain-certified-copies-translations",
+      "kind": "website",
+      "publisher": "Registrar General's Department",
+      "retrievedAt": "2026-11-24"
+    },
+    {
+      "id": "rgd-ebmd",
+      "title": "e-BMD: island-wide issue of certified copies from any Divisional Secretariat",
+      "url": "https://rgd.gov.lk/web/index.php/en/e-services/e-bmd",
+      "kind": "website",
+      "publisher": "Registrar General's Department",
+      "retrievedAt": "2026-11-24"
+    },
+    {
+      "id": "rgd-ebmd-online-request",
+      "title": "Request certified copies of birth, marriage and death certificates online",
+      "url": "https://rgd.gov.lk/web/index.php/en/e-services/e-bmd/request-certified-copies-of-birth-marriage-and-death-certificates-online",
+      "kind": "website",
+      "publisher": "Registrar General's Department",
+      "retrievedAt": "2026-11-24"
+    },
+    {
+      "id": "rgd-ebmd-user-manual",
+      "title": "User Manual: eBMD Local Online Portal",
+      "url": "https://www.rgd.gov.lk/web/images/ebmd/UserManual/User%20Manual_eBMD%20Local%20Online%20Portal.pdf",
+      "kind": "website",
+      "publisher": "Registrar General's Department",
+      "retrievedAt": "2026-11-24"
+    },
+    {
+      "id": "rgd-form-b63",
+      "title": "Form B 63: Application for Birth Certificate and/or Search of Registers",
+      "url": "https://rgd.gov.lk/web/images/pdf/birth/Application_for_birth_certificate_or_search_registeres_2017-04-25.pdf",
+      "kind": "form",
+      "publisher": "Registrar General's Department",
+      "retrievedAt": "2026-11-24"
+    },
+    {
+      "id": "births-deaths-registration-act-1951",
+      "title": "Births and Deaths Registration Act (Ordinance) No. 17 of 1951, as cited by RGD",
+      "url": "https://rgd.gov.lk/web/index.php/en/services/civil-registration/birth/birth-registration",
+      "kind": "act",
+      "publisher": "Registrar General's Department",
+      "retrievedAt": "2026-11-24"
+    }
+  ],
+  "fieldSources": {
+    "fee": [
+      "rgd-birth-copies",
+      "rgd-ebmd-user-manual"
+    ],
+    "processingTime": [
+      "rgd-ebmd-online-request",
+      "rgd-ebmd"
+    ],
+    "officeFlow": [
+      "rgd-birth-copies",
+      "rgd-ebmd",
+      "rgd-ebmd-online-request"
+    ],
+    "requiredDocuments": [
+      "rgd-birth-copies",
+      "rgd-form-b63",
+      "rgd-ebmd-user-manual",
+      "rgd-ebmd-online-request"
+    ],
+    "eligibility": [
+      "rgd-birth-copies",
+      "rgd-ebmd-user-manual"
+    ],
+    "steps": [
+      "rgd-birth-copies",
+      "rgd-ebmd-online-request",
+      "rgd-ebmd-user-manual"
+    ],
+    "formIds": [
+      "rgd-form-b63"
+    ]
+  },
+  "verification": {
+    "status": "approved",
+    "sourceRef": "rgd-birth-copies",
+    "verifiedBy": "ByteMe research team (pending Kuruwita DS officer review)",
+    "verifiedAt": "2026-11-24",
+    "demoData": true
+  }
+}

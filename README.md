@@ -21,4 +21,56 @@ Team ByteMe, University of Ruhuna · DevFest Sri Lanka 2026, Government Digitali
 | `evals/` | Multilingual evaluation suite and report |
 | `docs/` | Plan, decisions, architecture, submission, demo script |
 
-Setup, run, seed, test and deploy instructions will be added as each milestone lands.
+## Quick start (local)
+
+**Prerequisites:** Node 20+, pnpm 10, Python 3.11–3.13, [uv](https://docs.astral.sh/uv/).
+
+```bash
+pnpm install
+cd services/agents && uv sync && cd ../..
+cp .env.example .env          # leave GEMINI_API_KEY empty to run in offline mode
+```
+
+Run the two services in separate terminals:
+
+```bash
+# 1. Agent service (Google ADK + FastAPI) on http://localhost:8787
+cd services/agents && PORT=8787 uv run govnav-api
+```
+
+```bash
+# 2. Web app (Next.js) on http://localhost:3000
+pnpm --filter @govnav/web dev
+```
+
+**Offline mode vs Gemini.** With no `GEMINI_API_KEY`, the **same ADK agent tree** runs on a deterministic local model (`OfflineLlm`), so the app, tests and evals work without network access. Add a Gemini key and the router and info agents switch to Gemini Flash, and retrieval switches to Gemini embeddings. Model IDs live in one file: `services/agents/src/govnav_agents/llm/models.py`.
+
+## Knowledge base
+
+`data/` holds the seed: 9 procedures, 12 offices, the Ratnapura → Kuruwita hierarchy (39 GN divisions) and 11 official form PDFs from gov.lk sources. Every fact carries a `SourceRef`. Anything not confirmed for Kuruwita is flagged `demoData` and shown as "Sample data, confirm with office". Validate the seed:
+
+```bash
+cd services/agents && uv run python -c "from govnav_agents.kb import LocalKnowledgeBase as K; k=K(); print(len(k.procedures()), 'procedures OK')"
+```
+
+## Tests
+
+```bash
+cd services/agents && uv run pytest && uv run mypy src && uv run ruff check src tests
+```
+
+```bash
+pnpm --filter @govnav/web test && pnpm --filter @govnav/web typecheck && pnpm --filter @govnav/web lint
+```
+
+Shared contracts: after editing `services/agents/src/govnav_agents/schemas.py`, run `pnpm schemas` to regenerate the JSON Schemas and TypeScript types.
+
+## Milestones
+
+| | Status |
+|---|---|
+| **M1 Foundation**: tokens, i18n, seed KB, ADK router + info agent, hybrid retrieval, Ask → cited answer in si/ta/en | ✅ |
+| **M2 Core promise**: checklist, Form Studio, profile from NIC/bill, auto-fill, PDF, Visit pack | ⏳ |
+| **M3 Adoption & reach**: Offices + Maps, Counter view, Procedure editor, Insights, voice | ⏳ |
+| **M4 Proof**: evals report, accessibility/performance, Cloud Run + Firebase deploy | ⏳ |
+| **M5 Submission** | ⏳ |

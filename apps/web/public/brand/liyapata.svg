@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="60" viewBox="0 0 120 60" fill="none" stroke="#F2B705" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round" opacity="0.55">
+  <!-- Liya-pata (vine) band with lotus buds: a calm, traditional Sri Lankan motif -->
+  <path d="M0 30 C15 12 25 12 30 30 S45 48 60 30 S75 12 90 30 S105 48 120 30"/>
+  <path d="M30 30 c-4 -10 -2 -18 0 -22 c2 4 4 12 0 22z"/>
+  <path d="M90 30 c-4 -10 -2 -18 0 -22 c2 4 4 12 0 22z"/>
+  <path d="M60 30 c-4 10 -2 18 0 22 c2 -4 4 -12 0 -22z"/>
+  <path d="M0 30 c-4 10 -2 18 0 22"/><path d="M120 30 c4 10 2 18 0 22"/>
+  <path d="M15 21 c-5 -3 -8 -1 -9 2 c3 1 6 1 9 -2z"/><path d="M45 39 c5 3 8 1 9 -2 c-3 -1 -6 -1 -9 2z"/>
+  <path d="M75 21 c-5 -3 -8 -1 -9 2 c3 1 6 1 9 -2z"/><path d="M105 39 c5 3 8 1 9 -2 c-3 -1 -6 -1 -9 2z"/>
+</svg>

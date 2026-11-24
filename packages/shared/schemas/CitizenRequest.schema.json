@@ -1,0 +1,125 @@
+{
+  "$defs": {
+    "Lang": {
+      "description": "UI / answer language.",
+      "enum": [
+        "si",
+        "ta",
+        "en"
+      ],
+      "title": "Lang",
+      "type": "string"
+    },
+    "RequestStatus": {
+      "enum": [
+        "exploring",
+        "checklist",
+        "form_ready",
+        "visited"
+      ],
+      "title": "RequestStatus",
+      "type": "string"
+    },
+    "VisitOutcome": {
+      "enum": [
+        "unknown",
+        "first_visit_success",
+        "needed_return"
+      ],
+      "title": "VisitOutcome",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "description": "A row in 'My requests' (stored on the device).",
+  "properties": {
+    "id": {
+      "title": "Id",
+      "type": "string"
+    },
+    "procedureId": {
+      "title": "Procedureid",
+      "type": "string"
+    },
+    "language": {
+      "$ref": "#/$defs/Lang"
+    },
+    "createdAt": {
+      "format": "date-time",
+      "title": "Createdat",
+      "type": "string"
+    },
+    "updatedAt": {
+      "format": "date-time",
+      "title": "Updatedat",
+      "type": "string"
+    },
+    "status": {
+      "$ref": "#/$defs/RequestStatus",
+      "default": "exploring"
+    },
+    "checklist": {
+      "additionalProperties": {
+        "type": "boolean"
+      },
+      "title": "Checklist",
+      "type": "object"
+    },
+    "formId": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Formid"
+    },
+    "purpose": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Purpose"
+    },
+    "filledValues": {
+      "additionalProperties": {
+        "type": "string"
+      },
+      "title": "Filledvalues",
+      "type": "object"
+    },
+    "visitPackCode": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Visitpackcode"
+    },
+    "outcome": {
+      "$ref": "#/$defs/VisitOutcome",
+      "default": "unknown"
+    }
+  },
+  "required": [
+    "id",
+    "procedureId",
+    "language",
+    "createdAt",
+    "updatedAt"
+  ],
+  "title": "CitizenRequest",
+  "type": "object"
+}

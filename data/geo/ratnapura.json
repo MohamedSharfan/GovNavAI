@@ -1,0 +1,539 @@
+{
+  "id": "ratnapura",
+  "name": {
+    "en": "Ratnapura District",
+    "si": "රත්නපුර දිස්ත්‍රික්කය",
+    "ta": "இரத்தினபுரி மாவட்டம்"
+  },
+  "province": {
+    "en": "Sabaragamuwa Province",
+    "si": "සබරගමුව පළාත",
+    "ta": "சப்ரகமுவ மாகாணம்"
+  },
+  "dsDivisions": [
+    {
+      "id": "ratnapura",
+      "name": {
+        "en": "Ratnapura",
+        "si": "රත්නපුර",
+        "ta": "இரத்தினபுரி"
+      }
+    },
+    {
+      "id": "eheliyagoda",
+      "name": {
+        "en": "Eheliyagoda",
+        "si": "ඇහැලියගොඩ",
+        "ta": "எஹெலியகொட"
+      }
+    },
+    {
+      "id": "kuruwita",
+      "name": {
+        "en": "Kuruwita",
+        "si": "කුරුවිට",
+        "ta": "குருவிட்ட"
+      },
+      "gnDivisions": [
+        {
+          "code": "127",
+          "name": {
+            "en": "Pathberiya",
+            "si": "පත්බේරිය",
+            "ta": "பத்பேரிய"
+          }
+        },
+        {
+          "code": "127/A",
+          "name": {
+            "en": "Parakaduwa",
+            "si": "පරකඩුව",
+            "ta": "பரகடுவ"
+          }
+        },
+        {
+          "code": "127/B",
+          "name": {
+            "en": "West Pathberiya",
+            "si": "බ/පත්බේරිය",
+            "ta": "மேற்கு பத்பேரிய"
+          }
+        },
+        {
+          "code": "127/C",
+          "name": {
+            "en": "Meneripitiya",
+            "si": "මෙනේරිපිටිය",
+            "ta": "மெனேரிபிட்டிய"
+          }
+        },
+        {
+          "code": "146",
+          "name": {
+            "en": "Thalawitiya",
+            "si": "තලාවිටිය",
+            "ta": "தலாவிட்டிய"
+          }
+        },
+        {
+          "code": "146/A",
+          "name": {
+            "en": "Amuhenkanda",
+            "si": "අමුහේන්කන්ද",
+            "ta": "அமுஹேன்கந்த"
+          }
+        },
+        {
+          "code": "146/B",
+          "name": {
+            "en": "Bodhimaluwa",
+            "si": "බෝධිමළුව",
+            "ta": "போதிமளுவ"
+          }
+        },
+        {
+          "code": "148",
+          "name": {
+            "en": "Pohorabawa",
+            "si": "පොහොරබාව",
+            "ta": "பொஹொரபாவ"
+          }
+        },
+        {
+          "code": "148/A",
+          "name": {
+            "en": "Miyanadeniya",
+            "si": "මියනදෙනිය",
+            "ta": "மியனதெனிய"
+          }
+        },
+        {
+          "code": "154",
+          "name": {
+            "en": "Walandura",
+            "si": "වලඳුර",
+            "ta": "வலந்துர"
+          }
+        },
+        {
+          "code": "154/A",
+          "name": {
+            "en": "Kahengama",
+            "si": "කාහේන්ගම",
+            "ta": "காஹேன்கம"
+          }
+        },
+        {
+          "code": "154/B",
+          "name": {
+            "en": "Nadukaradeniya",
+            "si": "නඩුකාරදෙනිය",
+            "ta": "நடுகாரதெனிய"
+          }
+        },
+        {
+          "code": "154/C",
+          "name": {
+            "en": "Galukagama",
+            "si": "ගලුකාගම",
+            "ta": "கலுகாகம"
+          }
+        },
+        {
+          "code": "154/D",
+          "name": {
+            "en": "West Kahengama",
+            "si": "බ/කාහේන්ගම",
+            "ta": "மேற்கு காஹேன்கம"
+          }
+        },
+        {
+          "code": "154/E",
+          "name": {
+            "en": "Kosgoda",
+            "si": "කොස්ගොඩ",
+            "ta": "கொஸ்கொட"
+          }
+        },
+        {
+          "code": "155",
+          "name": {
+            "en": "Kuruwita",
+            "si": "කුරුවිට",
+            "ta": "குருவிட்ட"
+          }
+        },
+        {
+          "code": "155/A",
+          "name": {
+            "en": "Kithulpe",
+            "si": "කිතුල්පෙ",
+            "ta": "கித்துல்பே"
+          }
+        },
+        {
+          "code": "155/B",
+          "name": {
+            "en": "Delgamuwa",
+            "si": "දෙල්ගමුව",
+            "ta": "தெல்கமுவ"
+          }
+        },
+        {
+          "code": "155/C",
+          "name": {
+            "en": "Pahala Kuruwita",
+            "si": "පහල කුරුවිට",
+            "ta": "பஹல குருவிட்ட"
+          }
+        },
+        {
+          "code": "155/D",
+          "name": {
+            "en": "Pathagama",
+            "si": "පාතගම",
+            "ta": "பாதகம"
+          }
+        },
+        {
+          "code": "156",
+          "name": {
+            "en": "Medagama (Theppanawa)",
+            "si": "මැදගම (තෙප්පනාව)",
+            "ta": "மெதகம (தெப்பனாவ)"
+          }
+        },
+        {
+          "code": "156/A",
+          "name": {
+            "en": "Ihalagama (Theppanawa Ihalagama)",
+            "si": "ඉහලගම (තෙප්පනාව ඉහලගම)",
+            "ta": "இஹலகம (தெப்பனாவ இஹலகம)"
+          }
+        },
+        {
+          "code": "156/B",
+          "name": {
+            "en": "Pahalagama (Theppanawa Pahalagama)",
+            "si": "පහලගම (තෙප්පනාව පහලගම)",
+            "ta": "பஹலகம (தெப்பனாவ பஹலகம)"
+          }
+        },
+        {
+          "code": "156/C",
+          "name": {
+            "en": "Ovitigama",
+            "si": "ඕවිටිගම",
+            "ta": "ஓவிட்டிகம"
+          }
+        },
+        {
+          "code": "157",
+          "name": {
+            "en": "Kandangoda",
+            "si": "කඳන්ගොඩ",
+            "ta": "கந்தன்கொட"
+          }
+        },
+        {
+          "code": "157/A",
+          "name": {
+            "en": "South Kandangoda",
+            "si": "ද/කඳන්ගොඩ",
+            "ta": "தெற்கு கந்தன்கொட"
+          }
+        },
+        {
+          "code": "158",
+          "name": {
+            "en": "Pussella",
+            "si": "පුස්සැල්ල",
+            "ta": "புஸ்ஸெல்ல"
+          }
+        },
+        {
+          "code": "158/A",
+          "name": {
+            "en": "Millawitiya",
+            "si": "මිල්ලවිටිය",
+            "ta": "மில்லவிட்டிய"
+          }
+        },
+        {
+          "code": "159",
+          "name": {
+            "en": "Wathuyaya",
+            "si": "වතුයාය",
+            "ta": "வத்துயாய"
+          }
+        },
+        {
+          "code": "159/A",
+          "name": {
+            "en": "Udakada",
+            "si": "උඩකඩ",
+            "ta": "உடகட"
+          }
+        },
+        {
+          "code": "159/B",
+          "name": {
+            "en": "North Ekneligoda",
+            "si": "උ/එක්නැලිගොඩ",
+            "ta": "வடக்கு எக்னெலிகொட"
+          }
+        },
+        {
+          "code": "159/C",
+          "name": {
+            "en": "Ekneligoda",
+            "si": "එක්නැලිගොඩ",
+            "ta": "எக்னெலிகொட"
+          }
+        },
+        {
+          "code": "159/D",
+          "name": {
+            "en": "Keeragala",
+            "si": "කීරගල",
+            "ta": "கீரகல"
+          }
+        },
+        {
+          "code": "160",
+          "name": {
+            "en": "Endiriyanwala",
+            "si": "ඇඳිරියන්වල",
+            "ta": "எந்திரியன்வல"
+          }
+        },
+        {
+          "code": "160/A",
+          "name": {
+            "en": "Devipahala",
+            "si": "දෙවිපහල",
+            "ta": "தெவிபஹல"
+          }
+        },
+        {
+          "code": "161",
+          "name": {
+            "en": "Erathna",
+            "si": "එරත්න",
+            "ta": "எரத்ன"
+          }
+        },
+        {
+          "code": "161/A",
+          "name": {
+            "en": "Sudagala",
+            "si": "සූදගල",
+            "ta": "சூதகல"
+          }
+        },
+        {
+          "code": "161/B",
+          "name": {
+            "en": "Adavikanda",
+            "si": "අඩවිකන්ද",
+            "ta": "அடவிகந்த"
+          }
+        },
+        {
+          "code": "161/C",
+          "name": {
+            "en": "Lassakanda",
+            "si": "ලස්සකන්ද",
+            "ta": "லஸ்ஸகந்த"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pelmadulla",
+      "name": {
+        "en": "Pelmadulla",
+        "si": "පැල්මඩුල්ල",
+        "ta": "பெல்மடுல்ல"
+      }
+    },
+    {
+      "id": "kahawatta",
+      "name": {
+        "en": "Kahawatta",
+        "si": "කහවත්ත",
+        "ta": "கஹவத்த"
+      }
+    },
+    {
+      "id": "godakawela",
+      "name": {
+        "en": "Godakawela",
+        "si": "ගොඩකවෙල",
+        "ta": "கொடகவெல"
+      }
+    },
+    {
+      "id": "kolonna",
+      "name": {
+        "en": "Kolonna",
+        "si": "කොලොන්න",
+        "ta": "கொலொன்ன"
+      }
+    },
+    {
+      "id": "embilipitiya",
+      "name": {
+        "en": "Embilipitiya",
+        "si": "ඇඹිලිපිටිය",
+        "ta": "எம்பிலிப்பிட்டிய"
+      }
+    },
+    {
+      "id": "opanayaka",
+      "name": {
+        "en": "Opanayaka",
+        "si": "ඕපනායක",
+        "ta": "ஓபநாயக்க"
+      }
+    },
+    {
+      "id": "balangoda",
+      "name": {
+        "en": "Balangoda",
+        "si": "බලංගොඩ",
+        "ta": "பலாங்கொடை"
+      }
+    },
+    {
+      "id": "imbulpe",
+      "name": {
+        "en": "Imbulpe",
+        "si": "ඉඹුල්පේ",
+        "ta": "இம்புல்பே"
+      }
+    },
+    {
+      "id": "elapatha",
+      "name": {
+        "en": "Elapatha",
+        "si": "ඇලපාත",
+        "ta": "எலபாத்த"
+      }
+    },
+    {
+      "id": "nivithigala",
+      "name": {
+        "en": "Nivithigala",
+        "si": "නිවිතිගල",
+        "ta": "நிவித்திகல"
+      }
+    },
+    {
+      "id": "kalawana",
+      "name": {
+        "en": "Kalawana",
+        "si": "කලවාන",
+        "ta": "கலவான"
+      }
+    },
+    {
+      "id": "kiriella",
+      "name": {
+        "en": "Kiriella",
+        "si": "කිරිඇල්ල",
+        "ta": "கிரியெல்ல"
+      }
+    },
+    {
+      "id": "ayagama",
+      "name": {
+        "en": "Ayagama",
+        "si": "අයගම",
+        "ta": "அயகம"
+      }
+    },
+    {
+      "id": "weligepola",
+      "name": {
+        "en": "Weligepola",
+        "si": "වැලිගෙපොල",
+        "ta": "வெலிகெபொல"
+      }
+    },
+    {
+      "id": "kaltota",
+      "name": {
+        "en": "Kaltota",
+        "si": "කල්තොට",
+        "ta": "கல்தொட்ட"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "kuruwita-ds-gn-list",
+      "title": "Kuruwita Divisional Secretariat - Grama Niladhari divisions",
+      "url": "http://kuruvita.ds.gov.lk/index.php/en/administrative-structure/gn-divisions.html",
+      "kind": "website",
+      "publisher": "Divisional Secretariat, Kuruwita",
+      "retrievedAt": "2026-11-24"
+    },
+    {
+      "id": "kuruwita-ds-gn-list-si",
+      "title": "කුරුවිට ප්‍රාදේශීය ලේකම් කාර්යාලය - ග්‍රාම නිලධාරී කොට්ඨාස",
+      "url": "http://kuruvita.ds.gov.lk/index.php/si/administrative-structure-si/gn-divisions-si.html",
+      "kind": "website",
+      "publisher": "Divisional Secretariat, Kuruwita",
+      "retrievedAt": "2026-11-24"
+    },
+    {
+      "id": "kuruwita-ds-overview",
+      "title": "Kuruwita Divisional Secretariat - Overview",
+      "url": "http://kuruvita.ds.gov.lk/index.php/en/about-us/overview.html",
+      "kind": "website",
+      "publisher": "Divisional Secretariat, Kuruwita",
+      "retrievedAt": "2026-11-24"
+    },
+    {
+      "id": "ratnapura-district-contact-en",
+      "title": "Ratnapura District Secretariat - Contact details",
+      "url": "http://www.ratnapura.dist.gov.lk/index.php/en/contact/contact-details.html",
+      "kind": "website",
+      "publisher": "District Secretariat, Ratnapura",
+      "retrievedAt": "2026-11-24"
+    },
+    {
+      "id": "ratnapura-district-contact-si",
+      "title": "රත්නපුර දිස්ත්‍රික් ලේකම් කාර්යාලය - සම්බන්ධතා විස්තර",
+      "url": "http://www.ratnapura.dist.gov.lk/index.php/si/contact/contact-details.html",
+      "kind": "website",
+      "publisher": "District Secretariat, Ratnapura",
+      "retrievedAt": "2026-11-24"
+    },
+    {
+      "id": "ratnapura-dist-annual-report-2025",
+      "title": "Ratnapura District Secretariat - Annual Performance Report 2025 (tabled in Parliament)",
+      "url": "https://www.parliament.lk/uploads/businessdocs/english/23814_english_2026-06-26.pdf",
+      "kind": "office_notice",
+      "publisher": "Parliament of Sri Lanka",
+      "retrievedAt": "2026-11-24"
+    },
+    {
+      "id": "dcs-gn-report-2020-ratnapura",
+      "title": "Department of Census and Statistics - GN division report 2020, Ratnapura",
+      "url": "https://www.statistics.gov.lk/Resource/en/Population/GND_Reports/2020/Ratnapura.pdf",
+      "kind": "website",
+      "publisher": "Department of Census and Statistics",
+      "retrievedAt": "2026-11-24"
+    },
+    {
+      "id": "citypopulation-kuruwita",
+      "title": "City Population - Kuruvita DS division (Ratnapura)",
+      "url": "https://www.citypopulation.de/en/srilanka/ratnapura/admin/9106__kuruvita/",
+      "kind": "website",
+      "publisher": "City Population (T. Brinkhoff)",
+      "retrievedAt": "2026-11-24"
+    }
+  ]
+}

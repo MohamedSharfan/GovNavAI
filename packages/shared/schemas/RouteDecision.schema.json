@@ -1,0 +1,99 @@
+{
+  "$defs": {
+    "InputVariety": {
+      "description": "How the citizen wrote the query (for per-variety evaluation).",
+      "enum": [
+        "si",
+        "ta",
+        "en",
+        "singlish",
+        "tanglish"
+      ],
+      "title": "InputVariety",
+      "type": "string"
+    },
+    "Intent": {
+      "enum": [
+        "procedure_info",
+        "checklist",
+        "form",
+        "office",
+        "greeting",
+        "out_of_scope"
+      ],
+      "title": "Intent",
+      "type": "string"
+    },
+    "Lang": {
+      "description": "UI / answer language.",
+      "enum": [
+        "si",
+        "ta",
+        "en"
+      ],
+      "title": "Lang",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "description": "Output of router_agent. Validated, then gated by deterministic code.",
+  "properties": {
+    "intent": {
+      "$ref": "#/$defs/Intent"
+    },
+    "procedureId": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "MUST be one of the candidate ids given, or null.",
+      "title": "Procedureid"
+    },
+    "language": {
+      "$ref": "#/$defs/Lang",
+      "description": "Language to answer in."
+    },
+    "inputVariety": {
+      "$ref": "#/$defs/InputVariety"
+    },
+    "confidence": {
+      "maximum": 1,
+      "minimum": 0,
+      "title": "Confidence",
+      "type": "number"
+    },
+    "purpose": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Why the citizen needs it, in their own words, if stated.",
+      "title": "Purpose"
+    },
+    "reason": {
+      "description": "Short justification, for the trace.",
+      "maxLength": 300,
+      "title": "Reason",
+      "type": "string"
+    }
+  },
+  "required": [
+    "intent",
+    "language",
+    "inputVariety",
+    "confidence",
+    "reason"
+  ],
+  "title": "RouteDecision",
+  "type": "object"
+}

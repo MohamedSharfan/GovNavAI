@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+/* ------------------------------------------------------------------------
+   GovNavAI design tokens: Sri Lankan government identity.
+   Primary #B31C1C (Government Red) + the GovNavAI logo's flag colours.
+   ------------------------------------------------------------------------ */
+:root {
+  --primary: #b31c1c;        /* 6.8:1 with white */
+  --primary-strong: #8a1515; /* hover / pressed */
+  --primary-deep: #5c0f0f;   /* hero + header surfaces */
+  --gold: #f2b705;           /* AI badges, focus accents (dark text on it) */
+  --saffron: #e8740c;        /* do-this-by-hand + caution */
+  --saffron-ink: #8a3f00;    /* saffron text on light surfaces (AA) */
+  --green: #1b6e3a;          /* verified / open / done */
+  --bg: #fbf7f2;
+  --surface: #ffffff;
+  --surface-2: #f5eee6;
+  --ink: #2a1a1a;
+  --muted: #6b5b57;
+  --line: #eadfd6;
+  --focus: #f2b705;
+  --radius: 16px;
+}
+
+@theme inline {
+  --color-primary: var(--primary);
+  --color-primary-strong: var(--primary-strong);
+  --color-primary-deep: var(--primary-deep);
+  --color-gold: var(--gold);
+  --color-saffron: var(--saffron);
+  --color-saffron-ink: var(--saffron-ink);
+  --color-green: var(--green);
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --font-sans: var(--font-jakarta), var(--font-sinhala), var(--font-tamil), system-ui, sans-serif;
+  --font-display-si: var(--font-yaldevi), var(--font-sinhala), sans-serif;
+  --radius-card: var(--radius);
+}
+
+/* Text-size control (A / A+ / A++) scales the whole UI via rem. */
+html { font-size: 100%; }
+html[data-text-scale="lg"] { font-size: 112.5%; }
+html[data-text-scale="xl"] { font-size: 125%; }
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Sinhala and Tamil scripts need a slightly larger size and more leading.
+   Applied once at the page level (an `em` rule on :lang() would compound per element). */
+html:lang(si) body, html:lang(ta) body { font-size: 1.0625rem; line-height: 1.75; }
+[lang="si"]:not(html), [lang="ta"]:not(html) { line-height: 1.7; }
+html:lang(si) h1, html:lang(si) .display { font-family: var(--font-display-si); }
+
+:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 2px;
+  border-radius: 8px;
+}
+
+/* Thin tricolour strip (gold · saffron · green) under the app header. */
+.tricolour {
+  height: 4px;
+  background: linear-gradient(90deg, var(--gold) 0 33.33%, var(--saffron) 33.33% 66.66%, var(--green) 66.66% 100%);
+}
+
+/* Faint liya-pata motif on the dark hero and printable headers. */
+.liyapata {
+  background-image: url("/brand/liyapata.svg");
+  background-size: 120px 60px;
+  background-repeat: repeat-x;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}

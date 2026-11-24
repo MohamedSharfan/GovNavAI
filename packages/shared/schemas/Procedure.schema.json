@@ -1,0 +1,512 @@
+{
+  "$defs": {
+    "ExampleQuestions": {
+      "additionalProperties": false,
+      "properties": {
+        "en": {
+          "items": {
+            "type": "string"
+          },
+          "title": "En",
+          "type": "array"
+        },
+        "si": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Si",
+          "type": "array"
+        },
+        "ta": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Ta",
+          "type": "array"
+        },
+        "singlish": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Singlish",
+          "type": "array"
+        },
+        "tanglish": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Tanglish",
+          "type": "array"
+        }
+      },
+      "title": "ExampleQuestions",
+      "type": "object"
+    },
+    "Fee": {
+      "additionalProperties": false,
+      "properties": {
+        "amountLkr": {
+          "anyOf": [
+            {
+              "minimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Amountlkr"
+        },
+        "isFree": {
+          "title": "Isfree",
+          "type": "boolean"
+        },
+        "text": {
+          "$ref": "#/$defs/LocalizedText"
+        },
+        "short": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/LocalizedText"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Card-sized value (e.g. 'Rs 120 – 250'); text holds the full rule."
+        }
+      },
+      "required": [
+        "isFree",
+        "text"
+      ],
+      "title": "Fee",
+      "type": "object"
+    },
+    "LocalizedText": {
+      "additionalProperties": false,
+      "description": "A user-facing string in all three official languages.",
+      "properties": {
+        "en": {
+          "minLength": 1,
+          "title": "En",
+          "type": "string"
+        },
+        "si": {
+          "minLength": 1,
+          "title": "Si",
+          "type": "string"
+        },
+        "ta": {
+          "minLength": 1,
+          "title": "Ta",
+          "type": "string"
+        }
+      },
+      "required": [
+        "en",
+        "si",
+        "ta"
+      ],
+      "title": "LocalizedText",
+      "type": "object"
+    },
+    "OfficeType": {
+      "enum": [
+        "GN",
+        "DS",
+        "DISTRICT",
+        "RGD",
+        "DRP",
+        "LAND_REGISTRY",
+        "OTHER"
+      ],
+      "title": "OfficeType",
+      "type": "string"
+    },
+    "ProcedureCategory": {
+      "enum": [
+        "civil-registration",
+        "identity",
+        "land-property",
+        "welfare-certificates",
+        "licensing"
+      ],
+      "title": "ProcedureCategory",
+      "type": "string"
+    },
+    "ProcessingTime": {
+      "additionalProperties": false,
+      "properties": {
+        "minDays": {
+          "anyOf": [
+            {
+              "minimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Mindays"
+        },
+        "maxDays": {
+          "anyOf": [
+            {
+              "minimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Maxdays"
+        },
+        "text": {
+          "$ref": "#/$defs/LocalizedText"
+        },
+        "short": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/LocalizedText"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        }
+      },
+      "required": [
+        "text"
+      ],
+      "title": "ProcessingTime",
+      "type": "object"
+    },
+    "RecordStatus": {
+      "enum": [
+        "draft",
+        "approved"
+      ],
+      "title": "RecordStatus",
+      "type": "string"
+    },
+    "RequiredDocument": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "maxLength": 64,
+          "minLength": 2,
+          "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+          "title": "Id",
+          "type": "string"
+        },
+        "name": {
+          "$ref": "#/$defs/LocalizedText"
+        },
+        "note": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/LocalizedText"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "conditional": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/LocalizedText"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "When this document is needed, if not always."
+        },
+        "aiCanPrefill": {
+          "default": false,
+          "title": "Aicanprefill",
+          "type": "boolean"
+        },
+        "formId": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Formid"
+        }
+      },
+      "required": [
+        "id",
+        "name"
+      ],
+      "title": "RequiredDocument",
+      "type": "object"
+    },
+    "SourceKind": {
+      "enum": [
+        "circular",
+        "gazette",
+        "act",
+        "website",
+        "form",
+        "office_notice",
+        "field_visit"
+      ],
+      "title": "SourceKind",
+      "type": "string"
+    },
+    "SourceRef": {
+      "additionalProperties": false,
+      "description": "An authorising or informing source for one or more facts.",
+      "properties": {
+        "id": {
+          "maxLength": 64,
+          "minLength": 2,
+          "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+          "title": "Id",
+          "type": "string"
+        },
+        "title": {
+          "title": "Title",
+          "type": "string"
+        },
+        "url": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Url"
+        },
+        "kind": {
+          "$ref": "#/$defs/SourceKind"
+        },
+        "section": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Section"
+        },
+        "publisher": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Publisher"
+        },
+        "retrievedAt": {
+          "format": "date",
+          "title": "Retrievedat",
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "title",
+        "kind",
+        "retrievedAt"
+      ],
+      "title": "SourceRef",
+      "type": "object"
+    },
+    "Verification": {
+      "additionalProperties": false,
+      "description": "Human-in-the-loop provenance kept on every record.",
+      "properties": {
+        "status": {
+          "$ref": "#/$defs/RecordStatus"
+        },
+        "sourceRef": {
+          "description": "Primary SourceRef id",
+          "title": "Sourceref",
+          "type": "string"
+        },
+        "verifiedBy": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Verifiedby"
+        },
+        "verifiedAt": {
+          "anyOf": [
+            {
+              "format": "date",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Verifiedat"
+        },
+        "demoData": {
+          "default": false,
+          "description": "True when one or more facts could not be confirmed from an official source.",
+          "title": "Demodata",
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "status",
+        "sourceRef"
+      ],
+      "title": "Verification",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "description": "A verified government procedure: the unit of the knowledge base.",
+  "properties": {
+    "id": {
+      "maxLength": 64,
+      "minLength": 2,
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+      "title": "Id",
+      "type": "string"
+    },
+    "version": {
+      "default": 1,
+      "minimum": 1,
+      "title": "Version",
+      "type": "integer"
+    },
+    "category": {
+      "$ref": "#/$defs/ProcedureCategory"
+    },
+    "name": {
+      "$ref": "#/$defs/LocalizedText"
+    },
+    "summary": {
+      "$ref": "#/$defs/LocalizedText"
+    },
+    "synonyms": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Synonyms",
+      "type": "array"
+    },
+    "exampleQuestions": {
+      "$ref": "#/$defs/ExampleQuestions"
+    },
+    "officeType": {
+      "$ref": "#/$defs/OfficeType"
+    },
+    "officeFlow": {
+      "$ref": "#/$defs/LocalizedText"
+    },
+    "fee": {
+      "$ref": "#/$defs/Fee"
+    },
+    "processingTime": {
+      "$ref": "#/$defs/ProcessingTime"
+    },
+    "requiredDocuments": {
+      "items": {
+        "$ref": "#/$defs/RequiredDocument"
+      },
+      "minItems": 1,
+      "title": "Requireddocuments",
+      "type": "array"
+    },
+    "eligibility": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/LocalizedText"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "steps": {
+      "items": {
+        "$ref": "#/$defs/LocalizedText"
+      },
+      "title": "Steps",
+      "type": "array"
+    },
+    "formIds": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Formids",
+      "type": "array"
+    },
+    "sources": {
+      "items": {
+        "$ref": "#/$defs/SourceRef"
+      },
+      "minItems": 1,
+      "title": "Sources",
+      "type": "array"
+    },
+    "fieldSources": {
+      "additionalProperties": {
+        "items": {
+          "type": "string"
+        },
+        "type": "array"
+      },
+      "description": "Per-field citations: field name -> SourceRef ids.",
+      "title": "Fieldsources",
+      "type": "object"
+    },
+    "verification": {
+      "$ref": "#/$defs/Verification"
+    }
+  },
+  "required": [
+    "id",
+    "category",
+    "name",
+    "summary",
+    "exampleQuestions",
+    "officeType",
+    "officeFlow",
+    "fee",
+    "processingTime",
+    "requiredDocuments",
+    "sources",
+    "verification"
+  ],
+  "title": "Procedure",
+  "type": "object"
+}

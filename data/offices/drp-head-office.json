@@ -1,0 +1,80 @@
+{
+  "id": "drp-head-office",
+  "type": "DRP",
+  "name": {
+    "en": "Department for Registration of Persons - Head Office",
+    "si": "පුද්ගලයින් ලියාපදිංචි කිරීමේ දෙපාර්තමේන්තුව - ප්‍රධාන කාර්යාලය",
+    "ta": "ஆட்பதிவுத் திணைக்களம் - தலைமை அலுவலகம்"
+  },
+  "address": {
+    "en": "Suhurupaya, Subuthipura Road, Battaramulla",
+    "si": "සුහුරුපාය, සුබූතිපුර පාර, බත්තරමුල්ල",
+    "ta": "சுஹுருபாய, சுபூதிபுர வீதி, பத்தரமுல்லை"
+  },
+  "location": {
+    "lat": 6.90305,
+    "lng": 79.9174
+  },
+  "phone": "+94 11 5226100",
+  "email": "info@drp.lk",
+  "website": "https://drp.gov.lk/en/",
+  "hours": [
+    {
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "open": "08:30",
+      "close": "16:15"
+    }
+  ],
+  "hoursNote": {
+    "en": "Phone enquiries are answered on weekdays from 8.30 in the morning to 4.15 in the afternoon (general line 011 5226100, NIC details 011 5226126). People in Ratnapura District should first go to the NIC unit at their own Divisional Secretariat.",
+    "si": "දුරකථන විමසීම් සතියේ දිනවල උදේ 8.30 සිට හවස 4.15 දක්වා (සාමාන්‍ය අංකය 011 5226100, හැඳුනුම්පත් විස්තර 011 5226126). රත්නපුර දිස්ත්‍රික්කයේ අය මුලින්ම තමන්ගේ ප්‍රාදේශීය ලේකම් කාර්යාලයේ හැඳුනුම්පත් අංශයට යන්න.",
+    "ta": "தொலைபேசி விசாரணைகள் வார நாட்களில் காலை 8.30 முதல் மாலை 4.15 வரை (பொது இலக்கம் 011 5226100, அடையாள அட்டை விவரங்கள் 011 5226126). இரத்தினபுரி மாவட்ட மக்கள் முதலில் தங்கள் பிரதேச செயலகத்தின் அடையாள அட்டைப் பிரிவுக்குச் செல்லுங்கள்."
+  },
+  "handles": [
+    "nic-application"
+  ],
+  "adminArea": {
+    "province": "Western",
+    "district": "Colombo"
+  },
+  "queueStatus": "normal",
+  "sources": [
+    {
+      "id": "drp-contact",
+      "title": "Department for Registration of Persons - Contact us",
+      "url": "https://drp.gov.lk/en/contact.php",
+      "kind": "website",
+      "publisher": "Department for Registration of Persons",
+      "retrievedAt": "2026-11-24"
+    },
+    {
+      "id": "drp-divisional-offices",
+      "title": "Department for Registration of Persons - Divisional offices",
+      "url": "https://drp.gov.lk/en/divisional_office.php",
+      "kind": "website",
+      "publisher": "Department for Registration of Persons",
+      "retrievedAt": "2026-11-24"
+    },
+    {
+      "id": "osm-drp-head-office",
+      "title": "OpenStreetMap - Department for Registration of Persons, Battaramulla (node 4835803021)",
+      "url": "https://www.openstreetmap.org/node/4835803021",
+      "kind": "website",
+      "publisher": "OpenStreetMap contributors",
+      "retrievedAt": "2026-11-24"
+    }
+  ],
+  "verification": {
+    "status": "approved",
+    "sourceRef": "drp-contact",
+    "verifiedBy": "ByteMe research team (pending Kuruwita DS officer review)",
+    "verifiedAt": "2026-11-24",
+    "demoData": true
+  }
+}

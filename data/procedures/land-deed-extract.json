@@ -1,0 +1,344 @@
+{
+  "id": "land-deed-extract",
+  "version": 1,
+  "category": "land-property",
+  "name": {
+    "en": "Land Register Extract (certified copy of a land folio)",
+    "si": "ඉඩම් ලේඛන උපුටනය (ඉඩම් පත්‍රයක සහතික පිටපත)",
+    "ta": "காணிப் பதிவேட்டுச் சாற்று (காணிப் பக்கத்தின் சான்றளிக்கப்பட்ட பிரதி)"
+  },
+  "summary": {
+    "en": "An extract is a certified copy of the land register page (called a folio). It shows every deed registered for your land. Banks, courts and buyers often ask for it. Fill Form A32(A) – one form for each land – and give it to the Land Registry where your land is registered. For lands in Kuruwita this is usually the Ratnapura Land Registry, but please check. It costs Rs 120 per extract (Rs 200 for the fast service). You can also apply online and get it in about 5 working days.",
+    "si": "උපුටනය (Extract) යනු ඉඩම් ලේඛනයේ පිටුවක (පත්‍රයක) සහතික පිටපතයි. ඔබේ ඉඩමට ලියාපදිංචි කළ සියලු ඔප්පු එහි සඳහන් වේ. බැංකු, උසාවි සහ ඉඩම මිලදී ගන්නන් බොහෝවිට මෙය ඉල්ලයි. A32(අ) ඉල්ලුම් පත්‍රය පුරවා (එක් ඉඩමකට එකක්), ඔබේ ඉඩම ලියාපදිංචි කර ඇති ඉඩම් රෙජිස්ට්‍රාර් කාර්යාලයට භාර දෙන්න. කුරුවිට ඉඩම් සඳහා සාමාන්‍යයෙන් එය රත්නපුර ඉඩම් රෙජිස්ට්‍රාර් කාර්යාලයයි; කරුණාකර තහවුරු කරගන්න. එක් උපුටනයකට රු. 120යි (ඉක්මන් සේවාවට රු. 200). අන්තර්ජාලයෙන්ද අයදුම් කර වැඩ කරන දින 5කින් පමණ ලබාගත හැක.",
+    "ta": "சாற்று (Extract) என்பது காணிப் பதிவேட்டுப் பக்கத்தின் (Folio) சான்றளிக்கப்பட்ட பிரதி. உங்கள் காணிக்குப் பதிவுசெய்யப்பட்ட எல்லா உறுதிகளும் அதில் இருக்கும். வங்கிகள், நீதிமன்றங்கள், காணி வாங்குபவர்கள் இதை அடிக்கடி கேட்பார்கள். A32(அ) படிவத்தை நிரப்பி (ஒரு காணிக்கு ஒன்று), உங்கள் காணி பதிவுசெய்யப்பட்ட காணிப் பதிவகத்தில் கொடுங்கள். குருவிட்ட காணிகளுக்கு இது பொதுவாக இரத்தினபுரி காணிப் பதிவகம்; தயவுசெய்து உறுதிப்படுத்திக்கொள்ளுங்கள். ஒரு சாற்றுக்கு ரூ. 120 (துரித சேவைக்கு ரூ. 200). இணையம் மூலமும் விண்ணப்பித்து சுமார் 5 வேலை நாட்களில் பெறலாம்."
+  },
+  "synonyms": [
+    "land extract",
+    "land register extract",
+    "extract of land register",
+    "land registry extract",
+    "folio copy",
+    "certified copy of folio",
+    "copy of land register",
+    "land registry copy",
+    "A32",
+    "A32(A)",
+    "A32A",
+    "Ratnapura land registry",
+    "idam extract",
+    "idame extract eka",
+    "extract eka",
+    "folio eka",
+    "idam lekhana pitapatha",
+    "idam upudanaya",
+    "ඉඩම් උපුටනය",
+    "ඉඩම් ලේඛන පිටපත",
+    "ඉඩම් ලේඛන උපුටනය",
+    "පත්‍ර පිටපත",
+    "எக்ஸ்ட்ராக்ட்",
+    "காணிச் சாற்று",
+    "காணிப் பதிவேட்டுப் பிரதி",
+    "kaani extract",
+    "kaani saatru",
+    "land extract venum"
+  ],
+  "exampleQuestions": {
+    "en": [
+      "The bank asked for an extract of my land. How do I get it?",
+      "How much does a land registry extract cost in Ratnapura?",
+      "Can I request a folio copy online?",
+      "I don't know my folio number. Can I still get an extract?"
+    ],
+    "si": [
+      "බැංකුවෙන් ඉඩමේ extract එකක් ඉල්ලුවා. ඒක ගන්නේ කොහොමද?",
+      "රත්නපුර ඉඩම් රෙජිස්ට්‍රාර් කාර්යාලයෙන් උපුටනයක් ගන්න කීයක් යනවද?",
+      "ඉඩම් ලේඛන පිටපතක් online ගන්න පුළුවන්ද?",
+      "පත්‍ර අංකය දන්නේ නැහැ. එහෙම වුණත් උපුටනයක් ගන්න පුළුවන්ද?"
+    ],
+    "ta": [
+      "வங்கி என் காணியின் சாற்றைக் கேட்கிறது. அதை எப்படிப் பெறுவது?",
+      "இரத்தினபுரி காணிப் பதிவகத்தில் சாற்றுக்கு எவ்வளவு கட்டணம்?",
+      "காணிப் பதிவேட்டுப் பிரதியை இணையம் மூலம் பெற முடியுமா?",
+      "எனக்கு பக்க இலக்கம் தெரியாது. அப்படியும் சாற்று பெற முடியுமா?"
+    ],
+    "singlish": [
+      "Idame extract eka ganna koheda yanna one?",
+      "Land registry eken folio copy ekak ganna kiyada?",
+      "Extract eka online ganna puluwanda?",
+      "Bank eken idam extract ekak illuwa, mokakda karanna one?"
+    ],
+    "tanglish": [
+      "Kaani extract eppadi edukkiradhu?",
+      "Land registry la folio copy ku evvalavu kasu?",
+      "Extract online la apply panna mudiyuma?",
+      "Bank kaani extract kekkuranga, enna seyyanum?"
+    ]
+  },
+  "officeType": "LAND_REGISTRY",
+  "officeFlow": {
+    "en": "You (the owner, or someone with the owner's letter of authority) → the Land Registry where the land is registered (for Kuruwita, usually Ratnapura – please confirm). Hand in Form A32(A) in person or by post, and pay at the cash counter or attach a Bank of Ceylon receipt → the Registrar approves → the copy is made, checked and given to you (you sign when you receive it). Or apply online at online.land.rgd.gov.lk, pay by card, and get it by speed post or collect it. Office hours: weekdays 8.30 a.m. to 3.45 p.m.; the cash counter closes at 3.00 p.m.",
+    "si": "ඔබ (අයිතිකරු, හෝ අයිතිකරුගේ බලය පැවරීමේ ලිපිය ඇති කෙනෙක්) → ඉඩම ලියාපදිංචි කර ඇති ඉඩම් රෙජිස්ට්‍රාර් කාර්යාලය (කුරුවිට සඳහා සාමාන්‍යයෙන් රත්නපුර – කරුණාකර තහවුරු කරගන්න). A32(අ) ඉල්ලුම් පත්‍රය පෞද්ගලිකව හෝ තැපෑලෙන් භාර දී, මුදල් කවුන්ටරයේ ගෙවන්න, නැත්නම් ලංකා බැංකු රිසිට්පත අමුණන්න → රෙජිස්ට්‍රාර් අනුමත කරයි → පිටපත සකසා, සසඳා ඔබට දෙයි (ලැබෙන විට ඔබ අත්සන් කරයි). නැත්නම් online.land.rgd.gov.lk හරහා අයදුම් කර කාඩ්පතෙන් ගෙවා, ස්පීඩ් පෝස්ට් මගින් හෝ කාර්යාලයෙන් ලබාගන්න. කාර්යාල වේලාව: සතියේ දිනවල පෙ.ව. 8.30 සිට ප.ව. 3.45 දක්වා; මුදල් කවුන්ටරය ප.ව. 3.00ට වැසේ.",
+    "ta": "நீங்கள் (உரிமையாளர், அல்லது உரிமையாளரின் அதிகாரக் கடிதம் உள்ளவர்) → காணி பதிவுசெய்யப்பட்ட காணிப் பதிவகம் (குருவிட்டவுக்கு பொதுவாக இரத்தினபுரி – தயவுசெய்து உறுதிப்படுத்துங்கள்). A32(அ) படிவத்தை நேரில் அல்லது தபாலில் கொடுத்து, காசுக் கருமபீடத்தில் பணம் செலுத்துங்கள், அல்லது இலங்கை வங்கிப் பற்றுச்சீட்டை இணையுங்கள் → பதிவாளர் அனுமதிப்பார் → பிரதி தயாரித்து, ஒப்பிட்டுப் பார்த்து உங்களுக்கு வழங்கப்படும் (பெறும்போது நீங்கள் கையொப்பமிடுவீர்கள்). அல்லது online.land.rgd.gov.lk மூலம் விண்ணப்பித்து அட்டையால் பணம் செலுத்தி, துரித தபாலில் அல்லது பதிவகத்தில் பெறலாம். அலுவலக நேரம்: வார நாட்களில் காலை 8.30 முதல் மாலை 3.45 வரை; காசுக் கருமபீடம் மாலை 3.00க்கு மூடப்படும்."
+  },
+  "fee": {
+    "amountLkr": 120,
+    "isFree": false,
+    "text": {
+      "en": "Rs 120 per extract (normal service). Rs 200 per extract (fast service). Pay in cash at the Land Registry, or pay into the Registrar General's Bank of Ceylon account and bring the receipt. Ask the registry which account number to use (the website and the printed form show different numbers).",
+      "si": "එක් උපුටනයකට රු. 120 (සාමාන්‍ය සේවාව). එක් උපුටනයකට රු. 200 (ඉක්මන් සේවාව). ඉඩම් රෙජිස්ට්‍රාර් කාර්යාලයේ මුදලින් ගෙවන්න, නැත්නම් ලංකා බැංකුවේ රෙජිස්ට්‍රාර් ජනරාල්ගේ ගිණුමට බැර කර රිසිට්පත ගෙනෙන්න. කුමන ගිණුම් අංකයද කියා කාර්යාලයෙන් අසන්න (වෙබ් අඩවියේ සහ මුද්‍රිත ආකෘතියේ අංක වෙනස්).",
+      "ta": "ஒரு சாற்றுக்கு ரூ. 120 (சாதாரண சேவை). ஒரு சாற்றுக்கு ரூ. 200 (துரித சேவை). காணிப் பதிவகத்தில் பணமாகச் செலுத்துங்கள், அல்லது இலங்கை வங்கியில் பதிவாளர் நாயகத்தின் கணக்கில் வைப்பிலிட்டுப் பற்றுச்சீட்டைக் கொண்டுவாருங்கள். எந்தக் கணக்கு இலக்கம் என்று பதிவகத்தில் கேளுங்கள் (இணையத்தளத்திலும் அச்சிட்ட படிவத்திலும் வெவ்வேறு இலக்கங்கள் உள்ளன)."
+    },
+    "short": {
+      "en": "Rs 120 – 200",
+      "si": "රු. 120 – 200",
+      "ta": "ரூ. 120 – 200"
+    }
+  },
+  "processingTime": {
+    "minDays": null,
+    "maxDays": 5,
+    "text": {
+      "en": "Online requests take about 5 working days. For counter applications, no official time is published – ask the registry when you hand it in.",
+      "si": "Online ඉල්ලීම්වලට වැඩ කරන දින 5ක් පමණ ගතවේ. කවුන්ටරයෙන් භාර දෙන ඉල්ලීම්වලට නිල කාලයක් ප්‍රකාශයට පත් කර නැත – භාර දෙන විට කාර්යාලයෙන් අසන්න.",
+      "ta": "இணைய விண்ணப்பங்களுக்கு சுமார் 5 வேலை நாட்கள் ஆகும். கருமபீடத்தில் கொடுக்கும் விண்ணப்பங்களுக்கு அதிகாரப்பூர்வ கால அளவு வெளியிடப்படவில்லை – கொடுக்கும்போது பதிவகத்தில் கேளுங்கள்."
+    },
+    "short": {
+      "en": "About 5 working days",
+      "si": "වැඩ කරන දින 5ක් පමණ",
+      "ta": "சுமார் 5 வேலை நாள்"
+    }
+  },
+  "requiredDocuments": [
+    {
+      "id": "a32a-application-form",
+      "name": {
+        "en": "Filled Form A32(A) – Application for Copy of Land Registers",
+        "si": "පුරවන ලද A32(අ) ආකෘතිය – ඉඩම් ලේඛන පිටපත් සඳහා ඉල්ලුම් පත්‍රය",
+        "ta": "நிரப்பிய A32(அ) படிவம் – காணிப் பதிவேட்டுப் பிரதிக்கான விண்ணப்பம்"
+      },
+      "note": {
+        "en": "Use a separate form for each land. It asks for your name, address and NIC number.",
+        "si": "එක් එක් ඉඩමට වෙනම ඉල්ලුම් පත්‍රයක් භාවිත කරන්න. එහි ඔබේ නම, ලිපිනය සහ ජාතික හැඳුනුම්පත් අංකය ඉල්ලයි.",
+        "ta": "ஒவ்வொரு காணிக்கும் தனிப் படிவம் பயன்படுத்துங்கள். அதில் உங்கள் பெயர், முகவரி, தேசிய அடையாள அட்டை இலக்கம் கேட்கப்படும்."
+      },
+      "aiCanPrefill": true,
+      "formId": "rgd-a32a-land-register-copy-application"
+    },
+    {
+      "id": "nic",
+      "name": {
+        "en": "Your National Identity Card (the number goes on the form)",
+        "si": "ඔබේ ජාතික හැඳුනුම්පත (අංකය ආකෘතියේ ලියන්න)",
+        "ta": "உங்கள் தேசிய அடையாள அட்டை (இலக்கத்தைப் படிவத்தில் எழுத வேண்டும்)"
+      }
+    },
+    {
+      "id": "land-details",
+      "name": {
+        "en": "Your land details: district, village, land name, extent, and the Division / Volume / Folio number",
+        "si": "ඉඩමේ විස්තර: දිස්ත්‍රික්කය, ගම, ඉඩමේ නම, ප්‍රමාණය සහ කොට්ඨාසය / වෙළුම / පත්‍ර අංකය",
+        "ta": "காணி விவரங்கள்: மாவட்டம், கிராமம், காணியின் பெயர், விஸ்தீரணம், பிரிவு / புத்தகம் / பக்க இலக்கம்"
+      },
+      "note": {
+        "en": "You can usually find these on your deed or an old extract. If you don't know the folio number, first ask for a search of the land registers (Form A33(A)).",
+        "si": "සාමාන්‍යයෙන් මේවා ඔබේ ඔප්පුවේ හෝ පැරණි උපුටනයක ඇත. පත්‍ර අංකය නොදන්නේ නම් මුලින්ම ඉඩම් ලේඛන සෙවීමක් (A33(අ) ආකෘතිය) ඉල්ලන්න.",
+        "ta": "இவை பொதுவாக உங்கள் உறுதியில் அல்லது பழைய சாற்றில் இருக்கும். பக்க இலக்கம் தெரியாவிட்டால் முதலில் காணிப் பதிவேட்டுத் தேடலுக்கு (A33(அ) படிவம்) விண்ணப்பியுங்கள்."
+      },
+      "formId": "rgd-a33a-land-register-search-application"
+    },
+    {
+      "id": "self-addressed-envelope",
+      "name": {
+        "en": "An envelope with your own address written on it and enough postage stamps",
+        "si": "ඔබේම ලිපිනය ලියූ, ප්‍රමාණවත් මුද්දර ඇලවූ කවරයක්",
+        "ta": "உங்கள் சொந்த முகவரி எழுதி, போதுமான முத்திரை ஒட்டிய உறை"
+      },
+      "note": {
+        "en": "The form says every application needs this envelope, with stamps for normal or registered post – not only postal applications. Ask the registry if you will collect the copy yourself.",
+        "si": "සෑම ඉල්ලුම් පත්‍රයක් සමඟම සාමාන්‍ය හෝ ලියාපදිංචි තැපෑලට ප්‍රමාණවත් මුද්දර ඇලවූ මෙම කවරය අවශ්‍ය බව ආකෘතියේ සඳහන් වේ – තැපෑලෙන් එවන ඉල්ලීම්වලට පමණක් නොවේ. ඔබම පිටපත ලබාගන්නේ නම් කාර්යාලයෙන් විමසන්න.",
+        "ta": "சாதாரண அல்லது பதிவுத் தபாலுக்கான முத்திரையுடன் இந்த உறை எல்லா விண்ணப்பங்களுக்கும் தேவை என்று படிவம் கூறுகிறது – தபால் விண்ணப்பங்களுக்கு மட்டும் அல்ல. பிரதியை நீங்களே பெறுவதாக இருந்தால் பதிவகத்தில் கேளுங்கள்."
+      }
+    },
+    {
+      "id": "letter-of-authority",
+      "name": {
+        "en": "Letter of authority from the land owner",
+        "si": "ඉඩම් අයිතිකරුගෙන් බලය පැවරීමේ ලිපිය",
+        "ta": "காணி உரிமையாளரிடமிருந்து அதிகாரக் கடிதம்"
+      },
+      "conditional": {
+        "en": "Only if you are applying for someone else (as their agent)",
+        "si": "වෙනත් අයෙකු වෙනුවෙන් (නියෝජිතයෙකු ලෙස) අයදුම් කරන්නේ නම් පමණි",
+        "ta": "வேறொருவருக்காக (முகவராக) விண்ணப்பித்தால் மட்டும்"
+      }
+    },
+    {
+      "id": "boc-deposit-receipt",
+      "name": {
+        "en": "Bank of Ceylon receipt for the fee",
+        "si": "ගාස්තුව ගෙවූ ලංකා බැංකු රිසිට්පත",
+        "ta": "கட்டணம் செலுத்திய இலங்கை வங்கிப் பற்றுச்சீட்டு"
+      },
+      "conditional": {
+        "en": "Only if you paid at the bank instead of the registry cash counter (for example when applying by post)",
+        "si": "කාර්යාලයේ මුදල් කවුන්ටරය වෙනුවට බැංකුවේ ගෙවූවා නම් පමණි (උදා: තැපෑලෙන් අයදුම් කරන විට)",
+        "ta": "பதிவகக் காசுக் கருமபீடத்திற்குப் பதிலாக வங்கியில் செலுத்தியிருந்தால் மட்டும் (உதா: தபாலில் விண்ணப்பிக்கும்போது)"
+      }
+    },
+    {
+      "id": "court-case-number",
+      "name": {
+        "en": "Court case number",
+        "si": "නඩු අංකය",
+        "ta": "வழக்கு இலக்கம்"
+      },
+      "conditional": {
+        "en": "Only if you need the extract for a court case",
+        "si": "නඩුවක් සඳහා උපුටනය අවශ්‍ය නම් පමණි",
+        "ta": "வழக்கு ஒன்றுக்காகச் சாற்று தேவைப்பட்டால் மட்டும்"
+      }
+    }
+  ],
+  "eligibility": {
+    "en": "The land owner, or a person acting for someone with an interest in the land who has a letter of authority.",
+    "si": "ඉඩම් අයිතිකරු, හෝ ඉඩමට සම්බන්ධ අයෙකු වෙනුවෙන් බලය පැවරීමේ ලිපියක් සහිතව ක්‍රියා කරන අයෙක්.",
+    "ta": "காணி உரிமையாளர், அல்லது காணியில் அக்கறை உள்ள ஒருவருக்காக அதிகாரக் கடிதத்துடன் செயல்படுபவர்."
+  },
+  "steps": [
+    {
+      "en": "Find your land details: district, village, land name, extent and the Division / Volume / Folio number. Look at your deed or an old extract.",
+      "si": "ඉඩමේ විස්තර සොයාගන්න: දිස්ත්‍රික්කය, ගම, ඉඩමේ නම, ප්‍රමාණය සහ කොට්ඨාසය / වෙළුම / පත්‍ර අංකය. ඔබේ ඔප්පුව හෝ පැරණි උපුටනයක් බලන්න.",
+      "ta": "காணி விவரங்களைக் கண்டறியுங்கள்: மாவட்டம், கிராமம், காணியின் பெயர், விஸ்தீரணம், பிரிவு / புத்தகம் / பக்க இலக்கம். உங்கள் உறுதியை அல்லது பழைய சாற்றைப் பாருங்கள்."
+    },
+    {
+      "en": "If you don't know the folio number, first fill Form A33(A) to ask the registry to search the land registers. It asks for the village, land name, extent, Korale, Pattu, GN division and DS division.",
+      "si": "පත්‍ර අංකය නොදන්නේ නම්, ඉඩම් ලේඛන සොයන ලෙස ඉල්ලා මුලින්ම A33(අ) ආකෘතිය පුරවන්න. එහි ගම, ඉඩමේ නම, ප්‍රමාණය, කෝරළය, පත්තුව, ග්‍රාම නිලධාරී වසම සහ ප්‍රාදේශීය ලේකම් කොට්ඨාසය ඉල්ලයි.",
+      "ta": "பக்க இலக்கம் தெரியாவிட்டால், காணிப் பதிவேடுகளைத் தேடுமாறு கேட்டு முதலில் A33(அ) படிவத்தை நிரப்புங்கள். அதில் கிராமம், காணியின் பெயர், விஸ்தீரணம், கோறளை, பற்று, கிராம அலுவலர் பிரிவு, பிரதேச செயலகப் பிரிவு கேட்கப்படும்."
+    },
+    {
+      "en": "Fill Form A32(A). Use one form for each land. Write your name, address and NIC number, the land details, the reason (owner, agent, or court case) and the Division / Volume / Folio. Then sign and date it.",
+      "si": "A32(අ) ආකෘතිය පුරවන්න. එක් ඉඩමකට එක් ආකෘතියක් භාවිත කරන්න. ඔබේ නම, ලිපිනය, ජාතික හැඳුනුම්පත් අංකය, ඉඩමේ විස්තර, හේතුව (අයිතිකරු, නියෝජිත හෝ නඩුවක්) සහ කොට්ඨාසය / වෙළුම / පත්‍රය ලියන්න. ඉන්පසු දිනය ලියා අත්සන් කරන්න.",
+      "ta": "A32(அ) படிவத்தை நிரப்புங்கள். ஒவ்வொரு காணிக்கும் ஒரு படிவம் பயன்படுத்துங்கள். உங்கள் பெயர், முகவரி, தேசிய அடையாள அட்டை இலக்கம், காணி விவரங்கள், காரணம் (உரிமையாளர், முகவர், அல்லது வழக்கு), பிரிவு / புத்தகம் / பக்கம் ஆகியவற்றை எழுதுங்கள். பின்னர் திகதியிட்டுக் கையொப்பமிடுங்கள்."
+    },
+    {
+      "en": "Put your own address on an envelope and stick on enough stamps. Every application needs this envelope.",
+      "si": "කවරයක ඔබේම ලිපිනය ලියා ප්‍රමාණවත් මුද්දර අලවන්න. සෑම ඉල්ලුම් පත්‍රයකටම මෙම කවරය අවශ්‍යයි.",
+      "ta": "ஒரு உறையில் உங்கள் சொந்த முகவரியை எழுதி போதுமான முத்திரைகளை ஒட்டுங்கள். எல்லா விண்ணப்பங்களுக்கும் இந்த உறை தேவை."
+    },
+    {
+      "en": "Pay Rs 120 per extract (or Rs 200 for the fast service) in cash at the registry, or pay at Bank of Ceylon into the Registrar General's account and attach the receipt.",
+      "si": "එක් උපුටනයකට රු. 120ක් (ඉක්මන් සේවාවට රු. 200ක්) කාර්යාලයේ මුදලින් ගෙවන්න, නැත්නම් ලංකා බැංකුවේ රෙජිස්ට්‍රාර් ජනරාල්ගේ ගිණුමට ගෙවා රිසිට්පත අමුණන්න.",
+      "ta": "ஒரு சாற்றுக்கு ரூ. 120 (துரித சேவைக்கு ரூ. 200) ஐ பதிவகத்தில் பணமாகச் செலுத்துங்கள், அல்லது இலங்கை வங்கியில் பதிவாளர் நாயகத்தின் கணக்கில் செலுத்திப் பற்றுச்சீட்டை இணையுங்கள்."
+    },
+    {
+      "en": "Hand it all in at the Land Registry where the land is registered (for Kuruwita, usually Ratnapura – please confirm), in person or by post, on a weekday before 3.00 p.m. if you are paying in cash. If you are an agent, add the owner's letter of authority.",
+      "si": "ඉඩම ලියාපදිංචි කර ඇති ඉඩම් රෙජිස්ට්‍රාර් කාර්යාලයට (කුරුවිට සඳහා සාමාන්‍යයෙන් රත්නපුර – කරුණාකර තහවුරු කරගන්න) සියල්ල පෞද්ගලිකව හෝ තැපෑලෙන් භාර දෙන්න. මුදලින් ගෙවන්නේ නම් සතියේ දිනයක ප.ව. 3.00ට පෙර යන්න. නියෝජිතයෙක් නම් අයිතිකරුගේ බලය පැවරීමේ ලිපිය අමුණන්න.",
+      "ta": "காணி பதிவுசெய்யப்பட்ட காணிப் பதிவகத்தில் (குருவிட்டவுக்கு பொதுவாக இரத்தினபுரி – தயவுசெய்து உறுதிப்படுத்துங்கள்) எல்லாவற்றையும் நேரில் அல்லது தபாலில் கொடுங்கள். பணமாகச் செலுத்தினால் வார நாளில் மாலை 3.00க்கு முன் செல்லுங்கள். முகவர் எனில் உரிமையாளரின் அதிகாரக் கடிதத்தை இணையுங்கள்."
+    },
+    {
+      "en": "After the Registrar approves, the copy is made and checked. Collect it and sign for it, or it is posted to you in your envelope.",
+      "si": "රෙජිස්ට්‍රාර් අනුමත කළ පසු පිටපත සකසා සසඳා බලයි. අත්සන් කර එය ලබාගන්න, නැත්නම් ඔබේ කවරයෙන් තැපෑලෙන් එවයි.",
+      "ta": "பதிவாளர் அனுமதித்த பின் பிரதி தயாரித்து ஒப்பிட்டுப் பார்க்கப்படும். கையொப்பமிட்டுப் பெற்றுக்கொள்ளுங்கள், அல்லது உங்கள் உறையில் தபாலில் அனுப்பப்படும்."
+    },
+    {
+      "en": "Online option: apply at online.land.rgd.gov.lk, pay by Visa or MasterCard, and get the copy in about 5 working days by speed post or from the registry.",
+      "si": "ඔන්ලයින් ක්‍රමය: online.land.rgd.gov.lk හරහා අයදුම් කර Visa හෝ MasterCard කාඩ්පතෙන් ගෙවන්න. වැඩ කරන දින 5කින් පමණ ස්පීඩ් පෝස්ට් මගින් හෝ කාර්යාලයෙන් පිටපත ලැබේ.",
+      "ta": "இணைய வழி: online.land.rgd.gov.lk மூலம் விண்ணப்பித்து Visa அல்லது MasterCard அட்டையால் பணம் செலுத்துங்கள். சுமார் 5 வேலை நாட்களில் துரித தபாலில் அல்லது பதிவகத்தில் பிரதி கிடைக்கும்."
+    }
+  ],
+  "formIds": [
+    "rgd-a32a-land-register-copy-application",
+    "rgd-a33a-land-register-search-application"
+  ],
+  "sources": [
+    {
+      "id": "rgd-extract-service",
+      "title": "Obtaining a certified copy of a land record (extract copies) – Registrar General's Department",
+      "url": "https://www.rgd.gov.lk/web/index.php/en/services/document-land-registration/movable-and-immovable-properties/obtaining-a-certified-copy-of-a-land-record-extract-copies1",
+      "kind": "website",
+      "publisher": "Registrar General's Department",
+      "retrievedAt": "2026-11-24"
+    },
+    {
+      "id": "rgd-a32a-form",
+      "title": "Registration A32(A) – Application for Copy of Land Registers (2016/02 print)",
+      "url": "https://rgd.gov.lk/web/images/application_forms/land/Application_for_copy_of_land_registeres_2017-04-25.pdf",
+      "kind": "form",
+      "publisher": "Registrar General's Department",
+      "retrievedAt": "2026-11-24"
+    },
+    {
+      "id": "rgd-a33a-form",
+      "title": "Registration A33(A) – Application for search of land registers (2016/11 print)",
+      "url": "https://rgd.gov.lk/web/images/application_forms/land/Application_for_search_of_land_registeres_2017-04-25.pdf",
+      "kind": "form",
+      "publisher": "Registrar General's Department",
+      "retrievedAt": "2026-11-24"
+    },
+    {
+      "id": "rgd-land-forms",
+      "title": "Application forms – Land – Registrar General's Department",
+      "url": "https://rgd.gov.lk/web/index.php/en/application-form1/land",
+      "kind": "website",
+      "publisher": "Registrar General's Department",
+      "retrievedAt": "2026-11-24"
+    },
+    {
+      "id": "rgd-online-deed-extract",
+      "title": "Request deed and extract copies via online platform – Registrar General's Department",
+      "url": "https://rgd.gov.lk/web/index.php/en/e-services/e-bmd/request-deed-and-extract-copies-via-online-platform",
+      "kind": "website",
+      "publisher": "Registrar General's Department",
+      "retrievedAt": "2026-11-24"
+    },
+    {
+      "id": "rgd-faqs",
+      "title": "FAQs – Registrar General's Department (A32(A) for a folio copy, A32(B) for a deed copy)",
+      "url": "https://rgd.gov.lk/web/index.php/en/faqs",
+      "kind": "website",
+      "publisher": "Registrar General's Department",
+      "retrievedAt": "2026-11-24"
+    }
+  ],
+  "fieldSources": {
+    "fee": [
+      "rgd-extract-service",
+      "rgd-a32a-form"
+    ],
+    "processingTime": [
+      "rgd-online-deed-extract"
+    ],
+    "officeFlow": [
+      "rgd-extract-service",
+      "rgd-a32a-form",
+      "rgd-online-deed-extract"
+    ],
+    "requiredDocuments": [
+      "rgd-a32a-form",
+      "rgd-extract-service",
+      "rgd-a33a-form"
+    ],
+    "eligibility": [
+      "rgd-extract-service"
+    ],
+    "steps": [
+      "rgd-extract-service",
+      "rgd-a32a-form",
+      "rgd-a33a-form",
+      "rgd-online-deed-extract"
+    ],
+    "formIds": [
+      "rgd-land-forms",
+      "rgd-a32a-form",
+      "rgd-a33a-form",
+      "rgd-faqs"
+    ]
+  },
+  "verification": {
+    "status": "approved",
+    "sourceRef": "rgd-extract-service",
+    "verifiedBy": "ByteMe research team (pending Kuruwita DS officer review)",
+    "verifiedAt": "2026-11-24",
+    "demoData": true
+  }
+}

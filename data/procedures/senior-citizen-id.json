@@ -1,0 +1,277 @@
+{
+  "id": "senior-citizen-id",
+  "version": 1,
+  "category": "welfare-certificates",
+  "name": {
+    "en": "Senior Citizen (Elders') Identity Card",
+    "si": "ජ්‍යෙෂ්ඨ පුරවැසි (වැඩිහිටි) හැඳුනුම්පත",
+    "ta": "சிரேஷ்ட பிரஜைகள் (முதியோர்) அடையாள அட்டை"
+  },
+  "summary": {
+    "en": "If you are 60 or older, you can get an Elders' Identity Card. With it you get priority service at government offices, extra interest on NSB fixed deposits and a 5% discount on medicines at government pharmacies. Apply through your Grama Niladhari or the Social Services unit of the Kuruwita Divisional Secretariat. For low-income elders, the government pays for the photo and the card.",
+    "si": "ඔබට වයස අවුරුදු 60 හෝ ඊට වැඩි නම් වැඩිහිටි හැඳුනුම්පතක් ලබාගත හැක. එමඟින් රජයේ කාර්යාලවල ප්‍රමුඛතා සේවාව, ජාතික ඉතිරි කිරීමේ බැංකුවේ ස්ථාවර තැන්පතුවලට අමතර පොලියක් සහ රජයේ ඔසුසල්වලින් බෙහෙත්වලට 5% වට්ටමක් ලැබේ. ඔබේ ග්‍රාම නිලධාරී හෝ කුරුවිට ප්‍රාදේශීය ලේකම් කාර්යාලයේ සමාජ සේවා අංශය හරහා අයදුම් කරන්න. අඩු ආදායම්ලාභී වැඩිහිටියන්ට ඡායාරූපයේ සහ හැඳුනුම්පතේ වියදම රජය දරයි.",
+    "ta": "உங்களுக்கு 60 வயது அல்லது அதற்கு மேல் என்றால் முதியோர் அடையாள அட்டையைப் பெறலாம். இதன் மூலம் அரச அலுவலகங்களில் முன்னுரிமைச் சேவை, தேசிய சேமிப்பு வங்கி நிலையான வைப்புகளுக்கு மேலதிக வட்டி, அரச மருந்தகங்களில் மருந்துகளுக்கு 5% தள்ளுபடி கிடைக்கும். உங்கள் கிராம அலுவலர் அல்லது குருவிட்ட பிரதேச செயலகத்தின் சமூக சேவைகள் பிரிவு மூலம் விண்ணப்பியுங்கள். குறைந்த வருமானமுள்ள முதியோருக்கு புகைப்படம் மற்றும் அட்டையின் செலவை அரசு ஏற்கும்."
+  },
+  "synonyms": [
+    "senior citizen ID",
+    "senior citizen card",
+    "senior citizen identity card",
+    "elders ID",
+    "elders identity card",
+    "elderly identity card",
+    "elders card",
+    "60 plus card",
+    "National Secretariat for Elders",
+    "NSE",
+    "ජ්‍යෙෂ්ඨ පුරවැසි හැඳුනුම්පත",
+    "වැඩිහිටි හැඳුනුම්පත",
+    "වැඩිහිටි කාඩ්පත",
+    "முதியோர் அடையாள அட்டை",
+    "சிரேஷ்ட பிரஜைகள் அடையாள அட்டை",
+    "wadihiti handunumpatha",
+    "wedihiti handunumpatha",
+    "jyeshta purawasi handunumpatha",
+    "wadihiti ID",
+    "wadihiti card eka",
+    "senior citizen card eka",
+    "muthiyor adayala attai",
+    "muthiyor card",
+    "senior citizen card venum"
+  ],
+  "exampleQuestions": {
+    "en": [
+      "My mother is 62. How can she get a senior citizen ID card?",
+      "What documents are needed for an elders' identity card?",
+      "Is the senior citizen ID card free?",
+      "Where in Kuruwita can my father apply for the elders' card?"
+    ],
+    "si": [
+      "අම්මාට වයස 62යි. වැඩිහිටි හැඳුනුම්පත ගන්නේ කොහොමද?",
+      "ජ්‍යෙෂ්ඨ පුරවැසි හැඳුනුම්පතට මොන ලේඛන ඕනෙද?",
+      "වැඩිහිටි හැඳුනුම්පතට ගාස්තුවක් තියෙනවද?",
+      "තාත්තට වැඩිහිටි හැඳුනුම්පත ගන්න කොහෙද යන්න ඕනේ?"
+    ],
+    "ta": [
+      "என் அம்மாவுக்கு 62 வயது. முதியோர் அடையாள அட்டையை எப்படிப் பெறுவது?",
+      "முதியோர் அடையாள அட்டைக்கு என்ன ஆவணங்கள் தேவை?",
+      "முதியோர் அடையாள அட்டை இலவசமா?",
+      "அப்பாவுக்கு முதியோர் அட்டை எங்கே விண்ணப்பிக்க வேண்டும்?"
+    ],
+    "singlish": [
+      "Thaththata wadihiti ID eka ganna puluwanda?",
+      "Senior citizen card ekata mona documents da one?",
+      "Wadihiti handunumpatha ganna koheda yanna one?",
+      "Ammata 65i, senior citizen card eka free da?"
+    ],
+    "tanglish": [
+      "Appa ku senior citizen card eppadi edukkiradhu?",
+      "Muthiyor ID card ku enna documents venum?",
+      "Senior citizen card free ah?",
+      "Amma ku 60 vayasu aachu, muthiyor card enga edukkalam?"
+    ]
+  },
+  "officeType": "DS",
+  "officeFlow": {
+    "en": "You fill the Elders' Identity Card application → your Grama Niladhari certifies it (needed if you have no NIC yet, or to confirm you are low-income / Samurdhi) → the Social Services Officer or Elders' Rights Promotion Assistant at the Kuruwita Divisional Secretariat recommends it → the Divisional Secretary approves and the card is issued. You can get the card through the GN office, the DS office or the National Secretariat for Elders.",
+    "si": "ඔබ වැඩිහිටි හැඳුනුම්පත් ඉල්ලුම් පත්‍රය පුරවයි → ඔබේ ග්‍රාම නිලධාරී සහතික කරයි (ජාතික හැඳුනුම්පත තවම නැත්නම්, හෝ අඩු ආදායම්ලාභී / සමෘද්ධි බව තහවුරු කිරීමට) → කුරුවිට ප්‍රාදේශීය ලේකම් කාර්යාලයේ සමාජ සේවා නිලධාරී හෝ වැඩිහිටි හිමිකම් ප්‍රවර්ධන සහකාර නිර්දේශ කරයි → ප්‍රාදේශීය ලේකම් අනුමත කර හැඳුනුම්පත නිකුත් කෙරේ. හැඳුනුම්පත ග්‍රාම නිලධාරී කාර්යාලය, ප්‍රාදේශීය ලේකම් කාර්යාලය හෝ වැඩිහිටියන් සඳහා වූ ජාතික ලේකම් කාර්යාලය හරහා ලබාගත හැක.",
+    "ta": "நீங்கள் முதியோர் அடையாள அட்டை விண்ணப்பத்தை நிரப்புகிறீர்கள் → உங்கள் கிராம அலுவலர் சான்றுப்படுத்துவார் (தேசிய அடையாள அட்டை இன்னும் இல்லையெனில், அல்லது குறைந்த வருமானம் / சமுர்த்தி என்பதை உறுதிப்படுத்த) → குருவிட்ட பிரதேச செயலகத்தின் சமூக சேவைகள் உத்தியோகத்தர் அல்லது முதியோர் உரிமைகள் மேம்பாட்டு உதவியாளர் பரிந்துரைப்பார் → பிரதேச செயலாளர் அனுமதித்து அட்டை வழங்கப்படும். அட்டையை கிராம அலுவலர் அலுவலகம், பிரதேச செயலகம் அல்லது முதியோருக்கான தேசிய செயலகம் மூலம் பெறலாம்."
+  },
+  "fee": {
+    "amountLkr": null,
+    "isFree": false,
+    "text": {
+      "en": "Free for low-income elders – the government pays for the photo and the card. For others, no official fee is published; please ask the Kuruwita DS Social Services unit.",
+      "si": "අඩු ආදායම්ලාභී වැඩිහිටියන්ට නොමිලේ – ඡායාරූපයේ සහ හැඳුනුම්පතේ වියදම රජය දරයි. අනෙක් අයට නිල ගාස්තුවක් ප්‍රකාශයට පත් කර නැත; කරුණාකර කුරුවිට ප්‍රාදේශීය ලේකම් කාර්යාලයේ සමාජ සේවා අංශයෙන් විමසන්න.",
+      "ta": "குறைந்த வருமானமுள்ள முதியோருக்கு இலவசம் – புகைப்படம் மற்றும் அட்டையின் செலவை அரசு ஏற்கும். மற்றவர்களுக்கு அதிகாரப்பூர்வ கட்டணம் வெளியிடப்படவில்லை; குருவிட்ட பிரதேச செயலக சமூக சேவைகள் பிரிவில் கேளுங்கள்."
+    },
+    "short": {
+      "en": "Free for low income",
+      "si": "අඩු ආදායම්ලාභීන්ට නොමිලේ",
+      "ta": "குறைந்த வருமானத்தினருக்கு இலவசம்"
+    }
+  },
+  "processingTime": {
+    "minDays": 14,
+    "maxDays": 28,
+    "text": {
+      "en": "About 2 to 4 weeks (estimate only – no official time is published, so please check with the DS office).",
+      "si": "සති 2 සිට 4 දක්වා පමණ (ඇස්තමේන්තුවක් පමණි – නිල කාලයක් ප්‍රකාශයට පත් කර නැති නිසා ප්‍රාදේශීය ලේකම් කාර්යාලයෙන් විමසන්න).",
+      "ta": "சுமார் 2 முதல் 4 வாரங்கள் (மதிப்பீடு மட்டும் – அதிகாரப்பூர்வ கால அளவு வெளியிடப்படவில்லை, எனவே பிரதேச செயலகத்தில் கேளுங்கள்)."
+    },
+    "short": {
+      "en": "2 – 4 weeks",
+      "si": "සති 2 – 4",
+      "ta": "2 – 4 வாரம்"
+    }
+  },
+  "requiredDocuments": [
+    {
+      "id": "elders-id-application-form",
+      "name": {
+        "en": "Filled Elders' Identity Card application form",
+        "si": "පුරවන ලද වැඩිහිටි හැඳුනුම්පත් ඉල්ලුම් පත්‍රය",
+        "ta": "நிரப்பிய முதியோர் அடையாள அட்டை விண்ணப்பப் படிவம்"
+      },
+      "note": {
+        "en": "Available from your Grama Niladhari, the Kuruwita DS office, or the Kuruwita DS website (Downloads).",
+        "si": "ග්‍රාම නිලධාරීගෙන්, කුරුවිට ප්‍රාදේශීය ලේකම් කාර්යාලයෙන් හෝ කුරුවිට ප්‍රාදේශීය ලේකම් වෙබ් අඩවියෙන් (බාගැනීම්) ලබාගත හැක.",
+        "ta": "கிராம அலுவலர், குருவிட்ட பிரதேச செயலகம் அல்லது குருவிட்ட பிரதேச செயலக இணையத்தளத்தில் (பதிவிறக்கங்கள்) கிடைக்கும்."
+      },
+      "aiCanPrefill": true,
+      "formId": "nce-elders-id-application"
+    },
+    {
+      "id": "nic",
+      "name": {
+        "en": "Your National Identity Card (shows you are 60 or older)",
+        "si": "ඔබේ ජාතික හැඳුනුම්පත (වයස අවුරුදු 60 හෝ ඊට වැඩි බව පෙන්වයි)",
+        "ta": "உங்கள் தேசிய அடையாள அட்டை (60 வயது அல்லது அதற்கு மேல் என்பதைக் காட்டும்)"
+      }
+    },
+    {
+      "id": "birth-certificate",
+      "name": {
+        "en": "Birth certificate",
+        "si": "උප්පැන්න සහතිකය",
+        "ta": "பிறப்புச் சான்றிதழ்"
+      },
+      "conditional": {
+        "en": "Only if your age is not clear from your NIC",
+        "si": "ජාතික හැඳුනුම්පතෙන් ඔබේ වයස පැහැදිලි නැත්නම් පමණි",
+        "ta": "தேசிய அடையாள அட்டையில் உங்கள் வயது தெளிவாக இல்லையென்றால் மட்டும்"
+      }
+    },
+    {
+      "id": "passport-photo",
+      "name": {
+        "en": "One passport-size photograph",
+        "si": "පාස්පෝට් ප්‍රමාණයේ ඡායාරූපයක්",
+        "ta": "கடவுச்சீட்டு அளவு புகைப்படம் ஒன்று"
+      }
+    },
+    {
+      "id": "gn-certification",
+      "name": {
+        "en": "Grama Niladhari certification on the form (your residence, and low-income / Samurdhi / Mahapola status)",
+        "si": "ආකෘතියේම ග්‍රාම නිලධාරී සහතිකය (ඔබේ පදිංචිය සහ අඩු ආදායම්ලාභී / සමෘද්ධි / මහපොළ ලාභී බව)",
+        "ta": "படிவத்திலேயே கிராம அலுவலர் சான்றுப்படுத்தல் (உங்கள் வதிவிடம், குறைந்த வருமானம் / சமுர்த்தி / மகாபொல நிலை)"
+      },
+      "conditional": {
+        "en": "If you have no NIC yet, or if you are applying for the free low-income card",
+        "si": "ජාතික හැඳුනුම්පත තවම නැත්නම්, හෝ අඩු ආදායම්ලාභී (නොමිලේ) හැඳුනුම්පත සඳහා අයදුම් කරන්නේ නම්",
+        "ta": "தேசிய அடையாள அட்டை இன்னும் இல்லையெனில், அல்லது குறைந்த வருமான (இலவச) அட்டைக்கு விண்ணப்பித்தால்"
+      }
+    }
+  ],
+  "eligibility": {
+    "en": "Sri Lankan citizens who have completed 60 years of age. The free version of the card is for low-income, Samurdhi or Mahapola families.",
+    "si": "වයස අවුරුදු 60 සම්පූර්ණ කළ ශ්‍රී ලාංකික පුරවැසියන්. නොමිලේ හැඳුනුම්පත අඩු ආදායම්ලාභී, සමෘද්ධි හෝ මහපොළ ලාභී පවුල් සඳහායි.",
+    "ta": "60 வயதைப் பூர்த்தி செய்த இலங்கைப் பிரஜைகள். இலவச அட்டை குறைந்த வருமானம், சமுர்த்தி அல்லது மகாபொல குடும்பங்களுக்கானது."
+  },
+  "steps": [
+    {
+      "en": "Check that you are 60 or older (look at the date of birth on your NIC).",
+      "si": "ඔබට වයස අවුරුදු 60 හෝ ඊට වැඩි බව බලන්න (ජාතික හැඳුනුම්පතේ උපන් දිනය බලන්න).",
+      "ta": "உங்களுக்கு 60 வயது அல்லது அதற்கு மேல் என்பதைப் பாருங்கள் (தேசிய அடையாள அட்டையில் பிறந்த திகதியைப் பாருங்கள்)."
+    },
+    {
+      "en": "Get the Elders' Identity Card application from your Grama Niladhari, the Social Services unit of the Kuruwita DS office, or the Kuruwita DS website.",
+      "si": "වැඩිහිටි හැඳුනුම්පත් ඉල්ලුම් පත්‍රය ග්‍රාම නිලධාරීගෙන්, කුරුවිට ප්‍රාදේශීය ලේකම් කාර්යාලයේ සමාජ සේවා අංශයෙන් හෝ කුරුවිට ප්‍රාදේශීය ලේකම් වෙබ් අඩවියෙන් ලබාගන්න.",
+      "ta": "முதியோர் அடையாள அட்டை விண்ணப்பத்தை கிராம அலுவலர், குருவிட்ட பிரதேச செயலகத்தின் சமூக சேவைகள் பிரிவு அல்லது குருவிட்ட பிரதேச செயலக இணையத்தளத்தில் பெறுங்கள்."
+    },
+    {
+      "en": "Fill in your full name, name with initials, phone number, address, sex, job, post office, date of birth, NIC number, GN division, DS division and district. Then sign and write the date.",
+      "si": "සම්පූර්ණ නම, මුලකුරු සමඟ නම, දුරකථන අංකය, ලිපිනය, ස්ත්‍රී/පුරුෂ භාවය, රැකියාව, තැපැල් කාර්යාලය, උපන් දිනය, හැඳුනුම්පත් අංකය, ග්‍රාම නිලධාරී වසම, ප්‍රාදේශීය ලේකම් කොට්ඨාසය සහ දිස්ත්‍රික්කය පුරවන්න. ඉන්පසු දිනය ලියා අත්සන් කරන්න.",
+      "ta": "முழுப் பெயர், முதலெழுத்துகளுடன் பெயர், தொலைபேசி இலக்கம், முகவரி, பால், தொழில், தபால் அலுவலகம், பிறந்த திகதி, அடையாள அட்டை இலக்கம், கிராம அலுவலர் பிரிவு, பிரதேச செயலகப் பிரிவு, மாவட்டம் ஆகியவற்றை நிரப்புங்கள். பின்னர் திகதியிட்டு கையொப்பமிடுங்கள்."
+    },
+    {
+      "en": "If you have no NIC, or you want the free low-income card, ask your Grama Niladhari to fill and sign the GN part of the form.",
+      "si": "ජාතික හැඳුනුම්පත නැත්නම් හෝ නොමිලේ අඩු ආදායම්ලාභී හැඳුනුම්පත අවශ්‍ය නම්, ආකෘතියේ ග්‍රාම නිලධාරී කොටස පුරවා අත්සන් කරන ලෙස ග්‍රාම නිලධාරීගෙන් ඉල්ලන්න.",
+      "ta": "தேசிய அடையாள அட்டை இல்லையெனில் அல்லது இலவச குறைந்த வருமான அட்டை வேண்டுமெனில், படிவத்தின் கிராம அலுவலர் பகுதியை நிரப்பி கையொப்பமிடுமாறு கிராம அலுவலரிடம் கேளுங்கள்."
+    },
+    {
+      "en": "Hand in the form with your NIC and one passport-size photo to the Social Services Officer or Elders' Rights Promotion Assistant at the Kuruwita DS office.",
+      "si": "ඉල්ලුම් පත්‍රය, ඔබේ ජාතික හැඳුනුම්පත සහ පාස්පෝට් ප්‍රමාණයේ ඡායාරූපයක් කුරුවිට ප්‍රාදේශීය ලේකම් කාර්යාලයේ සමාජ සේවා නිලධාරී හෝ වැඩිහිටි හිමිකම් ප්‍රවර්ධන සහකාර වෙත භාර දෙන්න.",
+      "ta": "விண்ணப்பம், உங்கள் தேசிய அடையாள அட்டை, கடவுச்சீட்டு அளவு புகைப்படம் ஒன்றுடன் குருவிட்ட பிரதேச செயலகத்தின் சமூக சேவைகள் உத்தியோகத்தர் அல்லது முதியோர் உரிமைகள் மேம்பாட்டு உதவியாளரிடம் கையளியுங்கள்."
+    },
+    {
+      "en": "After the Divisional Secretary approves, the card is issued. Collect it from the DS office or through your Grama Niladhari.",
+      "si": "ප්‍රාදේශීය ලේකම් අනුමත කළ පසු හැඳුනුම්පත නිකුත් කෙරේ. එය ප්‍රාදේශීය ලේකම් කාර්යාලයෙන් හෝ ග්‍රාම නිලධාරී හරහා ලබාගන්න.",
+      "ta": "பிரதேச செயலாளர் அனுமதித்த பின் அட்டை வழங்கப்படும். அதை பிரதேச செயலகத்தில் அல்லது கிராம அலுவலர் மூலம் பெற்றுக்கொள்ளுங்கள்."
+    }
+  ],
+  "formIds": [
+    "nce-elders-id-application"
+  ],
+  "sources": [
+    {
+      "id": "kuruwita-ds-elders-id-form",
+      "title": "Elderly Identity Card Application (National Council for Elders, low-income) – Kuruwita Divisional Secretariat",
+      "url": "http://www.kuruvita.ds.gov.lk/images/ID_FOR_ELDERS.pdf",
+      "kind": "form",
+      "publisher": "Divisional Secretariat, Kuruwita",
+      "retrievedAt": "2026-11-24"
+    },
+    {
+      "id": "kuruwita-ds-downloads",
+      "title": "Kuruwita Divisional Secretariat – Downloads (Elderly Identity Card Application)",
+      "url": "http://www.kuruvita.ds.gov.lk/index.php/en/downloads.html",
+      "kind": "website",
+      "publisher": "Divisional Secretariat, Kuruwita",
+      "retrievedAt": "2026-11-24"
+    },
+    {
+      "id": "welipitiya-ds-social-welfare",
+      "title": "Welipitiya Divisional Secretariat – Social welfare and benefits (Senior citizen identity card)",
+      "url": "http://www.welipitiya.ds.gov.lk/index.php/en/social-welfare-and-benefits.html",
+      "kind": "website",
+      "publisher": "Divisional Secretariat, Welipitiya",
+      "retrievedAt": "2026-11-24"
+    },
+    {
+      "id": "mrds-national-secretariat-elders",
+      "title": "National Secretariat for Elders – Protection of the Rights of Elders Act No. 9 of 2000 (amended by Act No. 5 of 2011)",
+      "url": "https://www.mrds.gov.lk/ns_elders.html",
+      "kind": "website",
+      "publisher": "mrds.gov.lk (Ministry page for the National Secretariat for Elders)",
+      "retrievedAt": "2026-11-24"
+    }
+  ],
+  "fieldSources": {
+    "fee": [
+      "kuruwita-ds-elders-id-form"
+    ],
+    "processingTime": [
+      "welipitiya-ds-social-welfare"
+    ],
+    "officeFlow": [
+      "kuruwita-ds-elders-id-form",
+      "welipitiya-ds-social-welfare"
+    ],
+    "requiredDocuments": [
+      "kuruwita-ds-downloads",
+      "kuruwita-ds-elders-id-form",
+      "welipitiya-ds-social-welfare"
+    ],
+    "eligibility": [
+      "mrds-national-secretariat-elders",
+      "welipitiya-ds-social-welfare"
+    ],
+    "steps": [
+      "kuruwita-ds-downloads",
+      "kuruwita-ds-elders-id-form",
+      "welipitiya-ds-social-welfare"
+    ],
+    "formIds": [
+      "kuruwita-ds-downloads",
+      "kuruwita-ds-elders-id-form"
+    ]
+  },
+  "verification": {
+    "status": "approved",
+    "sourceRef": "kuruwita-ds-elders-id-form",
+    "verifiedBy": "ByteMe research team (pending Kuruwita DS officer review)",
+    "verifiedAt": "2026-11-24",
+    "demoData": true
+  }
+}

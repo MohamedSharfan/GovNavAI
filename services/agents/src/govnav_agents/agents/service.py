@@ -15,7 +15,7 @@ from govnav_agents.agents.root import S_CARD, S_CURRENT, S_META, S_TRACE, GovNav
 from govnav_agents.schemas import AskRequest, AskResponse
 
 log = logging.getLogger(__name__)
-APP_NAME = "govnav"
+APP_NAME = "agents"  # ADK infers the app name from the agent package directory
 USER_ID = "citizen"  # citizens are anonymous; sessions are in-memory and expire with the process
 
 

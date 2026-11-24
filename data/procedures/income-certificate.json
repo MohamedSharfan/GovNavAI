@@ -1,0 +1,377 @@
+{
+  "id": "income-certificate",
+  "version": 1,
+  "category": "welfare-certificates",
+  "name": {
+    "en": "Income Certificate",
+    "si": "ආදායම් සහතිකය",
+    "ta": "வருமானச் சான்றிதழ்"
+  },
+  "summary": {
+    "en": "An official paper from the Divisional Secretariat that says how much you or your family earn. Universities ask for it for Mahapola and bursary scholarships, and other offices may ask for it too. First your Grama Niladhari checks your income and recommends you. Then the Kuruwita Divisional Secretariat issues the certificate, usually within half an hour.",
+    "si": "ඔබ හෝ ඔබේ පවුල කීයක් උපයනවාද කියා ප්‍රාදේශීය ලේකම් කාර්යාලය නිල වශයෙන් සහතික කරන ලියවිල්ලයි. මහපොළ සහ ශිෂ්‍යාධාර සඳහා විශ්වවිද්‍යාල මෙය ඉල්ලනවා. වෙනත් ආයතනත් ඉල්ලන්න පුළුවන්. මුලින්ම ඔබේ ග්‍රාම නිලධාරී ඔබේ ආදායම බලා නිර්දේශ කරනවා. ඊට පස්සේ කුරුවිට ප්‍රාදේශීය ලේකම් කාර්යාලය සාමාන්‍යයෙන් පැය භාගයක් ඇතුළත සහතිකය දෙනවා.",
+    "ta": "நீங்கள் அல்லது உங்கள் குடும்பம் எவ்வளவு சம்பாதிக்கிறீர்கள் என்பதை பிரதேச செயலகம் அதிகாரபூர்வமாக உறுதிப்படுத்தும் ஆவணம். மகாபொல மற்றும் புலமைப்பரிசில் உதவிக்குப் பல்கலைக்கழகங்கள் இதைக் கேட்கும். வேறு அலுவலகங்களும் கேட்கலாம். முதலில் உங்கள் கிராம உத்தியோகத்தர் உங்கள் வருமானத்தைப் பார்த்துப் பரிந்துரைப்பார். பின்னர் குருவிட்ட பிரதேச செயலகம் பொதுவாக அரை மணி நேரத்துக்குள் சான்றிதழை வழங்கும்."
+  },
+  "synonyms": [
+    "income certificate",
+    "income cert",
+    "income certificate ekak",
+    "aadayam sahathikaya",
+    "adayam sahathikaya",
+    "aadaayam sahathika",
+    "adayam sahathika",
+    "aadayam certificate",
+    "ආදායම් සහතිකය",
+    "ආදායම් සහතික",
+    "ආදායම් සහතිකයක්",
+    "varumana saanrithal",
+    "varumana saanridhal",
+    "varumaana saandrithal",
+    "varumana certificate",
+    "வருமானச் சான்றிதழ்",
+    "வருமான சான்றிதழ்",
+    "mahapola income certificate",
+    "mahapola",
+    "මහපොළ",
+    "மகாபொல",
+    "bursary income certificate",
+    "shishyadhara",
+    "annual income certificate",
+    "monthly income report",
+    "family income proof",
+    "proof of income",
+    "salary proof DS"
+  ],
+  "exampleQuestions": {
+    "en": [
+      "How do I get an income certificate for my daughter's Mahapola scholarship?",
+      "What documents do I need for an income certificate at Kuruwita DS office?",
+      "How long does it take to get an income certificate?",
+      "How much do I have to pay for an income certificate?",
+      "I grow tea, how do I prove my income for my son's university bursary?"
+    ],
+    "si": [
+      "දුවගේ මහපොළ ශිෂ්‍යත්වයට ආදායම් සහතිකයක් ගන්නේ කොහොමද?",
+      "ආදායම් සහතිකයක් ගන්න මොන ලියකියවිලිද ඕනේ?",
+      "ආදායම් සහතිකයකට කීයක් ගෙවන්න ඕනද?",
+      "ආදායම් සහතිකය ගන්න කොච්චර කල් යනවද?",
+      "මම තේ වවන්නේ, පුතාගේ ශිෂ්‍යාධාරයට ආදායම ඔප්පු කරන්නේ කොහොමද?"
+    ],
+    "ta": [
+      "மகளின் மகாபொல புலமைப்பரிசிலுக்கு வருமானச் சான்றிதழ் எப்படிப் பெறுவது?",
+      "வருமானச் சான்றிதழுக்கு என்ன ஆவணங்கள் தேவை?",
+      "வருமானச் சான்றிதழ் பெற எவ்வளவு நாள் ஆகும்?",
+      "வருமானச் சான்றிதழுக்கு எவ்வளவு கட்டணம்?",
+      "நான் தேயிலை பயிரிடுகிறேன், மகனின் பல்கலைக்கழக உதவிக்கு வருமானத்தை எப்படி நிரூபிப்பது?"
+    ],
+    "singlish": [
+      "mata income certificate ekak ona duwage mahapola ekata",
+      "aadayam sahathikayak ganna mokadda karanna one?",
+      "mahapola walata income certificate eka ganne kohomada?",
+      "income certificate ekata keeyak gewanna one?",
+      "adayam sahathikaya ganna mona documents da ona?"
+    ],
+    "tanglish": [
+      "enakku varumana saanrithal venum magalukku mahapola ku",
+      "varumana certificate eppadi edukkirathu?",
+      "mahapola ku income certificate venum, enna documents venum?",
+      "income certificate edukka evlo naal aagum?",
+      "varumana saanrithal ku evlo kaasu kattanum?"
+    ]
+  },
+  "officeType": "DS",
+  "officeFlow": {
+    "en": "Two offices, in this order. 1) Your Grama Niladhari (the GN of the division where you live) checks your income and writes a recommendation on your application. This can take up to 3 days. 2) You take the recommended form to the Kuruwita Divisional Secretariat. The Divisional Secretary, an Assistant Divisional Secretary or the Administrative Officer approves it, you pay the fee at the cash counter, and the certificate is issued.",
+    "si": "කාර්යාල දෙකකට, මේ පිළිවෙළට යන්න ඕනේ. 1) ඔබ පදිංචි වසමේ ග්‍රාම නිලධාරී ඔබේ ආදායම බලා අයදුම්පතේ නිර්දේශයක් ලියනවා. මේකට දින 3ක් දක්වා ගත විය හැකියි. 2) නිර්දේශ කළ අයදුම්පත කුරුවිට ප්‍රාදේශීය ලේකම් කාර්යාලයට ගෙනියන්න. ප්‍රාදේශීය ලේකම්, සහකාර ප්‍රාදේශීය ලේකම් හෝ පරිපාලන නිලධාරී අනුමත කළාට පස්සේ මුදල් කවුළුවේ ගාස්තුව ගෙවලා සහතිකය ලබාගන්න.",
+    "ta": "இரண்டு அலுவலகங்கள், இந்த வரிசையில். 1) நீங்கள் வசிக்கும் பிரிவின் கிராம உத்தியோகத்தர் உங்கள் வருமானத்தைச் சரிபார்த்து விண்ணப்பத்தில் பரிந்துரை எழுதுவார். இதற்கு 3 நாட்கள் வரை ஆகலாம். 2) பரிந்துரைக்கப்பட்ட படிவத்தை குருவிட்ட பிரதேச செயலகத்துக்குக் கொண்டு செல்லுங்கள். பிரதேச செயலாளர், உதவிப் பிரதேச செயலாளர் அல்லது நிர்வாக உத்தியோகத்தர் அனுமதித்த பின், காசாளர் கருமபீடத்தில் கட்டணம் செலுத்தி சான்றிதழைப் பெறுங்கள்."
+  },
+  "fee": {
+    "amountLkr": null,
+    "isFree": false,
+    "text": {
+      "en": "A small charge based on your income: 1.27% of your yearly income (for example Rs 1,270 if the family earns Rs 100,000 a year). This is the rate published by another DS office (Beruwala). Kuruwita DS does not publish its fee, so please ask at the counter.",
+      "si": "ඔබේ ආදායම අනුව ගාස්තුවක්: වාර්ෂික ආදායමෙන් 1.27% (උදා: පවුලේ අවුරුද්දකට ආදායම රු. 100,000 නම් රු. 1,270). මේ අනුපාතය ප්‍රකාශ කර ඇත්තේ වෙනත් ප්‍රාදේශීය ලේකම් කාර්යාලයක් (බේරුවල). කුරුවිට ප්‍රාදේශීය ලේකම් කාර්යාලය ගාස්තුව ප්‍රකාශ කර නැති නිසා කවුළුවෙන් අහලා බලන්න.",
+      "ta": "உங்கள் வருமானத்தைப் பொறுத்த சிறு கட்டணம்: வருட வருமானத்தில் 1.27% (உதா: குடும்பத்தின் வருட வருமானம் ரூ. 100,000 என்றால் ரூ. 1,270). இந்த வீதத்தை வேறொரு பிரதேச செயலகம் (பேருவளை) வெளியிட்டுள்ளது. குருவிட்ட பிரதேச செயலகம் கட்டணத்தை வெளியிடவில்லை, எனவே கருமபீடத்தில் கேட்டுக்கொள்ளுங்கள்."
+    }
+  },
+  "processingTime": {
+    "minDays": null,
+    "maxDays": 3,
+    "text": {
+      "en": "Up to 3 days at the Grama Niladhari, then about half an hour at the DS office",
+      "si": "ග්‍රාම නිලධාරී ළඟ දින 3ක් දක්වා, පසුව ප්‍රාදේශීය ලේකම් කාර්යාලයේ පැය භාගයක් පමණ",
+      "ta": "கிராம உத்தியோகத்தரிடம் 3 நாட்கள் வரை, பின்னர் பிரதேச செயலகத்தில் சுமார் அரை மணி நேரம்"
+    }
+  },
+  "requiredDocuments": [
+    {
+      "id": "application-form",
+      "name": {
+        "en": "Income certificate application form, filled in and recommended by your Grama Niladhari",
+        "si": "පුරවා ග්‍රාම නිලධාරී නිර්දේශ කළ ආදායම් සහතික අයදුම්පත",
+        "ta": "நிரப்பப்பட்டு கிராம உத்தியோகத்தர் பரிந்துரைத்த வருமானச் சான்றிதழ் விண்ணப்பப் படிவம்"
+      },
+      "note": {
+        "en": "GovNavAI can fill in your part. Sign it yourself, and leave the GN and office sections empty.",
+        "si": "ඔබේ කොටස GovNavAI පුරවා දෙයි. අත්සන ඔබම තබන්න. ග්‍රාම නිලධාරී සහ කාර්යාල කොටස් හිස්ව තබන්න.",
+        "ta": "உங்கள் பகுதியை GovNavAI நிரப்பித் தரும். கையொப்பத்தை நீங்களே இடுங்கள். கிராம உத்தியோகத்தர், அலுவலகப் பகுதிகளை வெறுமையாக விடுங்கள்."
+      },
+      "aiCanPrefill": true,
+      "formId": "imbulpe-ds-income-certificate-request"
+    },
+    {
+      "id": "request-letter",
+      "name": {
+        "en": "Short request letter: why you need the certificate and where you will hand it in (for example, Mahapola at the university)",
+        "si": "කෙටි ඉල්ලීම් ලිපියක්: සහතිකය ඕනේ ඇයි, කොහෙටද භාර දෙන්නේ (උදා: විශ්වවිද්‍යාලයේ මහපොළ සඳහා)",
+        "ta": "சிறு கோரிக்கைக் கடிதம்: சான்றிதழ் ஏன் தேவை, எங்கே கொடுக்கப்போகிறீர்கள் (உதா: பல்கலைக்கழக மகாபொல)"
+      },
+      "aiCanPrefill": true
+    },
+    {
+      "id": "proof-of-income",
+      "name": {
+        "en": "Proof of your income for the last 3 months (the 3 months before this month)",
+        "si": "පසුගිය මාස 3 ක ආදායම පෙන්වන සාක්ෂි (මේ මාසයට කලින් මාස 3)",
+        "ta": "கடந்த 3 மாத வருமானத்துக்கான ஆதாரங்கள் (இந்த மாதத்துக்கு முந்தைய 3 மாதங்கள்)"
+      },
+      "aiCanPrefill": false
+    },
+    {
+      "id": "nic",
+      "name": {
+        "en": "National Identity Card",
+        "si": "ජාතික හැඳුනුම්පත",
+        "ta": "தேசிய அடையாள அட்டை"
+      },
+      "note": {
+        "en": "The form asks for your NIC number next to your signature. Bring the card so the number is correct.",
+        "si": "අත්සන ළඟ හැඳුනුම්පත් අංකය ලියන්න ඕනේ. අංකය හරියට ලියන්න කාඩ්පත අරන් යන්න.",
+        "ta": "கையொப்பத்துக்கு அருகில் அடையாள அட்டை இலக்கம் கேட்கப்படும். இலக்கம் சரியாக இருக்க அட்டையைக் கொண்டு செல்லுங்கள்."
+      },
+      "aiCanPrefill": false
+    },
+    {
+      "id": "salary-details",
+      "name": {
+        "en": "Salary details from your employer",
+        "si": "රැකියාව කරන ආයතනයෙන් වැටුප් විස්තර",
+        "ta": "வேலை செய்யும் நிறுவனத்திலிருந்து சம்பள விபரங்கள்"
+      },
+      "conditional": {
+        "en": "If you earn from a job",
+        "si": "ඔබ රැකියාවකින් උපයනවා නම්",
+        "ta": "வேலையிலிருந்து வருமானம் பெற்றால்"
+      },
+      "aiCanPrefill": false
+    },
+    {
+      "id": "business-registration",
+      "name": {
+        "en": "Business name registration certificate",
+        "si": "ව්‍යාපාර නාම ලියාපදිංචි සහතිකය",
+        "ta": "வணிகப் பெயர் பதிவுச் சான்றிதழ்"
+      },
+      "conditional": {
+        "en": "If you earn from a business or a shop",
+        "si": "ඔබ ව්‍යාපාරයකින් හෝ කඩයකින් උපයනවා නම්",
+        "ta": "வணிகம் அல்லது கடையிலிருந்து வருமானம் பெற்றால்"
+      },
+      "aiCanPrefill": false
+    },
+    {
+      "id": "tea-land-and-leaf-bills",
+      "name": {
+        "en": "Certified copy of your land documents, and tea leaf bills for the last 3 months",
+        "si": "ඉඩම් ලියවිලිවල සහතික කළ පිටපත සහ ළඟම මාස 3 ක දළු බිල්පත්",
+        "ta": "நில ஆவணங்களின் சான்றுப்படுத்திய பிரதி மற்றும் அண்மைய 3 மாத தேயிலைக் கொழுந்து பற்றுச்சீட்டுகள்"
+      },
+      "conditional": {
+        "en": "If you earn from tea growing",
+        "si": "ඔබ තේ වගාවෙන් උපයනවා නම්",
+        "ta": "தேயிலைப் பயிர்ச்செய்கையிலிருந்து வருமானம் பெற்றால்"
+      },
+      "aiCanPrefill": false
+    },
+    {
+      "id": "income-affidavit",
+      "name": {
+        "en": "Affidavit (sworn statement) about your income",
+        "si": "ආදායම ගැන දිවුරුම් ප්‍රකාශයක්",
+        "ta": "வருமானம் தொடர்பான சத்தியக் கடதாசி"
+      },
+      "note": {
+        "en": "This rule comes from another DS office (Beruwala), so ask at Kuruwita whether you need it.",
+        "si": "මේ නීතිය වෙනත් ප්‍රාදේශීය ලේකම් කාර්යාලයක (බේරුවල) එකක්. ඔබට මෙය ඕනද කියා කුරුවිටින් අහලා බලන්න.",
+        "ta": "இது வேறொரு பிரதேச செயலகத்தின் (பேருவளை) விதி. உங்களுக்குத் தேவையா என்று குருவிட்டவில் கேட்டுக்கொள்ளுங்கள்."
+      },
+      "conditional": {
+        "en": "If your monthly income is more than Rs 15,000",
+        "si": "ඔබේ මාසික ආදායම රු. 15,000 ට වැඩි නම්",
+        "ta": "உங்கள் மாத வருமானம் ரூ. 15,000 க்கு மேல் என்றால்"
+      },
+      "aiCanPrefill": false
+    },
+    {
+      "id": "driving-licence-and-vehicle-book",
+      "name": {
+        "en": "Driving licence and the vehicle registration book",
+        "si": "රියදුරු බලපත්‍රය සහ වාහනයේ පොත",
+        "ta": "சாரதி அனுமதிப்பத்திரம் மற்றும் வாகனப் பதிவுப் புத்தகம்"
+      },
+      "conditional": {
+        "en": "If you work as a driver",
+        "si": "ඔබ රියදුරෙකු ලෙස වැඩ කරනවා නම්",
+        "ta": "நீங்கள் சாரதியாக வேலை செய்தால்"
+      },
+      "aiCanPrefill": false
+    }
+  ],
+  "eligibility": {
+    "en": "Anyone who lives permanently in a Grama Niladhari division of the Kuruwita DS area and needs official proof of their own or their family's income, for example for a Mahapola or university bursary application.",
+    "si": "කුරුවිට ප්‍රාදේශීය ලේකම් කොට්ඨාසයේ ග්‍රාම නිලධාරී වසමක ස්ථිරව පදිංචි, තමාගේ හෝ පවුලේ ආදායමට නිල සාක්ෂියක් ඕනෑ ඕනෑම කෙනෙකුට. උදා: මහපොළ හෝ විශ්වවිද්‍යාල ශිෂ්‍යාධාර අයදුම්පතකට.",
+    "ta": "குருவிட்ட பிரதேச செயலகப் பகுதியின் கிராம உத்தியோகத்தர் பிரிவில் நிரந்தரமாக வசித்து, தனது அல்லது குடும்பத்தின் வருமானத்துக்கு அதிகாரபூர்வ ஆதாரம் தேவைப்படும் எவரும். உதா: மகாபொல அல்லது பல்கலைக்கழகப் புலமைப்பரிசில் விண்ணப்பத்துக்கு."
+  },
+  "steps": [
+    {
+      "en": "Check the scholarship form first. Some university bursary forms have their own income section for the GN and DS to sign. If yours does, take that form with you too.",
+      "si": "මුලින්ම ශිෂ්‍යත්ව අයදුම්පත බලන්න. සමහර විශ්වවිද්‍යාල ශිෂ්‍යාධාර පෝරමවල ග්‍රාම නිලධාරී සහ ප්‍රාදේශීය ලේකම් අත්සන් කරන්න වෙනම ආදායම් කොටසක් තියෙනවා. එහෙම නම් ඒ පෝරමයත් අරන් යන්න.",
+      "ta": "முதலில் புலமைப்பரிசில் படிவத்தைப் பாருங்கள். சில பல்கலைக்கழகப் படிவங்களில் கிராம உத்தியோகத்தரும் பிரதேச செயலாளரும் கையொப்பமிட தனி வருமானப் பகுதி இருக்கும். அப்படியானால் அந்தப் படிவத்தையும் கொண்டு செல்லுங்கள்."
+    },
+    {
+      "en": "Get the income certificate application form from your Grama Niladhari or the DS office, or let GovNavAI fill it in for you. Write your name, address, every way you earn (job, land or tea, business, other) and why you need the certificate.",
+      "si": "ආදායම් සහතික අයදුම්පත ග්‍රාම නිලධාරීගෙන් හෝ ප්‍රාදේශීය ලේකම් කාර්යාලයෙන් ගන්න, නැත්නම් GovNavAI ලවා පුරවා ගන්න. නම, ලිපිනය, ඔබ උපයන සියලු ක්‍රම (රැකියාව, ඉඩම් හෝ තේ, ව්‍යාපාර, වෙනත්) සහ සහතිකය ඕනේ ඇයි කියා ලියන්න.",
+      "ta": "வருமானச் சான்றிதழ் விண்ணப்பப் படிவத்தை கிராம உத்தியோகத்தரிடம் அல்லது பிரதேச செயலகத்தில் பெறுங்கள், அல்லது GovNavAI மூலம் நிரப்புங்கள். பெயர், முகவரி, நீங்கள் சம்பாதிக்கும் எல்லா வழிகளும் (வேலை, நிலம் அல்லது தேயிலை, வணிகம், பிற), சான்றிதழ் ஏன் தேவை என்பதை எழுதுங்கள்."
+    },
+    {
+      "en": "Write a short request letter and gather your income proofs for the last 3 months (salary details, tea leaf bills, business registration, as fits you).",
+      "si": "කෙටි ඉල්ලීම් ලිපියක් ලියලා පසුගිය මාස 3 ක ආදායම් සාක්ෂි එකතු කරගන්න (වැටුප් විස්තර, දළු බිල්පත්, ව්‍යාපාර ලියාපදිංචිය වගේ ඔබට ගැළපෙන ඒවා).",
+      "ta": "சிறு கோரிக்கைக் கடிதம் எழுதி, கடந்த 3 மாத வருமான ஆதாரங்களைச் சேகரியுங்கள் (சம்பள விபரம், தேயிலைக் கொழுந்துப் பற்றுச்சீட்டு, வணிகப் பதிவு போன்ற உங்களுக்குப் பொருந்துவன)."
+    },
+    {
+      "en": "Meet the Grama Niladhari of your division with the form and documents. The GN checks them and writes a recommendation to the Divisional Secretary. This takes up to 3 days.",
+      "si": "අයදුම්පත සහ ලියවිලි අරන් ඔබේ වසමේ ග්‍රාම නිලධාරී හමුවෙන්න. ඔහු/ඇය ඒවා බලලා ප්‍රාදේශීය ලේකම්ට නිර්දේශයක් ලියනවා. මේකට දින 3ක් දක්වා යනවා.",
+      "ta": "படிவத்தையும் ஆவணங்களையும் கொண்டு உங்கள் பிரிவின் கிராம உத்தியோகத்தரைச் சந்தியுங்கள். அவர் சரிபார்த்து பிரதேச செயலாளருக்குப் பரிந்துரை எழுதுவார். இதற்கு 3 நாட்கள் வரை ஆகும்."
+    },
+    {
+      "en": "Take the recommended form and your documents to the Kuruwita Divisional Secretariat and hand them in at the certificates counter.",
+      "si": "නිර්දේශ කළ අයදුම්පතයි ලියවිලියි කුරුවිට ප්‍රාදේශීය ලේකම් කාර්යාලයට අරන් ගිහින් සහතික නිකුත් කරන කවුළුවට භාර දෙන්න.",
+      "ta": "பரிந்துரைக்கப்பட்ட படிவத்தையும் ஆவணங்களையும் குருவிட்ட பிரதேச செயலகத்துக்குக் கொண்டு சென்று சான்றிதழ் கருமபீடத்தில் கையளியுங்கள்."
+    },
+    {
+      "en": "You will get a payment slip. Pay the fee at the cash counter and keep the receipt.",
+      "si": "ඔබට ගෙවීම් වවුචරයක් ලැබෙනවා. මුදල් කවුළුවේ ගාස්තුව ගෙවලා කුවිතාන්සිය තියාගන්න.",
+      "ta": "கட்டணச் சீட்டு ஒன்று தரப்படும். காசாளர் கருமபீடத்தில் கட்டணம் செலுத்தி பற்றுச்சீட்டை வைத்துக்கொள்ளுங்கள்."
+    },
+    {
+      "en": "Show the receipt. The DS office gives you the income certificate, usually within about half an hour. Check that your name and the income amount are correct.",
+      "si": "කුවිතාන්සිය පෙන්වන්න. සාමාන්‍යයෙන් පැය භාගයක් ඇතුළත ආදායම් සහතිකය ලැබෙනවා. නමයි ආදායම් මුදලයි හරිද කියා බලන්න.",
+      "ta": "பற்றுச்சீட்டைக் காட்டுங்கள். பொதுவாக அரை மணி நேரத்துக்குள் வருமானச் சான்றிதழ் கிடைக்கும். பெயரும் வருமானத் தொகையும் சரியா எனப் பாருங்கள்."
+    }
+  ],
+  "formIds": [
+    "imbulpe-ds-income-certificate-request",
+    "beruwala-ds-gn-income-assessment"
+  ],
+  "sources": [
+    {
+      "id": "kuruwita-ds-citizen-charter",
+      "title": "Citizen Charter - Kuruwita Divisional Secretariat (පුරවැසි ප්‍රඥප්තිය - කුරුවිට ප්‍රාදේශීය ලේකම් කාර්යාලය)",
+      "url": "http://kuruvita.ds.gov.lk/images/_.pdf",
+      "kind": "office_notice",
+      "section": "p.1 DS service 02 (issuing income certificates, 1/2 hour); p.6 GN service 02 (recommendation for income certificate, 3 days); p.4 row 30 (university bursary request)",
+      "publisher": "Divisional Secretariat, Kuruwita",
+      "retrievedAt": "2026-11-24"
+    },
+    {
+      "id": "beruwala-ds-issuing-certificates",
+      "title": "Issuing of Certificates - Divisional Secretariat Beruwala",
+      "url": "http://beruwala.ds.gov.lk/index.php/en/issuing-of-certificates.html",
+      "kind": "website",
+      "section": "Income certificate",
+      "publisher": "Divisional Secretariat, Beruwala (Kalutara District)",
+      "retrievedAt": "2026-11-24"
+    },
+    {
+      "id": "beruwala-ds-income-form",
+      "title": "Grama Niladhari certificate on assessment of a person's annual / monthly income (Beruwala DS)",
+      "url": "http://beruwala.ds.gov.lk/images/PDF/%E0%B6%86%E0%B6%AF%E0%B6%BA%E0%B6%B8_%E0%B7%83%E0%B7%84%E0%B6%AD%E0%B6%9A_%E0%B6%85%E0%B6%BA%E0%B6%AF%E0%B6%B8%E0%B6%B4%E0%B6%AD.pdf",
+      "kind": "form",
+      "section": "p.2 documents to bring and steps",
+      "publisher": "Divisional Secretariat, Beruwala (Kalutara District)",
+      "retrievedAt": "2026-11-24"
+    },
+    {
+      "id": "imbulpe-ds-issuing-certificates",
+      "title": "Issuing of Certificates - Divisional Secretariat Imbulpe",
+      "url": "http://imbulpe.ds.gov.lk/index.php/en/issuing-of-certificates.html",
+      "kind": "website",
+      "section": "Income certificate",
+      "publisher": "Divisional Secretariat, Imbulpe (Ratnapura District)",
+      "retrievedAt": "2026-11-24"
+    },
+    {
+      "id": "imbulpe-ds-income-form",
+      "title": "Request for an Income Certificate (ආදායම් සහතිකයක් ඉල්ලීම) - Imbulpe DS",
+      "url": "http://imbulpe.ds.gov.lk/images/service_cluster_pdf/certificate_issuing/income-certificate.pdf",
+      "kind": "form",
+      "publisher": "Divisional Secretariat, Imbulpe (Ratnapura District)",
+      "retrievedAt": "2026-11-24"
+    },
+    {
+      "id": "usj-bursary-income-form",
+      "title": "Income Certification Form for Bursary Scholarship - University of Sri Jayewardenepura",
+      "url": "https://www.sjp.ac.lk/wp-content/uploads/2025/11/Income-Certification-Form-for-Bursaries-USJ.pdf",
+      "kind": "form",
+      "section": "GN certification of income; DS certification of the GN signature",
+      "publisher": "University of Sri Jayewardenepura",
+      "retrievedAt": "2026-11-24"
+    }
+  ],
+  "fieldSources": {
+    "fee": [
+      "beruwala-ds-issuing-certificates",
+      "beruwala-ds-income-form"
+    ],
+    "processingTime": [
+      "kuruwita-ds-citizen-charter"
+    ],
+    "officeFlow": [
+      "kuruwita-ds-citizen-charter",
+      "beruwala-ds-issuing-certificates",
+      "beruwala-ds-income-form"
+    ],
+    "requiredDocuments": [
+      "imbulpe-ds-issuing-certificates",
+      "imbulpe-ds-income-form",
+      "beruwala-ds-issuing-certificates",
+      "beruwala-ds-income-form"
+    ],
+    "eligibility": [
+      "beruwala-ds-issuing-certificates",
+      "kuruwita-ds-citizen-charter"
+    ],
+    "steps": [
+      "kuruwita-ds-citizen-charter",
+      "imbulpe-ds-income-form",
+      "beruwala-ds-issuing-certificates",
+      "beruwala-ds-income-form",
+      "usj-bursary-income-form"
+    ],
+    "formIds": [
+      "imbulpe-ds-income-form",
+      "beruwala-ds-income-form"
+    ],
+    "summary": [
+      "kuruwita-ds-citizen-charter",
+      "usj-bursary-income-form"
+    ]
+  },
+  "verification": {
+    "status": "approved",
+    "sourceRef": "kuruwita-ds-citizen-charter",
+    "verifiedBy": "ByteMe research team (pending Kuruwita DS officer review)",
+    "verifiedAt": "2026-11-24",
+    "demoData": true
+  }
+}

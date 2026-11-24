@@ -1,0 +1,96 @@
+{
+  "id": "gn-kahengama-154a",
+  "type": "GN",
+  "name": {
+    "en": "Kahengama Grama Niladhari Office (GN 154/A)",
+    "si": "කාහේන්ගම ග්‍රාම නිලධාරී කාර්යාලය (154/A)",
+    "ta": "காஹேன்கம கிராம உத்தியோகத்தர் அலுவலகம் (154/A)"
+  },
+  "address": {
+    "en": "Grama Niladhari division 154/A - Kahengama, Kuruwita DS Division. The exact office address is not published yet; ask at the Kuruwita Divisional Secretariat. The map pin shows the village area, not the office itself.",
+    "si": "ග්‍රාම නිලධාරී කොට්ඨාසය 154/A - කාහේන්ගම, කුරුවිට ප්‍රාදේශීය ලේකම් කොට්ඨාසය. කාර්යාලයේ නිවැරදි ලිපිනය තවම ප්‍රකාශ කර නැහැ; කුරුවිට ප්‍රාදේශීය ලේකම් කාර්යාලයෙන් අහන්න. සිතියමේ ලකුණ පෙන්වන්නේ ගම්මානය මිස කාර්යාලය නොවේ.",
+    "ta": "கிராம உத்தியோகத்தர் பிரிவு 154/A - காஹேன்கம, குருவிட்ட பிரதேச செயலாளர் பிரிவு. அலுவலகத்தின் சரியான முகவரி இன்னும் வெளியிடப்படவில்லை; குருவிட்ட பிரதேச செயலகத்தில் கேளுங்கள். வரைபடக் குறி கிராமப் பகுதியைக் காட்டுகிறது, அலுவலகத்தை அல்ல."
+  },
+  "location": {
+    "lat": 6.74,
+    "lng": 80.3652
+  },
+  "hours": [
+    {
+      "days": [
+        1,
+        3
+      ],
+      "open": "08:30",
+      "close": "16:15"
+    },
+    {
+      "days": [
+        5
+      ],
+      "open": "08:30",
+      "close": "12:30"
+    }
+  ],
+  "hoursNote": {
+    "en": "The Grama Niladhari meets the public at the office on Tuesday and Thursday (8.30 in the morning to 4.15 in the afternoon) and on Saturday morning (8.30 to 12.30). On Monday the officer works at the Divisional Secretariat, and the other days are for field visits. This is the national timetable, so please check with your Grama Niladhari before you go.",
+    "si": "ග්‍රාම නිලධාරී මහතා හෝ මහත්මිය අඟහරුවාදා සහ බ්‍රහස්පතින්දා (උදේ 8.30 සිට හවස 4.15 දක්වා) සහ සෙනසුරාදා උදේ (8.30 සිට දවල් 12.30 දක්වා) කාර්යාලයේදී ජනතාව හමුවෙනවා. සඳුදාට ප්‍රාදේශීය ලේකම් කාර්යාලයේ වැඩ කරනවා. අනෙක් දවස් ගම්මානවල ක්ෂේත්‍ර වැඩ සඳහායි. මේක රට පුරාම තියෙන පොදු කාලසටහන නිසා, යන්න කලින් ඔබේ ග්‍රාම නිලධාරීගෙන් අහලා බලන්න.",
+    "ta": "கிராம உத்தியோகத்தர் செவ்வாய் மற்றும் வியாழன் (காலை 8.30 முதல் மாலை 4.15 வரை), சனிக்கிழமை காலை (8.30 முதல் மதியம் 12.30 வரை) அலுவலகத்தில் பொதுமக்களைச் சந்திப்பார். திங்கட்கிழமை பிரதேச செயலகத்தில் கடமையாற்றுவார். மற்ற நாட்கள் களப் பணிக்கானவை. இது நாடு முழுவதற்குமான பொது நேர அட்டவணை, எனவே செல்லும் முன் உங்கள் கிராம உத்தியோகத்தரிடம் கேட்டு உறுதிப்படுத்துங்கள்."
+  },
+  "handles": [
+    "income-certificate",
+    "character-certificate",
+    "residence-certificate",
+    "nic-application",
+    "senior-citizen-id"
+  ],
+  "adminArea": {
+    "province": "Sabaragamuwa",
+    "district": "Ratnapura",
+    "dsDivision": "Kuruwita",
+    "gnCode": "154/A"
+  },
+  "queueStatus": "normal",
+  "sources": [
+    {
+      "id": "kuruwita-ds-gn-list",
+      "title": "Kuruwita Divisional Secretariat - Grama Niladhari divisions",
+      "url": "http://kuruvita.ds.gov.lk/index.php/en/administrative-structure/gn-divisions.html",
+      "kind": "website",
+      "publisher": "Divisional Secretariat, Kuruwita",
+      "retrievedAt": "2026-11-24"
+    },
+    {
+      "id": "kuruwita-ds-gn-list-si",
+      "title": "කුරුවිට ප්‍රාදේශීය ලේකම් කාර්යාලය - ග්‍රාම නිලධාරී කොට්ඨාස",
+      "url": "http://kuruvita.ds.gov.lk/index.php/si/administrative-structure-si/gn-divisions-si.html",
+      "kind": "website",
+      "publisher": "Divisional Secretariat, Kuruwita",
+      "retrievedAt": "2026-11-24"
+    },
+    {
+      "id": "gn-hours-circular-16-2020",
+      "title": "Circular issued on official hours of Grama Niladharis",
+      "url": "https://www.adaderana.lk/news/67460/circular-issued-on-official-hours-of-grama-niladharis",
+      "kind": "circular",
+      "section": "Ministry of Internal Affairs Circular No. 16/2020",
+      "publisher": "Ada Derana (news report)",
+      "retrievedAt": "2026-11-24"
+    },
+    {
+      "id": "osm-kahengama",
+      "title": "OpenStreetMap - Kahengama village (node 8048289647)",
+      "url": "https://www.openstreetmap.org/node/8048289647",
+      "kind": "website",
+      "publisher": "OpenStreetMap contributors",
+      "retrievedAt": "2026-11-24"
+    }
+  ],
+  "verification": {
+    "status": "approved",
+    "sourceRef": "kuruwita-ds-gn-list",
+    "verifiedBy": "ByteMe research team (pending Kuruwita DS officer review)",
+    "verifiedAt": "2026-11-24",
+    "demoData": true
+  }
+}

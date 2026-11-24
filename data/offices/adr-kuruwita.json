@@ -1,0 +1,114 @@
+{
+  "id": "adr-kuruwita",
+  "type": "RGD",
+  "name": {
+    "en": "Additional District Registrar, Kuruwita Divisional Secretariat",
+    "si": "අතිරේක දිස්ත්‍රික් රෙජිස්ට්‍රාර්, කුරුවිට ප්‍රාදේශීය ලේකම් කාර්යාලය",
+    "ta": "மேலதிக மாவட்டப் பதிவாளர், குருவிட்ட பிரதேச செயலகம்"
+  },
+  "address": {
+    "en": "District Registrar Division, Divisional Secretariat, Colombo-Ratnapura main road, Kuruwita",
+    "si": "දිස්ත්‍රික් රෙජිස්ට්‍රාර් අංශය, ප්‍රාදේශීය ලේකම් කාර්යාලය, කොළඹ-රත්නපුර ප්‍රධාන මාර්ගය, කුරුවිට",
+    "ta": "மாவட்டப் பதிவாளர் பிரிவு, பிரதேச செயலகம், கொழும்பு-இரத்தினபுரி பிரதான வீதி, குருவிட்ட"
+  },
+  "location": {
+    "lat": 6.7803,
+    "lng": 80.364
+  },
+  "phone": "+94 45 2262239",
+  "website": "http://kuruvita.ds.gov.lk/index.php/en/civil-registrations.html",
+  "hours": [
+    {
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "open": "08:30",
+      "close": "16:15"
+    }
+  ],
+  "hoursNote": {
+    "en": "Usually open on weekdays from 8.30 in the morning to 4.15 in the afternoon. These are the normal government office hours. This office has not published its own hours, so please phone before you travel. Monday is the Public Day, when government offices give special attention to people who visit.",
+    "si": "සාමාන්‍යයෙන් සතියේ දිනවල උදේ 8.30 සිට හවස 4.15 දක්වා විවෘතයි. මේවා සාමාන්‍ය රජයේ කාර්යාල වේලාවන්. මේ කාර්යාලය තමන්ගේම වේලාවන් ප්‍රකාශ කර නැති නිසා, යන්න කලින් කරුණාකර දුරකථනයෙන් අහලා බලන්න. සඳුදා මහජන දිනයයි. එදාට රජයේ කාර්යාලවලට එන අයට විශේෂ අවධානයක් දෙනවා.",
+    "ta": "பொதுவாக வார நாட்களில் காலை 8.30 முதல் மாலை 4.15 வரை திறந்திருக்கும். இவை வழக்கமான அரச அலுவலக நேரங்கள். இந்த அலுவலகம் தனது நேரங்களை வெளியிடவில்லை, எனவே புறப்படும் முன் தொலைபேசியில் கேட்டுக்கொள்ளுங்கள். திங்கட்கிழமை பொதுமக்கள் தினம். அன்று அரச அலுவலகங்களுக்கு வருபவர்களுக்கு விசேட கவனம் வழங்கப்படும்."
+  },
+  "handles": [
+    "birth-certificate-copy",
+    "marriage-certificate-copy",
+    "death-certificate-copy"
+  ],
+  "adminArea": {
+    "province": "Sabaragamuwa",
+    "district": "Ratnapura",
+    "dsDivision": "Kuruwita"
+  },
+  "queueStatus": "normal",
+  "sources": [
+    {
+      "id": "kuruwita-ds-contact",
+      "title": "Kuruwita Divisional Secretariat - Contact details",
+      "url": "http://kuruvita.ds.gov.lk/index.php/en/contact/contact-details.html",
+      "kind": "website",
+      "publisher": "Divisional Secretariat, Kuruwita",
+      "retrievedAt": "2026-11-24"
+    },
+    {
+      "id": "kuruwita-ds-civil-registration",
+      "title": "Kuruwita Divisional Secretariat - Civil registrations",
+      "url": "http://kuruvita.ds.gov.lk/index.php/en/civil-registrations.html",
+      "kind": "website",
+      "publisher": "Divisional Secretariat, Kuruwita",
+      "retrievedAt": "2026-11-24"
+    },
+    {
+      "id": "kuruwita-ds-registrar-divisions",
+      "title": "Kuruwita Divisional Secretariat - Registrar divisions",
+      "url": "http://kuruvita.ds.gov.lk/index.php/en/administrative-structure/registrar-division.html",
+      "kind": "website",
+      "publisher": "Divisional Secretariat, Kuruwita",
+      "retrievedAt": "2026-11-24"
+    },
+    {
+      "id": "kuruwita-ds-faq",
+      "title": "Kuruwita Divisional Secretariat - FAQ (office location)",
+      "url": "http://kuruvita.ds.gov.lk/index.php/en/faq.html",
+      "kind": "website",
+      "publisher": "Divisional Secretariat, Kuruwita",
+      "retrievedAt": "2026-11-24"
+    },
+    {
+      "id": "osm-kuruwita-ds",
+      "title": "OpenStreetMap - Divisional Secretariat Office - Kuruwita (way 406125991)",
+      "url": "https://www.openstreetmap.org/way/406125991",
+      "kind": "website",
+      "publisher": "OpenStreetMap contributors",
+      "retrievedAt": "2026-11-24"
+    },
+    {
+      "id": "drp-contact",
+      "title": "Department for Registration of Persons - Contact us",
+      "url": "https://drp.gov.lk/en/contact.php",
+      "kind": "website",
+      "publisher": "Department for Registration of Persons",
+      "retrievedAt": "2026-11-24"
+    },
+    {
+      "id": "public-day-monday",
+      "title": "People urged to report on inconveniences faced at state institutions on Public Day",
+      "url": "https://www.newsfirst.lk/2020/09/27/people-urged-to-report-on-inconveniences-faced-at-state-institutions-on-public-day",
+      "kind": "website",
+      "publisher": "News First",
+      "retrievedAt": "2026-11-24"
+    }
+  ],
+  "verification": {
+    "status": "approved",
+    "sourceRef": "kuruwita-ds-contact",
+    "verifiedBy": "ByteMe research team (pending Kuruwita DS officer review)",
+    "verifiedAt": "2026-11-24",
+    "demoData": true
+  }
+}

@@ -1,0 +1,424 @@
+{
+  "id": "nic-application",
+  "version": 1,
+  "category": "identity",
+  "name": {
+    "en": "National Identity Card (NIC) – first card or replacing a lost card",
+    "si": "ජාතික හැඳුනුම්පත – පළමු හැඳුනුම්පත හෝ නැති වූ හැඳුනුම්පත වෙනුවට අලුත් එකක්",
+    "ta": "தேசிய அடையாள அட்டை – முதல் அட்டை அல்லது தொலைந்த அட்டைக்குப் பதிலாக புதிய அட்டை"
+  },
+  "summary": {
+    "en": "Every Sri Lankan citizen should get an NIC from age 15. You fill one free form (DRP 1,7,8, also called Form \"B\"), your Grama Niladhari checks and signs it, and the Kuruwita Divisional Secretariat countersigns and sends it to the Department for Registration of Persons. The first card costs Rs 200. If you lost your card, a new one costs Rs 1,000 and you need the original police report. The card comes to you by post within about 3 months.",
+    "si": "වයස අවුරුදු 15 සිට සෑම ශ්‍රී ලාංකිකයෙක්ම ජාතික හැඳුනුම්පතක් ගත යුතුයි. නොමිලේ ලැබෙන එක් ඉල්ලුම් පත්‍රයක් (DRP 1,7,8, \"ආ\" ආකෘතිය) පුරවන්න. ඔබේ ග්‍රාම නිලධාරී එය පරීක්ෂා කර අත්සන් කරයි. පසුව කුරුවිට ප්‍රාදේශීය ලේකම් කාර්යාලය අනු අත්සන් කර පුද්ගලයන් ලියාපදිංචි කිරීමේ දෙපාර්තමේන්තුවට යවයි. පළමු හැඳුනුම්පතට රු. 200යි. හැඳුනුම්පත නැති වුණා නම් අලුත් එකකට රු. 1,000ක් සහ මුල් පොලිස් වාර්තාව අවශ්‍යයි. මාස 3ක් පමණ ඇතුළත හැඳුනුම්පත තැපෑලෙන් ලැබේ.",
+    "ta": "15 வயது முதல் ஒவ்வொரு இலங்கையரும் தேசிய அடையாள அட்டை பெற வேண்டும். இலவசமாகக் கிடைக்கும் ஒரு படிவத்தை (DRP 1,7,8, படிவம் \"ஆ\") நிரப்புங்கள். உங்கள் கிராம அலுவலர் அதைச் சரிபார்த்து கையொப்பமிடுவார். பின்னர் குருவிட்ட பிரதேச செயலகம் மேலொப்பமிட்டு ஆட்களைப் பதிவுசெய்யும் திணைக்களத்திற்கு அனுப்பும். முதல் அட்டைக்கு ரூ. 200. அட்டை தொலைந்திருந்தால் புதிய அட்டைக்கு ரூ. 1,000 மற்றும் மூல பொலிஸ் அறிக்கை தேவை. சுமார் 3 மாதங்களுக்குள் அட்டை தபாலில் வரும்."
+  },
+  "synonyms": [
+    "NIC",
+    "national identity card",
+    "identity card",
+    "ID card",
+    "smart NIC",
+    "e-NIC",
+    "new NIC",
+    "first NIC",
+    "lost NIC",
+    "duplicate NIC",
+    "NIC replacement",
+    "new ID",
+    "IC",
+    "DRP",
+    "Form B",
+    "DRP 1,7,8",
+    "one day service",
+    "ජාතික හැඳුනුම්පත",
+    "හැඳුනුම්පත",
+    "අලුත් හැඳුනුම්පත",
+    "නැති වූ හැඳුනුම්පත",
+    "අනු පිටපත",
+    "தேசிய அடையாள அட்டை",
+    "அடையாள அட்டை",
+    "தொலைந்த அடையாள அட்டை",
+    "handunumpatha",
+    "handunumpath",
+    "jathika handunumpatha",
+    "ID eka",
+    "ID eka nathi una",
+    "aluth ID",
+    "aluth handunumpathak",
+    "adayala attai",
+    "adaiyala attai",
+    "IC thulainjiduchu",
+    "puthu IC"
+  ],
+  "exampleQuestions": {
+    "en": [
+      "How do I apply for my first NIC when I turn 15?",
+      "I lost my NIC. How do I get a new one and how much does it cost?",
+      "Can I get my identity card in one day?",
+      "My son is 16 and has no ID card yet. What should he do?"
+    ],
+    "si": [
+      "මට වයස 15යි, පළමු හැඳුනුම්පත ගන්නේ කොහොමද?",
+      "මගේ හැඳුනුම්පත නැති වුණා. අලුත් එකක් ගන්න මොනවද කරන්න ඕනේ?",
+      "එක දවසින් හැඳුනුම්පත ගන්න පුළුවන්ද?",
+      "හැඳුනුම්පතට ගාස්තුව කීයද?"
+    ],
+    "ta": [
+      "15 வயதானதும் முதல் அடையாள அட்டைக்கு எப்படி விண்ணப்பிப்பது?",
+      "என் அடையாள அட்டை தொலைந்துவிட்டது. புதியதை எப்படிப் பெறுவது, கட்டணம் எவ்வளவு?",
+      "ஒரே நாளில் அடையாள அட்டை பெற முடியுமா?",
+      "அடையாள அட்டைக்கு என்ன ஆவணங்கள் வேண்டும்?"
+    ],
+    "singlish": [
+      "Mata ID eka ganna one, mokakda karanna one?",
+      "Mage ID eka nathi una, aluth ekak ganne kohomada?",
+      "ID ekata police report eka one da?",
+      "Puthata wayasa 15i, handunumpatha ganna mona documents da one?"
+    ],
+    "tanglish": [
+      "Muthal thadavai IC edukka enna documents venum?",
+      "En IC thulainjiduchu, puthusa eppadi edukkiradhu?",
+      "IC ku evvalavu kasu kattanum?",
+      "Oru naalil IC edukka mudiyuma?"
+    ]
+  },
+  "officeType": "DRP",
+  "officeFlow": {
+    "en": "You → your Grama Niladhari (checks your form, photo and address; you sign or put your left thumbprint in front of the GN) → Kuruwita Divisional Secretariat, Registration of Persons section (the Divisional Secretary, an Assistant Divisional Secretary or an Administrative Officer countersigns and sends it on) → Department for Registration of Persons, Battaramulla (makes the card and posts it to you). School students apply through the Principal; estate residents through the Estate Superintendent. The One-Day Service is only at the DRP Head Office in Battaramulla or the Galle office.",
+    "si": "ඔබ → ඔබේ ග්‍රාම නිලධාරී (ඉල්ලුම් පත්‍රය, ඡායාරූපය සහ ලිපිනය පරීක්ෂා කරයි; ඔබ ග්‍රාම නිලධාරී ඉදිරියේ අත්සන් කරන්න හෝ වම් මහපට ඇඟිලි සලකුණ තබන්න) → කුරුවිට ප්‍රාදේශීය ලේකම් කාර්යාලයේ පුද්ගලයන් ලියාපදිංචි කිරීමේ අංශය (ප්‍රාදේශීය ලේකම්, සහකාර ප්‍රාදේශීය ලේකම් හෝ පරිපාලන නිලධාරී අනු අත්සන් කර ඉදිරියට යවයි) → පුද්ගලයන් ලියාපදිංචි කිරීමේ දෙපාර්තමේන්තුව, බත්තරමුල්ල (හැඳුනුම්පත සකස් කර ඔබට තැපෑලෙන් එවයි). පාසල් සිසුන් විදුහල්පතිතුමා හරහාත්, වතුකරයේ අය වතු අධිකාරී හරහාත් අයදුම් කරති. එක් දින සේවාව ඇත්තේ බත්තරමුල්ල ප්‍රධාන කාර්යාලයේ සහ ගාල්ල කාර්යාලයේ පමණි.",
+    "ta": "நீங்கள் → உங்கள் கிராம அலுவலர் (படிவம், புகைப்படம், முகவரியைச் சரிபார்ப்பார்; அவர் முன்னிலையில் நீங்கள் கையொப்பம் அல்லது இடது பெருவிரல் அடையாளம் இடுங்கள்) → குருவிட்ட பிரதேச செயலகத்தின் ஆட்களைப் பதிவுசெய்யும் பிரிவு (பிரதேச செயலாளர், உதவிப் பிரதேச செயலாளர் அல்லது நிர்வாக உத்தியோகத்தர் மேலொப்பமிட்டு அனுப்புவார்) → ஆட்களைப் பதிவுசெய்யும் திணைக்களம், பத்தரமுல்லை (அட்டையைத் தயாரித்து உங்களுக்குத் தபாலில் அனுப்பும்). பாடசாலை மாணவர்கள் அதிபர் மூலமும், தோட்டப் பகுதியில் வசிப்பவர்கள் தோட்ட அத்தியட்சகர் மூலமும் விண்ணப்பிப்பார்கள். ஒரு நாள் சேவை பத்தரமுல்லை தலைமை அலுவலகத்திலும் காலி அலுவலகத்திலும் மட்டுமே உண்டு."
+  },
+  "fee": {
+    "amountLkr": null,
+    "isFree": false,
+    "text": {
+      "en": "The form is free. First card: Rs 200. New card for a lost one: Rs 1,000. One-Day Service: Rs 2,000 extra. If you apply more than one year after turning 15, there is also a Rs 2,500 late fine. For the normal service, Rs 120 is also charged for sending the card by registered post. You pay through the officer who certifies your form.",
+      "si": "ඉල්ලුම් පත්‍රය නොමිලේ. පළමු හැඳුනුම්පත: රු. 200. නැති වූ හැඳුනුම්පතක් වෙනුවට: රු. 1,000. එක් දින සේවාව: අමතරව රු. 2,000. වයස 15 වී අවුරුද්දකට පසු අයදුම් කරන්නේ නම් රු. 2,500ක ප්‍රමාද දඩයක්ද ඇත. සාමාන්‍ය සේවාවේදී හැඳුනුම්පත ලියාපදිංචි තැපෑලෙන් එවීමට රු. 120ක්ද අය වේ. ගාස්තුව ගෙවන්නේ ඉල්ලුම් පත්‍රය සහතික කරන නිලධාරී හරහායි.",
+      "ta": "படிவம் இலவசம். முதல் அட்டை: ரூ. 200. தொலைந்த அட்டைக்குப் பதிலாக: ரூ. 1,000. ஒரு நாள் சேவை: கூடுதலாக ரூ. 2,000. 15 வயதாகி ஒரு வருடத்திற்குப் பிறகு விண்ணப்பித்தால் ரூ. 2,500 தாமத அபராதமும் உண்டு. சாதாரண சேவையில் அட்டையைப் பதிவுத் தபாலில் அனுப்ப ரூ. 120 கட்டணமும் உண்டு. கட்டணத்தை உங்கள் படிவத்தைச் சான்றுப்படுத்தும் அலுவலர் மூலம் செலுத்துங்கள்."
+    }
+  },
+  "processingTime": {
+    "minDays": null,
+    "maxDays": 90,
+    "text": {
+      "en": "Normal service: the card is posted to you within about 3 months. One-Day Service (Battaramulla or Galle only): about 3 hours after you hand in the form. Both apply only if your details and documents have no problems.",
+      "si": "සාමාන්‍ය සේවාව: මාස 3ක් පමණ ඇතුළත හැඳුනුම්පත තැපෑලෙන් ලැබේ. එක් දින සේවාව (බත්තරමුල්ල හෝ ගාල්ල පමණි): ඉල්ලුම් පත්‍රය භාර දී පැය 3ක් පමණ ඇතුළත. ඔබේ විස්තර සහ ලේඛනවල ගැටලු නැත්නම් පමණි.",
+      "ta": "சாதாரண சேவை: சுமார் 3 மாதங்களுக்குள் அட்டை தபாலில் வரும். ஒரு நாள் சேவை (பத்தரமுல்லை அல்லது காலி மட்டும்): படிவத்தைக் கொடுத்து சுமார் 3 மணி நேரத்தில். உங்கள் விவரங்களிலும் ஆவணங்களிலும் பிரச்சினை இல்லையென்றால் மட்டுமே."
+    }
+  },
+  "requiredDocuments": [
+    {
+      "id": "drp-178-application-form",
+      "name": {
+        "en": "Filled application form DRP 1,7,8 (Form \"B\") – free",
+        "si": "පුරවන ලද DRP 1,7,8 (\"ආ\" ආකෘතිය) ඉල්ලුම් පත්‍රය – නොමිලේ",
+        "ta": "நிரப்பிய DRP 1,7,8 (படிவம் \"ஆ\") விண்ணப்பப் படிவம் – இலவசம்"
+      },
+      "note": {
+        "en": "Write your name in Sinhala or Tamil in box 1 and in English capital letters in box 2. Use a blue or black pen.",
+        "si": "1 කොටුවේ සිංහලෙන් හෝ දෙමළෙන්ද, 2 කොටුවේ ඉංග්‍රීසි කැපිටල් අකුරින්ද නම ලියන්න. නිල් හෝ කළු පෑනක් භාවිත කරන්න.",
+        "ta": "கூடு 1 இல் சிங்களம் அல்லது தமிழிலும், கூடு 2 இல் ஆங்கிலப் பெரிய எழுத்துகளிலும் பெயரை எழுதுங்கள். நீல அல்லது கறுப்பு பேனாவைப் பயன்படுத்துங்கள்."
+      },
+      "aiCanPrefill": true,
+      "formId": "drp-178-nic-application"
+    },
+    {
+      "id": "birth-certificate",
+      "name": {
+        "en": "Birth certificate (or a birth register extract certified by the Additional District Registrar)",
+        "si": "උප්පැන්න සහතිකය (හෝ අතිරේක දිස්ත්‍රික් රෙජිස්ට්‍රාර් සහතික කළ උප්පැන්න ලේඛන උපුටනය)",
+        "ta": "பிறப்புச் சான்றிதழ் (அல்லது மேலதிக மாவட்டப் பதிவாளர் சான்றுப்படுத்திய பிறப்புப் பதிவேட்டுப் பிரதி)"
+      }
+    },
+    {
+      "id": "icao-photo",
+      "name": {
+        "en": "Colour photo (35 mm x 45 mm, ICAO standard) from a DRP-registered photo studio, taken within the last 6 months",
+        "si": "ලියාපදිංචි ඡායාරූප ශාලාවකින් පසුගිය මාස 6 තුළ ගත් වර්ණ ඡායාරූපය (35mm x 45mm, ICAO ප්‍රමිතිය)",
+        "ta": "பதிவுசெய்யப்பட்ட புகைப்பட நிலையத்தில் கடந்த 6 மாதங்களுக்குள் எடுத்த வண்ணப் புகைப்படம் (35mm x 45mm, ICAO தரம்)"
+      },
+      "note": {
+        "en": "Keep the Photo Reference Slip the studio gives you.",
+        "si": "ඡායාරූප ශාලාව දෙන ඡායාරූප යොමු පත්‍රිකාව තබා ගන්න.",
+        "ta": "புகைப்பட நிலையம் தரும் புகைப்பட குறிப்புச் சீட்டை வைத்திருங்கள்."
+      }
+    },
+    {
+      "id": "fee-receipt",
+      "name": {
+        "en": "Receipt for the fee, stuck on page 5 of the form",
+        "si": "ගාස්තුව ගෙවූ රිසිට්පත, ඉල්ලුම් පත්‍රයේ 5 වන පිටුවේ අලවා",
+        "ta": "கட்டணம் செலுத்திய பற்றுச்சீட்டு, படிவத்தின் 5 ஆம் பக்கத்தில் ஒட்டியது"
+      }
+    },
+    {
+      "id": "police-report-lost-nic",
+      "name": {
+        "en": "Original police report about the lost NIC",
+        "si": "නැති වූ හැඳුනුම්පත ගැන මුල් පොලිස් වාර්තාව",
+        "ta": "தொலைந்த அடையாள அட்டை பற்றிய மூல பொலிஸ் அறிக்கை"
+      },
+      "note": {
+        "en": "It must show your NIC number (the 12-digit number if you had one), or say \"cannot remember the number\". A photocopy is not accepted.",
+        "si": "එහි ඔබේ හැඳුනුම්පත් අංකය (12 ඉලක්කම් අංකය තිබුණේ නම් එය) තිබිය යුතුයි, නැත්නම් \"අංකය මතක නැත\" ලෙස සඳහන් විය යුතුයි. ඡායා පිටපතක් පිළිගන්නේ නැත.",
+        "ta": "அதில் உங்கள் அடையாள அட்டை இலக்கம் (12 இலக்க இலக்கம் இருந்தால் அது) இருக்க வேண்டும், அல்லது \"இலக்கம் நினைவில் இல்லை\" என்று இருக்க வேண்டும். நிழல் பிரதி ஏற்கப்படாது."
+      },
+      "conditional": {
+        "en": "Only if you are replacing a lost NIC",
+        "si": "නැති වූ හැඳුනුම්පතක් වෙනුවට අලුත් එකක් ගන්නේ නම් පමණි",
+        "ta": "தொலைந்த அடையாள அட்டைக்குப் பதிலாக புதியது பெறுவதாக இருந்தால் மட்டும்"
+      }
+    },
+    {
+      "id": "no-birth-certificate-alternatives",
+      "name": {
+        "en": "Probable age certificate or \"results of search of registers\", plus a paper that shows your name and date of birth (for example school leaving certificate, horoscope copy, your child's birth certificate or your marriage certificate)",
+        "si": "අනුමාන වයස් සහතිකය හෝ \"ලේඛන සෙවීමේ ප්‍රතිඵල\", සමඟ ඔබේ නම සහ උපන් දිනය පෙන්වන ලේඛනයක් (උදා: පාසල් හැරයාමේ සහතිකය, කේන්දරයේ පිටපත, දරුවාගේ උප්පැන්න සහතිකය හෝ විවාහ සහතිකය)",
+        "ta": "உத்தேச வயதுச் சான்றிதழ் அல்லது \"பதிவேட்டுத் தேடல் முடிவு\", அத்துடன் உங்கள் பெயரையும் பிறந்த திகதியையும் காட்டும் ஆவணம் (உதா: பாடசாலை விடுகைச் சான்றிதழ், சாதகப் பிரதி, பிள்ளையின் பிறப்புச் சான்றிதழ் அல்லது திருமணச் சான்றிதழ்)"
+      },
+      "conditional": {
+        "en": "Only if you do not have a birth certificate",
+        "si": "උප්පැන්න සහතිකය නැත්නම් පමණි",
+        "ta": "பிறப்புச் சான்றிதழ் இல்லையென்றால் மட்டும்"
+      }
+    },
+    {
+      "id": "late-application-declaration",
+      "name": {
+        "en": "Late-application declaration (form D.R.P/OP/02/3)",
+        "si": "ප්‍රමාද වී අයදුම් කිරීමේ ප්‍රකාශය (D.R.P/OP/02/3 ආකෘතිය)",
+        "ta": "தாமதமான விண்ணப்பத்திற்கான வெளிப்படுத்தல் (D.R.P/OP/02/3 படிவம்)"
+      },
+      "note": {
+        "en": "The Grama Niladhari signs it and the Divisional Secretary recommends it. Students use the school version and estate residents use the estate version of the same form.",
+        "si": "ග්‍රාම නිලධාරී එය සහතික කරන අතර ප්‍රාදේශීය ලේකම් නිර්දේශ කරයි. සිසුන් පාසල් කොටසද, වතු පදිංචිකරුවන් වතු කොටසද භාවිත කරති.",
+        "ta": "கிராம அலுவலர் அதைச் சான்றுப்படுத்துவார், பிரதேச செயலாளர் பரிந்துரைப்பார். மாணவர்கள் பாடசாலைப் பதிப்பையும், தோட்டவாசிகள் தோட்டப் பதிப்பையும் பயன்படுத்துவார்கள்."
+      },
+      "conditional": {
+        "en": "Only if you did not apply within one year of turning 15",
+        "si": "වයස 15 වී අවුරුද්දක් ඇතුළත අයදුම් නොකළේ නම් පමණි",
+        "ta": "15 வயதாகி ஒரு வருடத்திற்குள் விண்ணப்பிக்கவில்லை என்றால் மட்டும்"
+      },
+      "aiCanPrefill": true,
+      "formId": "drp-op-02-3-late-application-declaration"
+    },
+    {
+      "id": "late-fine-receipt",
+      "name": {
+        "en": "Receipt for the Rs 2,500 late fine (paid to the cashier at the Divisional Secretariat)",
+        "si": "රු. 2,500 ප්‍රමාද දඩය ගෙවූ රිසිට්පත (ප්‍රාදේශීය ලේකම් කාර්යාලයේ මුදල් අයකැමිට ගෙවිය යුතුයි)",
+        "ta": "ரூ. 2,500 தாமத அபராதம் செலுத்திய பற்றுச்சீட்டு (பிரதேச செயலகக் காசாளரிடம் செலுத்த வேண்டும்)"
+      },
+      "conditional": {
+        "en": "Only if you did not apply within one year of turning 15",
+        "si": "වයස 15 වී අවුරුද්දක් ඇතුළත අයදුම් නොකළේ නම් පමණි",
+        "ta": "15 வயதாகி ஒரு வருடத்திற்குள் விண்ணப்பிக்கவில்லை என்றால் மட்டும்"
+      }
+    },
+    {
+      "id": "marriage-certificate",
+      "name": {
+        "en": "Marriage certificate certified by the Additional District Registrar",
+        "si": "අතිරේක දිස්ත්‍රික් රෙජිස්ට්‍රාර් සහතික කළ විවාහ සහතිකය",
+        "ta": "மேலதிக மாவட்டப் பதிவாளர் சான்றுப்படுத்திய திருமணச் சான்றிதழ்"
+      },
+      "conditional": {
+        "en": "Only if you want your husband's name on the card",
+        "si": "සැමියාගේ නම හැඳුනුම්පතේ දැමීමට අවශ්‍ය නම් පමණි",
+        "ta": "கணவரின் பெயரை அட்டையில் போட விரும்பினால் மட்டும்"
+      }
+    },
+    {
+      "id": "occupation-proof",
+      "name": {
+        "en": "Letter or certificate proving your job (not older than 6 months)",
+        "si": "ඔබේ රැකියාව තහවුරු කරන ලිපිය හෝ සහතිකය (මාස 6කට වඩා පැරණි නොවිය යුතුයි)",
+        "ta": "உங்கள் தொழிலை உறுதிப்படுத்தும் கடிதம் அல்லது சான்றிதழ் (6 மாதங்களுக்கு மேற்படாதது)"
+      },
+      "conditional": {
+        "en": "Only if you want your job shown (box 6 of the form)",
+        "si": "ඔබේ රැකියාව සඳහන් කිරීමට අවශ්‍ය නම් පමණි (ආකෘතියේ 6 කොටුව)",
+        "ta": "உங்கள் தொழிலைக் குறிப்பிட விரும்பினால் மட்டும் (படிவத்தின் கூடு 6)"
+      }
+    },
+    {
+      "id": "citizenship-certificate",
+      "name": {
+        "en": "Citizenship certificate or dual citizenship certificate",
+        "si": "පුරවැසි සහතිකය හෝ ද්විත්ව පුරවැසි සහතිකය",
+        "ta": "பிரஜாவுரிமைச் சான்றிதழ் அல்லது இரட்டைப் பிரஜாவுரிமைச் சான்றிதழ்"
+      },
+      "conditional": {
+        "en": "Only if you were born abroad or hold dual citizenship",
+        "si": "විදේශයක උපන්නේ නම් හෝ ද්විත්ව පුරවැසිභාවය ඇත්නම් පමණි",
+        "ta": "வெளிநாட்டில் பிறந்திருந்தால் அல்லது இரட்டைப் பிரஜாவுரிமை இருந்தால் மட்டும்"
+      }
+    }
+  ],
+  "eligibility": {
+    "en": "Sri Lankan citizens aged 15 or over. You should apply within one year of turning 15; after that a late fine applies. Anyone who lost their NIC can apply for a new one.",
+    "si": "වයස අවුරුදු 15 හෝ ඊට වැඩි ශ්‍රී ලාංකික පුරවැසියන්. වයස 15 වී අවුරුද්දක් ඇතුළත අයදුම් කළ යුතුයි; ඉන් පසු ප්‍රමාද දඩයක් අය වේ. හැඳුනුම්පත නැති වූ ඕනෑම අයෙකුට අලුත් එකක් සඳහා අයදුම් කළ හැක.",
+    "ta": "15 வயது அல்லது அதற்கு மேற்பட்ட இலங்கைப் பிரஜைகள். 15 வயதாகி ஒரு வருடத்திற்குள் விண்ணப்பிக்க வேண்டும்; அதன் பிறகு தாமத அபராதம் உண்டு. அடையாள அட்டை தொலைந்த எவரும் புதியதற்கு விண்ணப்பிக்கலாம்."
+  },
+  "steps": [
+    {
+      "en": "Get a colour photo (35 x 45 mm) at a DRP-registered photo studio and keep the Photo Reference Slip. The photo is good for 6 months.",
+      "si": "ලියාපදිංචි ඡායාරූප ශාලාවකින් වර්ණ ඡායාරූපයක් (35 x 45 mm) ගෙන ඡායාරූප යොමු පත්‍රිකාව තබා ගන්න. ඡායාරූපය මාස 6ක් වලංගුයි.",
+      "ta": "பதிவுசெய்யப்பட்ட புகைப்பட நிலையத்தில் வண்ணப் புகைப்படம் (35 x 45 மி.மீ) எடுத்து, புகைப்பட குறிப்புச் சீட்டை வைத்திருங்கள். புகைப்படம் 6 மாதங்களுக்குச் செல்லுபடியாகும்."
+    },
+    {
+      "en": "Get the free form (DRP 1,7,8 / Form \"B\") from your Grama Niladhari, or download it from drp.gov.lk. Fill it with a blue or black pen.",
+      "si": "නොමිලේ ලැබෙන ඉල්ලුම් පත්‍රය (DRP 1,7,8 / \"ආ\" ආකෘතිය) ග්‍රාම නිලධාරීගෙන් ලබාගන්න, නැත්නම් drp.gov.lk වෙතින් බාගන්න. නිල් හෝ කළු පෑනෙන් පුරවන්න.",
+      "ta": "இலவசப் படிவத்தை (DRP 1,7,8 / படிவம் \"ஆ\") கிராம அலுவலரிடம் பெறுங்கள், அல்லது drp.gov.lk இலிருந்து பதிவிறக்குங்கள். நீல அல்லது கறுப்பு பேனாவால் நிரப்புங்கள்."
+    },
+    {
+      "en": "If your NIC is lost: first make a complaint at the nearest police station and get the original police report. Then fill box 10 of the form (reason: lost).",
+      "si": "හැඳුනුම්පත නැති වී නම්: මුලින්ම ළඟම පොලිසියට පැමිණිලි කර මුල් පොලිස් වාර්තාව ගන්න. ඉන්පසු ආකෘතියේ 10 කොටුව (හේතුව: නැති වීම) පුරවන්න.",
+      "ta": "அடையாள அட்டை தொலைந்திருந்தால்: முதலில் அருகிலுள்ள பொலிஸ் நிலையத்தில் முறைப்பாடு செய்து மூல பொலிஸ் அறிக்கையைப் பெறுங்கள். பின்னர் படிவத்தின் கூடு 10 ஐ (காரணம்: தொலைந்தது) நிரப்புங்கள்."
+    },
+    {
+      "en": "If you are applying more than a year after turning 15: also fill the late-application declaration (D.R.P/OP/02/3) and pay the Rs 2,500 fine at the Divisional Secretariat cashier.",
+      "si": "වයස 15 වී අවුරුද්දකට පසු අයදුම් කරන්නේ නම්: ප්‍රමාද වී අයදුම් කිරීමේ ප්‍රකාශයද (D.R.P/OP/02/3) පුරවා රු. 2,500 දඩය ප්‍රාදේශීය ලේකම් කාර්යාලයේ මුදල් අයකැමිට ගෙවන්න.",
+      "ta": "15 வயதாகி ஒரு வருடத்திற்குப் பிறகு விண்ணப்பித்தால்: தாமதமான விண்ணப்ப வெளிப்படுத்தலையும் (D.R.P/OP/02/3) நிரப்பி, ரூ. 2,500 அபராதத்தை பிரதேச செயலகக் காசாளரிடம் செலுத்துங்கள்."
+    },
+    {
+      "en": "Pay the fee (Rs 200 for a first card, Rs 1,000 for a lost card) through the officer who certifies your form, and stick the receipt on page 5.",
+      "si": "ගාස්තුව (පළමු හැඳුනුම්පතට රු. 200, නැති වූ එකකට රු. 1,000) ඉල්ලුම් පත්‍රය සහතික කරන නිලධාරී හරහා ගෙවා රිසිට්පත 5 වන පිටුවේ අලවන්න.",
+      "ta": "கட்டணத்தை (முதல் அட்டைக்கு ரூ. 200, தொலைந்ததற்கு ரூ. 1,000) படிவத்தைச் சான்றுப்படுத்தும் அலுவலர் மூலம் செலுத்தி, பற்றுச்சீட்டை 5 ஆம் பக்கத்தில் ஒட்டுங்கள்."
+    },
+    {
+      "en": "Take the form, birth certificate and photo to your Grama Niladhari. Sign or put your left thumbprint in front of the GN. The GN certifies the form and signs across the photo.",
+      "si": "ඉල්ලුම් පත්‍රය, උප්පැන්න සහතිකය සහ ඡායාරූපය ග්‍රාම නිලධාරී වෙත ගෙන යන්න. ග්‍රාම නිලධාරී ඉදිරියේ අත්සන් කරන්න හෝ වම් මහපට ඇඟිලි සලකුණ තබන්න. ග්‍රාම නිලධාරී ආකෘතිය සහතික කර ඡායාරූපය මතින් අත්සන් කරයි.",
+      "ta": "படிவம், பிறப்புச் சான்றிதழ், புகைப்படத்துடன் கிராம அலுவலரிடம் செல்லுங்கள். அவர் முன்னிலையில் கையொப்பம் அல்லது இடது பெருவிரல் அடையாளம் இடுங்கள். கிராம அலுவலர் படிவத்தைச் சான்றுப்படுத்தி புகைப்படத்தின் மேல் கையொப்பமிடுவார்."
+    },
+    {
+      "en": "The form goes to the Kuruwita Divisional Secretariat, where it is countersigned and sent to the Department for Registration of Persons. Keep Part Three of the form (your acknowledgement slip).",
+      "si": "ඉල්ලුම් පත්‍රය කුරුවිට ප්‍රාදේශීය ලේකම් කාර්යාලයට යයි. එහිදී අනු අත්සන් කර පුද්ගලයන් ලියාපදිංචි කිරීමේ දෙපාර්තමේන්තුවට යවයි. ආකෘතියේ තුන්වන කොටස (ඔබේ ලදුපත) තබා ගන්න.",
+      "ta": "படிவம் குருவிட்ட பிரதேச செயலகத்திற்குச் செல்லும். அங்கே மேலொப்பமிட்டு ஆட்களைப் பதிவுசெய்யும் திணைக்களத்திற்கு அனுப்புவார்கள். படிவத்தின் பாகம் மூன்றை (உங்கள் ஏற்புச் சீட்டு) வைத்திருங்கள்."
+    },
+    {
+      "en": "Your card comes by post within about 3 months. If it is urgent, go to the DRP Head Office in Battaramulla (or the Galle office) for the One-Day Service with all original documents and pay Rs 2,000 extra.",
+      "si": "මාස 3ක් පමණ ඇතුළත හැඳුනුම්පත තැපෑලෙන් ලැබේ. හදිසි නම් සියලු මුල් ලේඛන රැගෙන බත්තරමුල්ල ප්‍රධාන කාර්යාලයට (හෝ ගාල්ල කාර්යාලයට) ගොස් අමතර රු. 2,000ක් ගෙවා එක් දින සේවාව ලබාගන්න.",
+      "ta": "சுமார் 3 மாதங்களுக்குள் அட்டை தபாலில் வரும். அவசரமெனில் எல்லா மூல ஆவணங்களுடனும் பத்தரமுல்லை தலைமை அலுவலகத்திற்கு (அல்லது காலி அலுவலகத்திற்கு) சென்று கூடுதலாக ரூ. 2,000 செலுத்தி ஒரு நாள் சேவையைப் பெறுங்கள்."
+    }
+  ],
+  "formIds": [
+    "drp-178-nic-application",
+    "drp-op-02-3-late-application-declaration"
+  ],
+  "sources": [
+    {
+      "id": "drp-normal-service",
+      "title": "Department for Registration of Persons – Normal service (issuing identity cards)",
+      "url": "https://drp.gov.lk/en/normal.php",
+      "kind": "website",
+      "publisher": "Department for Registration of Persons",
+      "retrievedAt": "2026-11-24"
+    },
+    {
+      "id": "drp-application-form",
+      "title": "Form DRP 1,7,8 (Form \"B\") – Application for an Identity Card, sections 9, 16 and 17 of the Registration of Persons Act No. 32 of 1968",
+      "url": "https://drp.gov.lk/en/assets/formats/application.pdf",
+      "kind": "form",
+      "section": "Instructions 1, 5, 8 and 9; cages 1–11; page 5 payments; Part Three",
+      "publisher": "Department for Registration of Persons",
+      "retrievedAt": "2026-11-24"
+    },
+    {
+      "id": "drp-fee-notice-2022",
+      "title": "DRP fee notice (effective 01.11.2022, Cabinet decision 22.09.2022)",
+      "url": "https://drp.gov.lk/en/assets/downloads/fees-english.pdf",
+      "kind": "office_notice",
+      "publisher": "Department for Registration of Persons",
+      "retrievedAt": "2026-11-24"
+    },
+    {
+      "id": "drp-faq",
+      "title": "Department for Registration of Persons – Frequently asked questions",
+      "url": "https://drp.gov.lk/en/faq.php",
+      "kind": "website",
+      "publisher": "Department for Registration of Persons",
+      "retrievedAt": "2026-11-24"
+    },
+    {
+      "id": "drp-icao-photo",
+      "title": "Department for Registration of Persons – ICAO standard photographs",
+      "url": "https://drp.gov.lk/en/icao.php",
+      "kind": "website",
+      "publisher": "Department for Registration of Persons",
+      "retrievedAt": "2026-11-24"
+    },
+    {
+      "id": "drp-circular-lost-nic-police-report",
+      "title": "DRP circular DRP/OP/10/15/03 (2025.06.27) – Police reports for lost identity cards",
+      "url": "https://drp.gov.lk/en/assets/formats/police%20report.pdf",
+      "kind": "circular",
+      "publisher": "Department for Registration of Persons",
+      "retrievedAt": "2026-11-24"
+    },
+    {
+      "id": "drp-late-declaration-form",
+      "title": "Form D.R.P/OP/02/3 – Statement that the identity card was not obtained within the relevant time period",
+      "url": "https://drp.gov.lk/en/assets/downloads/D.R.POP023.pdf",
+      "kind": "form",
+      "section": "General, school (02/3/ii) and estate (02/3/iii) versions",
+      "publisher": "Department for Registration of Persons",
+      "retrievedAt": "2026-11-24"
+    },
+    {
+      "id": "registration-of-persons-act-1968",
+      "title": "Registration of Persons Act No. 32 of 1968, as amended by Act No. 8 of 2016 (listed on DRP downloads)",
+      "url": "https://drp.gov.lk/en/downloads.php",
+      "kind": "act",
+      "section": "Sections 9, 16, 17 and 44(1)A",
+      "publisher": "Department for Registration of Persons",
+      "retrievedAt": "2026-11-24"
+    }
+  ],
+  "fieldSources": {
+    "fee": [
+      "drp-fee-notice-2022",
+      "drp-normal-service",
+      "drp-application-form"
+    ],
+    "processingTime": [
+      "drp-faq"
+    ],
+    "officeFlow": [
+      "drp-normal-service",
+      "drp-application-form"
+    ],
+    "requiredDocuments": [
+      "drp-normal-service",
+      "drp-application-form",
+      "drp-icao-photo",
+      "drp-circular-lost-nic-police-report",
+      "drp-late-declaration-form"
+    ],
+    "eligibility": [
+      "drp-normal-service",
+      "registration-of-persons-act-1968"
+    ],
+    "steps": [
+      "drp-normal-service",
+      "drp-application-form",
+      "drp-icao-photo",
+      "drp-circular-lost-nic-police-report",
+      "drp-late-declaration-form",
+      "drp-fee-notice-2022",
+      "drp-faq"
+    ],
+    "formIds": [
+      "drp-application-form",
+      "drp-late-declaration-form",
+      "drp-normal-service"
+    ]
+  },
+  "verification": {
+    "status": "approved",
+    "sourceRef": "drp-normal-service",
+    "verifiedBy": "ByteMe research team (pending Kuruwita DS officer review)",
+    "verifiedAt": "2026-11-24",
+    "demoData": false
+  }
+}

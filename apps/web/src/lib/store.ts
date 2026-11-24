@@ -39,6 +39,15 @@ function db(): Promise<IDBPDatabase<GovNavDB>> {
       }
       if (oldVersion < 2) d.createObjectStore("packs", { keyPath: "procedureId" });
     },
+    // Another tab running newer code wants to upgrade: let go so it is not blocked.
+    blocking() {
+      void dbPromise?.then((conn) => conn.close());
+      dbPromise = null;
+    },
+    // A tab running older code still holds the database: reset so the next call retries.
+    blocked() {
+      dbPromise = null;
+    },
   });
   return dbPromise;
 }

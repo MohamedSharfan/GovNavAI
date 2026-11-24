@@ -1,7 +1,7 @@
 "use client";
 
 import type { CitizenRequest } from "@govnav/shared";
-import { Building2, Check, Clock, MessageCircleQuestion, Sparkles, Wallet } from "lucide-react";
+import { Building2, Check, Clock, MessageCircleQuestion, QrCode, Sparkles, Wallet } from "lucide-react";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { SourceChip } from "@/components/chat/answer-cards";
@@ -134,6 +134,8 @@ export function ProcedureDetailView({ detail, compact = false }: { detail: Detai
                     type="button"
                     role="checkbox"
                     aria-checked={on}
+                    aria-labelledby={`doc-${p.id}-${d.id}`}
+                    aria-describedby={d.conditional || d.note ? `doc-${p.id}-${d.id}-note` : undefined}
                     onClick={() => void toggle(d.id)}
                     className={cn(
                       "flex w-full items-start gap-3 rounded-2xl bg-surface p-3 text-left ring-1 transition",
@@ -150,9 +152,13 @@ export function ProcedureDetailView({ detail, compact = false }: { detail: Detai
                       {on && <Check className="size-4" />}
                     </span>
                     <span className="min-w-0 flex-1">
-                      <span className="block font-semibold">{d.name[lang]}</span>
-                      {d.conditional && <span className="block text-sm text-muted">{d.conditional[lang]}</span>}
-                      {d.note && <span className="block text-sm text-muted">{d.note[lang]}</span>}
+                      <span id={`doc-${p.id}-${d.id}`} className="block font-semibold">
+                        {d.name[lang]}
+                      </span>
+                      <span id={`doc-${p.id}-${d.id}-note`}>
+                        {d.conditional && <span className="block text-sm text-muted">{d.conditional[lang]}</span>}
+                        {d.note && <span className="block text-sm text-muted">{d.note[lang]}</span>}
+                      </span>
                     </span>
                     {d.aiCanPrefill && (
                       <span className="flex shrink-0 items-center gap-1 rounded-full bg-gold/25 px-2 py-0.5 text-xs font-bold text-primary-deep">
@@ -223,6 +229,13 @@ export function ProcedureDetailView({ detail, compact = false }: { detail: Detai
           </details>
         )}
 
+        <Link
+          href={`/visit-pack/${p.id}`}
+          className="flex min-h-14 items-center justify-center gap-2 rounded-xl bg-primary text-lg font-bold text-white hover:bg-primary-strong"
+        >
+          <QrCode aria-hidden className="size-5" />
+          {t("visitPack.open")}
+        </Link>
         <Link
           href="/ask"
           className="flex min-h-12 items-center justify-center gap-2 rounded-xl bg-surface-2 font-semibold ring-1 ring-line"

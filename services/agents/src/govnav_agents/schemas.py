@@ -508,6 +508,10 @@ class CitizenRequest(StrictModel):
     form_id: str | None = Field(default=None, alias="formId")
     purpose: str | None = None
     filled_values: dict[str, str] = Field(default_factory=dict, alias="filledValues")
+    form_filled_pct: int | None = Field(default=None, alias="formFilledPct", ge=0, le=100)
+    manual_steps: list[LocalizedText] = Field(
+        default_factory=list, alias="manualSteps", description="e.g. 'Sign field 06 in front of the GN'"
+    )
     visit_pack_code: str | None = Field(default=None, alias="visitPackCode")
     outcome: VisitOutcome = VisitOutcome.UNKNOWN
 

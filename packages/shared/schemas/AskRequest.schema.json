@@ -1,0 +1,58 @@
+{
+  "$defs": {
+    "Lang": {
+      "description": "UI / answer language.",
+      "enum": [
+        "si",
+        "ta",
+        "en"
+      ],
+      "title": "Lang",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "message": {
+      "maxLength": 1000,
+      "minLength": 1,
+      "title": "Message",
+      "type": "string"
+    },
+    "uiLanguage": {
+      "$ref": "#/$defs/Lang",
+      "default": "si"
+    },
+    "sessionId": {
+      "anyOf": [
+        {
+          "maxLength": 80,
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Sessionid"
+    },
+    "procedureContext": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Procedure the user is currently viewing.",
+      "title": "Procedurecontext"
+    }
+  },
+  "required": [
+    "message"
+  ],
+  "title": "AskRequest",
+  "type": "object"
+}

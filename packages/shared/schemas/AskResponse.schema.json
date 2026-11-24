@@ -1,0 +1,371 @@
+{
+  "$defs": {
+    "AnswerCard": {
+      "additionalProperties": false,
+      "properties": {
+        "kind": {
+          "const": "answer",
+          "default": "answer",
+          "title": "Kind",
+          "type": "string"
+        },
+        "procedureId": {
+          "title": "Procedureid",
+          "type": "string"
+        },
+        "procedureName": {
+          "title": "Procedurename",
+          "type": "string"
+        },
+        "text": {
+          "title": "Text",
+          "type": "string"
+        },
+        "facts": {
+          "$ref": "#/$defs/FactCard"
+        },
+        "source": {
+          "$ref": "#/$defs/SourceChip"
+        },
+        "documentCount": {
+          "title": "Documentcount",
+          "type": "integer"
+        },
+        "hasForm": {
+          "title": "Hasform",
+          "type": "boolean"
+        },
+        "grounded": {
+          "description": "True if the grounding guard accepted the model text.",
+          "title": "Grounded",
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "procedureId",
+        "procedureName",
+        "text",
+        "facts",
+        "source",
+        "documentCount",
+        "hasForm",
+        "grounded"
+      ],
+      "title": "AnswerCard",
+      "type": "object"
+    },
+    "Candidate": {
+      "additionalProperties": false,
+      "properties": {
+        "procedureId": {
+          "title": "Procedureid",
+          "type": "string"
+        },
+        "name": {
+          "title": "Name",
+          "type": "string"
+        },
+        "score": {
+          "title": "Score",
+          "type": "number"
+        }
+      },
+      "required": [
+        "procedureId",
+        "name",
+        "score"
+      ],
+      "title": "Candidate",
+      "type": "object"
+    },
+    "DeclineCard": {
+      "additionalProperties": false,
+      "properties": {
+        "kind": {
+          "const": "decline",
+          "default": "decline",
+          "title": "Kind",
+          "type": "string"
+        },
+        "text": {
+          "title": "Text",
+          "type": "string"
+        },
+        "reason": {
+          "enum": [
+            "low_confidence",
+            "out_of_scope",
+            "unsafe",
+            "error"
+          ],
+          "title": "Reason",
+          "type": "string"
+        },
+        "hotline": {
+          "default": "1919",
+          "title": "Hotline",
+          "type": "string"
+        },
+        "suggestions": {
+          "items": {
+            "$ref": "#/$defs/Candidate"
+          },
+          "title": "Suggestions",
+          "type": "array"
+        }
+      },
+      "required": [
+        "text",
+        "reason"
+      ],
+      "title": "DeclineCard",
+      "type": "object"
+    },
+    "FactCard": {
+      "additionalProperties": false,
+      "description": "The Office · Fee · Time triple. Values come from the record, never the model.",
+      "properties": {
+        "office": {
+          "title": "Office",
+          "type": "string"
+        },
+        "fee": {
+          "title": "Fee",
+          "type": "string"
+        },
+        "time": {
+          "title": "Time",
+          "type": "string"
+        },
+        "isFree": {
+          "title": "Isfree",
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "office",
+        "fee",
+        "time",
+        "isFree"
+      ],
+      "title": "FactCard",
+      "type": "object"
+    },
+    "GreetingCard": {
+      "additionalProperties": false,
+      "properties": {
+        "kind": {
+          "const": "greeting",
+          "default": "greeting",
+          "title": "Kind",
+          "type": "string"
+        },
+        "text": {
+          "title": "Text",
+          "type": "string"
+        }
+      },
+      "required": [
+        "text"
+      ],
+      "title": "GreetingCard",
+      "type": "object"
+    },
+    "InputVariety": {
+      "description": "How the citizen wrote the query (for per-variety evaluation).",
+      "enum": [
+        "si",
+        "ta",
+        "en",
+        "singlish",
+        "tanglish"
+      ],
+      "title": "InputVariety",
+      "type": "string"
+    },
+    "Intent": {
+      "enum": [
+        "procedure_info",
+        "checklist",
+        "form",
+        "office",
+        "greeting",
+        "out_of_scope"
+      ],
+      "title": "Intent",
+      "type": "string"
+    },
+    "Lang": {
+      "description": "UI / answer language.",
+      "enum": [
+        "si",
+        "ta",
+        "en"
+      ],
+      "title": "Lang",
+      "type": "string"
+    },
+    "SourceChip": {
+      "additionalProperties": false,
+      "properties": {
+        "title": {
+          "title": "Title",
+          "type": "string"
+        },
+        "url": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Url"
+        },
+        "verifiedAt": {
+          "anyOf": [
+            {
+              "format": "date",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Verifiedat"
+        },
+        "verifiedBy": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Verifiedby"
+        },
+        "demoData": {
+          "title": "Demodata",
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "title",
+        "demoData"
+      ],
+      "title": "SourceChip",
+      "type": "object"
+    },
+    "TraceStep": {
+      "additionalProperties": false,
+      "properties": {
+        "agent": {
+          "title": "Agent",
+          "type": "string"
+        },
+        "label": {
+          "title": "Label",
+          "type": "string"
+        },
+        "ms": {
+          "minimum": 0,
+          "title": "Ms",
+          "type": "integer"
+        },
+        "detail": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Detail"
+        }
+      },
+      "required": [
+        "agent",
+        "label",
+        "ms"
+      ],
+      "title": "TraceStep",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "sessionId": {
+      "title": "Sessionid",
+      "type": "string"
+    },
+    "language": {
+      "$ref": "#/$defs/Lang"
+    },
+    "inputVariety": {
+      "$ref": "#/$defs/InputVariety"
+    },
+    "intent": {
+      "$ref": "#/$defs/Intent"
+    },
+    "card": {
+      "discriminator": {
+        "mapping": {
+          "answer": "#/$defs/AnswerCard",
+          "decline": "#/$defs/DeclineCard",
+          "greeting": "#/$defs/GreetingCard"
+        },
+        "propertyName": "kind"
+      },
+      "oneOf": [
+        {
+          "$ref": "#/$defs/AnswerCard"
+        },
+        {
+          "$ref": "#/$defs/DeclineCard"
+        },
+        {
+          "$ref": "#/$defs/GreetingCard"
+        }
+      ],
+      "title": "Card"
+    },
+    "trace": {
+      "items": {
+        "$ref": "#/$defs/TraceStep"
+      },
+      "title": "Trace",
+      "type": "array"
+    },
+    "mode": {
+      "enum": [
+        "gemini",
+        "offline"
+      ],
+      "title": "Mode",
+      "type": "string"
+    },
+    "latencyMs": {
+      "title": "Latencyms",
+      "type": "integer"
+    }
+  },
+  "required": [
+    "sessionId",
+    "language",
+    "inputVariety",
+    "intent",
+    "card",
+    "trace",
+    "mode",
+    "latencyMs"
+  ],
+  "title": "AskResponse",
+  "type": "object"
+}
